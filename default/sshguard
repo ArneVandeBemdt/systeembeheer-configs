@@ -12,4 +12,4 @@ LOGFILES="/var/log/auth.log"
 WHITELIST="/etc/sshguard/whitelist"
 
 # Other options
-ARGS="-a 40 -p 420 -s 1200"
+ARGS="-a 50 -p 300 -s 120"
