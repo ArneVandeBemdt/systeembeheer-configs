@@ -4,4 +4,6 @@
 !sshguard/
 !default/
 !apt/
+!scripts/
 !sudoers
+
