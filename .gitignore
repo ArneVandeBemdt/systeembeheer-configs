@@ -8,3 +8,4 @@
 !incron/
 !sudoers
 !ethers
+!ntp.conf
