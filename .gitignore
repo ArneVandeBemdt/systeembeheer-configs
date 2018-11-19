@@ -6,6 +6,7 @@
 !apt/
 !scripts/
 !incron/
+!mysql/
 !sudoers
 !ethers
 !ntp.conf
