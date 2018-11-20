@@ -8,6 +8,7 @@
 !incron/
 !mysql/
 !powerdns/
+!apache2/
 !sudoers
 !ethers
 !ntp.conf
