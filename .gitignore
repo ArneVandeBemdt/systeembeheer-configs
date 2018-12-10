@@ -12,3 +12,4 @@
 !sudoers
 !ethers
 !ntp.conf
+!vsftpd.conf
