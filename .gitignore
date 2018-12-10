@@ -9,6 +9,7 @@
 !mysql/
 !powerdns/
 !apache2/
+!network/
 !sudoers
 !ethers
 !ntp.conf
