@@ -6,4 +6,7 @@ iface eth0 inet static
 	address 193.191.177.132
 	netmask 255.255.255.128
 	gateway 193.191.177.254
-
+iface eth0 inet6 static
+	address 2001:6a8:2880:a077::84
+	netmask 64
+	gateway 2001:6a8:2880:a077::1
