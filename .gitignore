@@ -10,6 +10,7 @@
 !powerdns/
 !apache2/
 !network/
+!init.d/
 !sudoers
 !ethers
 !ntp.conf
