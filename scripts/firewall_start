@@ -35,5 +35,6 @@ ip6tables -A INPUT -p tcp --dport 22345 -j ACCEPT
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
 
-
+ip6tables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
+ip6tables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
 
