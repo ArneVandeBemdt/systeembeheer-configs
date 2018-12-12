@@ -3,12 +3,9 @@
 #script to restore default values in iptables, allow everything
 #Arne Van de Bemdt
 
-iptables -F
-ip6tables -F
+iptables-restore < default_rules.v4
+ip6tables-restore < default_rules.v6
 
-iptables -P INPUT ACCEPT
-iptables -P FORWARD ACCEPT
-iptables -P OUTPUT ACCEPT
-ip6tables -P INPUT ACCEPT
-ip6tables -P FORWARD ACCEPT
-ip6tables -P OUTPUT ACCEPT
+# enable tcp syn cookies
+awk -i inplace '/net.ipv4.tcp_syncookies/ { gsub("net.ipv4.tcp_syncookies=1", "#net.ipv4.tcp_syncookies=1") }1' /etc/sysctl.conf
+sysctl -p
