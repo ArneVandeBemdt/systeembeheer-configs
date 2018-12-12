@@ -23,6 +23,11 @@ iptables -A INPUT -p tcp --dport 587 -j ACCEPT
 iptables -A INPUT -p tcp --dport 993 -j ACCEPT
 iptables -A INPUT -p tcp --dport 22345 -j ACCEPT
 
+
+#passive FTP port range
+#iptables -A INPUT -p tcp --dport 1024:65535 -j ACCEPT
+#ip6tables -A INPUT -p tcp --dport 1024:65535 -j ACCEPT
+
 #open ports for incomming connection IPv6
 ip6tables -A INPUT -p tcp --dport 20 -j ACCEPT
 ip6tables -A INPUT -p tcp --dport 21 -j ACCEPT
