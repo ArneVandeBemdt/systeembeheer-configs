@@ -35,6 +35,16 @@ ip6tables -A INPUT -p tcp --dport 22345 -j ACCEPT
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
 iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
 
-ip6tables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
-ip6tables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
+ip6tables -A INPUT -p ipv6-icmp -j ACCEPT
+ip6tables -A OUTPUT -p ipv6-icmp -j ACCEPT
 
+#allow from specific IPv4s
+iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
+iptables -A INPUT -s 192.168.255.0/24 -j ACCEPT
+iptables -A INPUT -s 172.16.0.0/16 -j ACCEPT
+iptables -A INPUT -s 193.191.177.1 -j ACCEPT
+iptables -A INPUT -s 193.191.177.6 -j ACCEPT
+
+#allow from specific IPv6s
+ip6tables -A INPUT -s 2001:6a8:2880:a021::1 -j ACCEPT
+ip6tables -A INPUT -s 2001:6a8:2880:a021::6 -j ACCEPT
