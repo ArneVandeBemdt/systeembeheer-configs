@@ -1,12 +1,22 @@
+### BEGIN INIT INFO
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Description: firewall service
+### END INIT INFO
+
 #!/bin/bash
 # description: Firewall service for adding and removing rules
 
 start() {
-	echo start
+	echo configuring firewall...
+	/bin/bash /etc/scripts/firewall_start
 }
 
 stop() {
-	echo stop
+	echo stopping firewall...
+	/bin/bash /etc/scripts/firewall_stop
 }
 
 case "$1" in
@@ -21,7 +31,7 @@ case "$1" in
 		start
 		;;
 	*)
-		echo "Usage: $0 {start|stop|restart}"
+		start
 esac
 
 exit 0
