@@ -10,12 +10,12 @@
 # description: Firewall service for adding and removing rules
 
 start() {
-	echo configuring firewall...
+	echo "configuring firewall..."
 	/bin/bash /etc/scripts/firewall_start
 }
 
 stop() {
-	echo stopping firewall...
+	echo "stopping firewall..."
 	/bin/bash /etc/scripts/firewall_stop
 }
 
