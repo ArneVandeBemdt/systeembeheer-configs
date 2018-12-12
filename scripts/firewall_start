@@ -7,6 +7,10 @@
 iptables -F
 ip6tables -F
 
+#allow al output
+iptables -P OUTPUT ACCEPT
+ip6tables -P OUTPUT ACCEPT
+
 #open ports for incomming connection IPv4
 iptables -A INPUT -p tcp --dport 20 -j ACCEPT
 iptables -A INPUT -p tcp --dport 21 -j ACCEPT
@@ -33,10 +37,7 @@ ip6tables -A INPUT -p tcp --dport 22345 -j ACCEPT
 
 #allow pinging
 iptables -A INPUT -p icmp --icmp-type echo-request -j ACCEPT
-iptables -A OUTPUT -p icmp --icmp-type echo-reply -j ACCEPT
-
 ip6tables -A INPUT -p ipv6-icmp -j ACCEPT
-ip6tables -A OUTPUT -p ipv6-icmp -j ACCEPT
 
 #allow from specific IPv4s
 iptables -A INPUT -s 10.0.0.0/8 -j ACCEPT
