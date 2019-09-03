@@ -1,0 +1,39 @@
+#!/bin/sh
+
+set -e
+
+# ksh alternatives
+update-alternatives --remove ksh /usr/bin/zsh
+update-alternatives --remove ksh /bin/zsh4
+
+# Remove alternatives system for zsh in general
+update-alternatives --remove zsh /bin/zsh5
+update-alternatives --remove rzsh /bin/zsh5
+
+case "$1" in
+    (configure)
+        add-shell /bin/zsh
+        add-shell /usr/bin/zsh
+
+	# New hardcoded symlinks which unfortunately can't be shipped inside
+	# the package itself since some people want to merge /bin and /usr/bin
+	# against FHS and all Unix tradition.
+	if [ ! -e /usr/bin/zsh -a ! -L /usr/bin/zsh ]; then
+	  ln -s /bin/zsh /usr/bin/zsh
+	fi
+    ;;
+    (abort-upgrade|abort-remove|abort-deconfigure)
+	exit 0
+    ;;
+    (*)
+	echo "postinst called with unknown argument \`$1'" >&2
+	exit 0
+    ;;
+esac
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper symlink_to_dir /usr/share/doc/zsh zsh-common 5.0.7-3 -- "$@"
+# End automatically added section
+
+
+exit 0

@@ -1,0 +1,5 @@
+f861658b8d23d320b5225d9513b41227  usr/share/doc/mysql-server/COPYING.gz
+33cea9b9db6874168ce20e00ec97860a  usr/share/doc/mysql-server/README
+260df43d6ac6c94af2645887865ce9c9  usr/share/doc/mysql-server/changelog.Debian.gz
+cced8194934bce611cfee837c44f462d  usr/share/doc/mysql-server/copyright
+89c86da530beca728ed420ea95b2eb10  usr/share/lintian/overrides/mysql-server

@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+BASIC_PLUGINS="apt dhcp disk dummy ftp http load mail news ntp ping procs real ssh tcp_udp telnet users"
+
+if [ "$1" = "purge" ]; then
+	if which ucf >/dev/null 2>&1; then
+		have_ucf="yes"
+	fi
+	for f in $BASIC_PLUGINS; do
+		rm -f /etc/nagios-plugins/config/${f}.cfg
+		if [ "$have_ucf" = "yes" ]; then
+			ucf --purge /etc/nagios-plugins/config/${f}.cfg
+		fi
+	done 
+fi
+
+

@@ -1,0 +1,15 @@
+5dd55f8b4a4ba3bb4a6e7941787ef05a  usr/lib/x86_64-linux-gnu/pdns/libgmysqlbackend.so
+6d316736cbecf04bd8049c4b10aa7913  usr/share/dbconfig-common/data/pdns-backend-mysql/install/mysql
+8b3e0cea623acf33c7beae2de9ff34af  usr/share/dbconfig-common/data/pdns-backend-mysql/upgrade/mysql/3.0-1
+084d6b18fdc061c43bcf4b5e37dadb73  usr/share/dbconfig-common/data/pdns-backend-mysql/upgrade/mysql/3.3.1-4
+a3dc6a1eebd47ef926d38d9ebd69ac4d  usr/share/dbconfig-common/data/pdns-backend-mysql/upgrade/mysql/3.4.0
+37ece77bd77b684194927b7c76b0cc1e  usr/share/dbconfig-common/data/pdns-backend-mysql/upgrade/mysql/4.0.1-6
+9950b93cf8fdabc78c04867679e2d12c  usr/share/dbconfig-common/data/pdns-backend-mysql/upgrade/mysql/4.0.3-1
+34b7e0f8b72b4f73250cf34b9b865162  usr/share/doc/pdns-backend-mysql/NEWS.Debian.gz
+73b4d5179660e2eb3205498a9482c075  usr/share/doc/pdns-backend-mysql/README.Debian
+13f8a9dce632887892a5dc8761e47c28  usr/share/doc/pdns-backend-mysql/changelog.Debian.gz
+a76ac63596fd0e831866299d729c924f  usr/share/doc/pdns-backend-mysql/copyright
+3b18bbffa9f1396333ac7fbdb6658271  usr/share/doc/pdns-backend-mysql/dnssec-3.x_to_3.4.0_schema.mysql.sql
+da1a734755ebe871f0efe78b47655ba1  usr/share/doc/pdns-backend-mysql/nodnssec-3.x_to_3.4.0_schema.mysql.sql
+c2efcb7a2f6e014c853a583f91e6e9a2  usr/share/doc/pdns-backend-mysql/schema.mysql.sql
+30c1b3746cac7d9844660169ee2f8d52  usr/share/pdns-backend-mysql/pdns.local.gmysql.conf

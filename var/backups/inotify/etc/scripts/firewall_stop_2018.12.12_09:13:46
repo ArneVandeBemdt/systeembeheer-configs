@@ -1,0 +1,14 @@
+#!/bin/bash
+
+#script to restore default values in iptables, allow everything
+#Arne Van de Bemdt
+
+iptables -F
+ip6tables -F
+
+iptables -P INPUT ACCEPT
+iptables -P FORWARD ACCEPT
+iptables -P OUTPUT ACCEPT
+ip6tables -P INPUT ACCEPT
+ip6tables -P FORWARD ACCEPT
+ip6tables -P OUTPUT ACCEPT

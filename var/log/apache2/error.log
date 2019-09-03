@@ -1,0 +1,2 @@
+[Tue Sep 03 06:03:02.257345 2019] [mpm_prefork:notice] [pid 40278] AH00163: Apache/2.4.25 (Debian) OpenSSL/1.0.2s configured -- resuming normal operations
+[Tue Sep 03 06:03:02.257369 2019] [core:notice] [pid 40278] AH00094: Command line: '/usr/sbin/apache2'

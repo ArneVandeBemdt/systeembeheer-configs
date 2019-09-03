@@ -1,0 +1,13 @@
+<VirtualHost *:443>
+	ServerAdmin admin@mail.arne-vandebemdt.sb.uclllabs.be
+	ServerName supersecure.arne-vandebemdt.sb.uclllabs.be
+	DocumentRoot /var/www/supersecure.arne-vandebemdt.sb.uclllabs.be/html
+	ErrorLog ${APACHE_LOG_DIR}/supersecure-error.log
+	CustomLog ${APACHE_LOG_DIR}/supersecure-access.log combined
+	RewriteEngine on
+	RewriteCond %{SERVER_NAME} =supersecure.arne-vandebemdt.sb.uclllabs.be
+	RewriteRule ^ https://%{SERVER_NAME}%{REQUEST_URI} [END,NE,R=permanent]
+Include /etc/letsencrypt/options-ssl-apache.conf
+SSLCertificateFile insert_cert_file_path
+SSLCertificateKeyFile insert_key_file_path
+</VirtualHost>

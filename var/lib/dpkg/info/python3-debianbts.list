@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/debianbts.py
+/usr/lib/python3/dist-packages/python_debianbts-2.6.1.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-debianbts
+/usr/share/doc/python3-debianbts/changelog.gz
+/usr/share/doc/python3-debianbts/copyright

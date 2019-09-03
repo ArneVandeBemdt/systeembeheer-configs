@@ -1,0 +1,14 @@
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+    ServerAdmin admin@mail.arne-vandebemdt.sb.uclllabs.be
+    ServerName secure.arne-vandebemdt.sb.uclllabs.be
+    DocumentRoot /var/www/secure.arne-vandebemdt.sb.uclllabs.be/html
+    ErrorLog ${APACHE_LOG_DIR}/secure-error.log
+    CustomLog ${APACHE_LOG_DIR}/secure-access.log combined
+
+Include /etc/letsencrypt/options-ssl-apache.conf
+SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+SSLCertificateFile insert_cert_file_path
+SSLCertificateKeyFile insert_key_file_path
+</VirtualHost>
+</IfModule>

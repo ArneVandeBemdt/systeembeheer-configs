@@ -1,0 +1,3236 @@
+2019-09-02 10:17:22,245:DEBUG:certbot.main:certbot version: 0.28.0
+2019-09-02 10:17:22,246:DEBUG:certbot.main:Arguments: ['-q']
+2019-09-02 10:17:22,247:DEBUG:certbot.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#apache,PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2019-09-02 10:17:22,255:DEBUG:certbot.log:Root logging level set at 30
+2019-09-02 10:17:22,256:INFO:certbot.log:Saving debug log to /var/log/letsencrypt/letsencrypt.log
+2019-09-02 10:17:22,264:DEBUG:certbot.plugins.selection:Requested authenticator <certbot.cli._Default object at 0x7fca216c3c18> and installer <certbot.cli._Default object at 0x7fca216c3c18>
+2019-09-02 10:17:22,271:DEBUG:certbot.storage:Should renew, less than 30 days before certificate expiry 2019-02-18 18:48:42 UTC.
+2019-09-02 10:17:22,271:INFO:certbot.renewal:Cert is due for renewal, auto-renewing...
+2019-09-02 10:17:22,272:DEBUG:certbot.plugins.selection:Requested authenticator apache and installer apache
+2019-09-02 10:17:22,378:DEBUG:certbot_apache.configurator:Apache version is 2.4.25
+2019-09-02 10:17:22,745:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7fca216c5e80>
+Prep: True
+2019-09-02 10:17:22,747:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7fca216c5e80>
+Prep: True
+2019-09-02 10:17:22,747:DEBUG:certbot.plugins.selection:Selected authenticator <certbot_apache.override_debian.DebianConfigurator object at 0x7fca216c5e80> and installer <certbot_apache.override_debian.DebianConfigurator object at 0x7fca216c5e80>
+2019-09-02 10:17:22,747:INFO:certbot.plugins.selection:Plugins selected: Authenticator apache, Installer apache
+2019-09-02 10:17:22,750:DEBUG:certbot.main:Picked account: <Account(RegistrationResource(new_authzr_uri=None, body=Registration(key=None, only_return_existing=None, contact=(), status=None, agreement=None, terms_of_service_agreed=None), terms_of_service=None, uri='https://acme-v02.api.letsencrypt.org/acme/acct/46161535'), 70cf206806a56fea568d7a74e2c1188c, Meta(creation_dt=datetime.datetime(2018, 11, 20, 15, 52, 46, tzinfo=<UTC>), creation_host='arne-vandebemdt.uclllabs.be'))>
+2019-09-02 10:17:22,751:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2019-09-02 10:17:22,756:DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
+2019-09-02 10:17:27,099:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 658
+2019-09-02 10:17:27,099:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 658
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:27 GMT
+Connection: keep-alive
+
+{
+  "ItXZ15XQi8I": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2019-09-02 10:17:27,100:INFO:certbot.main:Renewing an existing certificate
+2019-09-02 10:17:27,167:DEBUG:certbot.crypto_util:Generating key (2048 bits): /etc/letsencrypt/keys/0221_key-certbot.pem
+2019-09-02 10:17:27,172:DEBUG:certbot.crypto_util:Creating CSR: /etc/letsencrypt/csr/0221_csr-certbot.pem
+2019-09-02 10:17:27,172:DEBUG:acme.client:Requesting fresh nonce
+2019-09-02 10:17:27,172:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2019-09-02 10:17:27,353:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2019-09-02 10:17:27,353:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: 0101b4XC7TgiyFCYFSPla6ClFyImI8U731p86eXQUutdtU8
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Content-Length: 0
+Expires: Mon, 02 Sep 2019 08:17:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:27 GMT
+Connection: keep-alive
+
+
+2019-09-02 10:17:27,353:DEBUG:acme.client:Storing nonce: 0101b4XC7TgiyFCYFSPla6ClFyImI8U731p86eXQUutdtU8
+2019-09-02 10:17:27,354:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "value": "arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "secure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    }\n  ]\n}'
+2019-09-02 10:17:27,357:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJhbGciOiAiUlMyNTYiLCAibm9uY2UiOiAiMDEwMWI0WEM3VGdpeUZDWUZTUGxhNkNsRnlJbUk4VTczMXA4NmVYUVV1dGR0VTgiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciJ9",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInZhbHVlIjogImFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0sCiAgICB7CiAgICAgICJ2YWx1ZSI6ICJzZWN1cmUuYXJuZS12YW5kZWJlbWR0LnNiLnVjbGxsYWJzLmJlIiwKICAgICAgInR5cGUiOiAiZG5zIgogICAgfSwKICAgIHsKICAgICAgInZhbHVlIjogInN1cGVyc2VjdXJlLmFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0KICBdCn0",
+  "signature": "jfPOYnxzmuRg7BFOc0o-I0533p94VDPvC5FBuGOG6Ua1kGnD0nuD_TZnCtMueJ-WB939joThod6AloioRTKlmFPyEtLhYk7fHmsjJsi--1hhilr-fe4-Tx2WTJ4McxNvlZqJrSFogGojHihTs-2RTNvBvFEKhaUZAe3sFRj1Yj6yYbeRpLgTWVsJ0g_nbTeVdz0AikgZ8mSQwDOt3wLdOm3QNCVCRPLdoSFS8-De4y5XOJRHReJMgkerurlCE31l7ZtyzKEHvQTPrdHOjqWOJGHMm457hDTSQDcXcNKOEkb7BJlVbDo1xFe16Sz25bobGPN9FhzRcU-VNW--4vdhTw"
+}
+2019-09-02 10:17:27,686:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 201 676
+2019-09-02 10:17:27,687:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Content-Type: application/json
+Content-Length: 676
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Location: https://acme-v02.api.letsencrypt.org/acme/order/46161535/1008521706
+Replay-Nonce: 0102fSySpXmXZ11NGp2ccmtCeXKBv77ucBHfDjjHHr4yAuU
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:27 GMT
+Connection: keep-alive
+
+{
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27.576434926Z",
+  "identifiers": [
+    {
+      "type": "dns",
+      "value": "arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+    }
+  ],
+  "authorizations": [
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119"
+  ],
+  "finalize": "https://acme-v02.api.letsencrypt.org/acme/finalize/46161535/1008521706"
+}
+2019-09-02 10:17:27,687:DEBUG:acme.client:Storing nonce: 0102fSySpXmXZ11NGp2ccmtCeXKBv77ucBHfDjjHHr4yAuU
+2019-09-02 10:17:27,688:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-02 10:17:27,871:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-02 10:17:27,871:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:27 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-02 10:17:27,872:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-02 10:17:28,063:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-02 10:17:28,064:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:28 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:28 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-02 10:17:28,064:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:28,259:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:28,259:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:28 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:28 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:28,260:INFO:certbot.auth_handler:Performing the following challenges:
+2019-09-02 10:17:28,260:INFO:certbot.auth_handler:http-01 challenge for arne-vandebemdt.sb.uclllabs.be
+2019-09-02 10:17:28,260:INFO:certbot.auth_handler:http-01 challenge for secure.arne-vandebemdt.sb.uclllabs.be
+2019-09-02 10:17:28,260:INFO:certbot.auth_handler:http-01 challenge for supersecure.arne-vandebemdt.sb.uclllabs.be
+2019-09-02 10:17:28,316:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/000-default.conf
+2019-09-02 10:17:28,317:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: secure.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:28,317:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www2.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:28,317:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www1.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:28,318:DEBUG:certbot_apache.http_01:writing a pre config file with text:
+         RewriteEngine on
+        RewriteRule ^/\.well-known/acme-challenge/([A-Za-z0-9-_=]+)$ /var/lib/letsencrypt/http_challenges/$1 [END]
+    
+2019-09-02 10:17:28,319:DEBUG:certbot_apache.http_01:writing a post config file with text:
+         <Directory /var/lib/letsencrypt/http_challenges>
+            Require all granted
+        </Directory>
+        <Location /.well-known/acme-challenge>
+            Require all granted
+        </Location>
+    
+2019-09-02 10:17:28,381:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:28,382:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:28,382:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/000-default.conf
+2019-09-02 10:17:28,382:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 10:17:31,646:INFO:certbot.auth_handler:Waiting for verification...
+2019-09-02 10:17:31,647:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "type": "http-01",\n  "keyAuthorization": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM"\n}'
+2019-09-02 10:17:31,649:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ:
+{
+  "protected": "eyJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJhbGciOiAiUlMyNTYiLCAibm9uY2UiOiAiMDEwMmZTeVNwWG1YWjExTkdwMmNjbXRDZVhLQnY3N3VjQkhmRGpqSEhyNHlBdVUiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzY0NzQyNzYxL3hqSGFYUSJ9",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJ0eXBlIjogImh0dHAtMDEiLAogICJrZXlBdXRob3JpemF0aW9uIjogIm5BS2Z0eU16eXBuSk80RG93VVI5QzcwZzk3dWJ5SkVRYnpPZEVGUlRLaUEua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIKfQ",
+  "signature": "iEOmfYfCLvrPv-pL6pMtd_PNwbXrjcQ93YiQuPseECJWowtcpUDSWVf-ToubbjhR50jkzfzdocGxFbMT3XHebBCxCraFpEaDIgPv9MYhPMUmRXO-zrDP2jyo1xDaHYjgts5NlETH5il0-D83KXvz_bzSFlTHZW8PyzFFDtnLMC7ZO_GdUatxZNwUVPg40SZMhvq8PlnoLSYy4uuJcAdgkGugNxUNA1ACuqPLbmg54h-1QjIDDiAXNdn2zuP1Gs7Iope0uJ445kgF4RSRmLzffiU-dwgI88mdh6tkEsMCNoNA5X-8pmXMr9CErjYIrpV3syl6fP7IYQQqgCoCvrXrBA"
+}
+2019-09-02 10:17:31,882:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/64742761/xjHaXQ HTTP/1.1" 200 910
+2019-09-02 10:17:31,883:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 910
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ
+Replay-Nonce: 0102aD-KODuejv7RHbCwQoMlfnpTIpYn6EJLrQ6ZgyYD9Ac
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:31 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:31 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+  "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+  "validationRecord": [
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "2001:6a8:2880:a077::84"
+    },
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-02 10:17:31,883:DEBUG:acme.client:Storing nonce: 0102aD-KODuejv7RHbCwQoMlfnpTIpYn6EJLrQ6ZgyYD9Ac
+2019-09-02 10:17:31,883:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "type": "http-01",\n  "keyAuthorization": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM"\n}'
+2019-09-02 10:17:31,885:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q:
+{
+  "protected": "eyJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJhbGciOiAiUlMyNTYiLCAibm9uY2UiOiAiMDEwMmFELUtPRHVlanY3UkhiQ3dRb01sZm5wVElwWW42RUpMclE2Wmd5WUQ5QWMiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzc0ODc2MjI0L2JtWVotUSJ9",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJ0eXBlIjogImh0dHAtMDEiLAogICJrZXlBdXRob3JpemF0aW9uIjogIjIxWlRSZlpSOUJ5SGxnMGRJUzNqWEd4NHlCY0ZwX254Tl9DZExmXzRtOW8ua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIKfQ",
+  "signature": "kw_29xB7XR_CAcPAQrJfdtmz2DZxruhKM-fEwpJ2vPrJ9pkBWks7-wpFt-BOjmSlKNYFQYqmq4OPRUSzcwnKcSet_iEzwn3t1ueaJdPgXf5iYLCsUvorR5lZwj4eOII7hf7YS8m_1oXNDS_TJ87MvNrTOQsCoX-D__wtfyw_kpTRno06F-v_UfviKqID82_vMvKleg3_grX6-vdsMVgIrchN8iPkw6RR9mTKo6ooKpyJq5xcXJaKnJKv16vy7ysz9ehz2Bem5Hbd79ATC-X9TmqzDIpJTMHKHloAZ1rgG_MXiKkLc-mkjaXTVhIH9yxK8O5Q2vLJbYkoX7dmNmQOng"
+}
+2019-09-02 10:17:32,102:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/74876224/bmYZ-Q HTTP/1.1" 200 536
+2019-09-02 10:17:32,103:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 536
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q
+Replay-Nonce: 0102ei9EFw4Jbz1x4XrB2tdHKCILWPn1D2xSwZJIxPVcuXQ
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:32 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:32 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+  "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+  "validationRecord": [
+    {
+      "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-02 10:17:32,103:DEBUG:acme.client:Storing nonce: 0102ei9EFw4Jbz1x4XrB2tdHKCILWPn1D2xSwZJIxPVcuXQ
+2019-09-02 10:17:32,103:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "type": "http-01",\n  "keyAuthorization": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM"\n}'
+2019-09-02 10:17:32,105:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ:
+{
+  "protected": "eyJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJhbGciOiAiUlMyNTYiLCAibm9uY2UiOiAiMDEwMmVpOUVGdzRKYnoxeDRYckIydGRIS0NJTFdQbjFEMnhTd1pKSXhQVmN1WFEiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzE1OTE0MDExOS9nRFhabFEifQ",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJ0eXBlIjogImh0dHAtMDEiLAogICJrZXlBdXRob3JpemF0aW9uIjogIkVlLXdpSVY0SFFHeUhfd3Q1ZkxBdG5wWnFleHpHLVdrb3l2cWZ3dElqYVEua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIKfQ",
+  "signature": "e7LTGyNdoi7KnSL6WXjXLUb0SKrkwsvL9KzdLuReoJb8zDP1DXPOjohb-Q4ni7KKXrauDkusRuYOUgc96Cdz5-OvjLanzo-DHgivZwYk6fVgrt2DwmRyQn1EWEM2KD5Hb4gTVqGimoGsM9bAzkJ9VEQZL2Z2-MeXJtb44po7GrJxN7q_4Ysz0pNdmVMbODbhguyMmdWf9IL8Ofz9YKsM60OWD9ggAL4x4MronnxP8SrVw2ENO-2h7o0lzlXpH8IXYY3fKDPcAquK9eZnENjmCbU1mBHT7LEcbpfuZ7cTXW8pSXrPEnP4pH-p1SH8gobNwGcWVUzFfN4R-JsaFBIfLA"
+}
+2019-09-02 10:17:32,331:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/159140119/gDXZlQ HTTP/1.1" 200 184
+2019-09-02 10:17:32,332:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 184
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ
+Replay-Nonce: 0101j5YkLviiGgDlz07kWlavS8HDYm95V_WuIscwL4sNUbo
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:32 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:32 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "pending",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+  "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+}
+2019-09-02 10:17:32,332:DEBUG:acme.client:Storing nonce: 0101j5YkLviiGgDlz07kWlavS8HDYm95V_WuIscwL4sNUbo
+2019-09-02 10:17:35,335:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-02 10:17:35,537:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-02 10:17:35,538:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:35 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:35 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-02 10:17:35,538:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-02 10:17:35,723:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-02 10:17:35,724:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:35 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:35 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-02 10:17:35,724:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:35,919:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:35,919:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:35 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:35 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:38,923:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:39,110:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:39,111:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:39 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:39 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:42,112:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:42,301:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:42,301:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:42 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:42 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:45,305:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:45,554:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:45,554:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:45 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:45 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:48,558:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:48,780:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:48,781:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:48 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:48 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:51,785:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:51,963:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:51,964:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:51 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:51 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:54,965:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:55,147:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:55,147:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:55 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:55 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:17:58,149:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:17:58,348:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:17:58,349:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:17:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:17:58 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:18:01,350:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:18:01,542:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 817
+2019-09-02 10:18:01,542:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 08:18:01 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:18:01 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:18:04,546:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/159140119.
+2019-09-02 10:18:04,804:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/159140119 HTTP/1.1" 200 2136
+2019-09-02 10:18:04,804:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Content-Length: 2136
+Expires: Mon, 02 Sep 2019 08:18:04 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 08:18:04 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "invalid",
+  "expires": "2019-09-09T08:17:27Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "invalid",
+      "error": {
+        "type": "urn:ietf:params:acme:error:unauthorized",
+        "detail": "Invalid response from https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ [193.191.177.132]: \"\u003c!DOCTYPE HTML PUBLIC \\\"-//IETF//DTD HTML 2.0//EN\\\"\u003e\\n\u003chtml\u003e\u003chead\u003e\\n\u003ctitle\u003e404 Not Found\u003c/title\u003e\\n\u003c/head\u003e\u003cbody\u003e\\n\u003ch1\u003eNot Found\u003c/h1\u003e\\n\u003cp\"",
+        "status": 403
+      },
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/gDXZlQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ",
+      "validationRecord": [
+        {
+          "url": "http://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ",
+          "hostname": "supersecure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        },
+        {
+          "url": "https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ",
+          "hostname": "supersecure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "443",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/nrpXOQ",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/159140119/oOeWVg",
+      "token": "Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ"
+    }
+  ]
+}
+2019-09-02 10:18:04,805:DEBUG:certbot.reporter:Reporting to user: The following errors were reported by the server:
+
+Domain: supersecure.arne-vandebemdt.sb.uclllabs.be
+Type:   unauthorized
+Detail: Invalid response from https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ [193.191.177.132]: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p"
+
+To fix these errors, please make sure that your domain name was entered correctly and the DNS A/AAAA record(s) for that domain contain(s) the right IP address.
+2019-09-02 10:18:04,806:DEBUG:certbot.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:unauthorized :: The client lacks sufficient authorization :: Invalid response from https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ [193.191.177.132]: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p"
+
+2019-09-02 10:18:04,806:DEBUG:certbot.error_handler:Calling registered functions
+2019-09-02 10:18:04,806:INFO:certbot.auth_handler:Cleaning up challenges
+2019-09-02 10:18:05,177:WARNING:certbot.renewal:Attempting to renew cert (arne-vandebemdt.sb.uclllabs.be) from /etc/letsencrypt/renewal/arne-vandebemdt.sb.uclllabs.be.conf produced an unexpected error: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:unauthorized :: The client lacks sufficient authorization :: Invalid response from https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ [193.191.177.132]: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p". Skipping.
+2019-09-02 10:18:05,179:DEBUG:certbot.renewal:Traceback was:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 430, in handle_renewal_request
+    main.renew_cert(lineage_config, plugins, renewal_candidate)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1168, in renew_cert
+    renewed_lineage = _get_and_save_cert(le_client, config, lineage=lineage)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 116, in _get_and_save_cert
+    renewal.renew_cert(config, domains, le_client, lineage)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 305, in renew_cert
+    new_cert, new_chain, new_key, _ = le_client.obtain_certificate(domains, new_key)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 335, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 371, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:unauthorized :: The client lacks sufficient authorization :: Invalid response from https://supersecure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/Ee-wiIV4HQGyH_wt5fLAtnpZqexzG-WkoyvqfwtIjaQ [193.191.177.132]: "<!DOCTYPE HTML PUBLIC \"-//IETF//DTD HTML 2.0//EN\">\n<html><head>\n<title>404 Not Found</title>\n</head><body>\n<h1>Not Found</h1>\n<p"
+
+2019-09-02 10:18:05,181:ERROR:certbot.renewal:All renewal attempts failed. The following certs could not be renewed:
+2019-09-02 10:18:05,182:ERROR:certbot.renewal:  /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem (failure)
+2019-09-02 10:18:05,183:DEBUG:certbot.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 11, in <module>
+    load_entry_point('certbot==0.28.0', 'console_scripts', 'certbot')()
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1340, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1247, in renew
+    renewal.handle_renewal_request(config)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 455, in handle_renewal_request
+    len(renew_failures), len(parse_failures)))
+certbot.errors.Error: 1 renew failure(s), 0 parse failure(s)
+2019-09-02 19:38:22,266:DEBUG:certbot.main:certbot version: 0.28.0
+2019-09-02 19:38:22,267:DEBUG:certbot.main:Arguments: ['-q']
+2019-09-02 19:38:22,268:DEBUG:certbot.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#apache,PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2019-09-02 19:38:22,277:DEBUG:certbot.log:Root logging level set at 30
+2019-09-02 19:38:22,278:INFO:certbot.log:Saving debug log to /var/log/letsencrypt/letsencrypt.log
+2019-09-02 19:38:22,286:DEBUG:certbot.plugins.selection:Requested authenticator <certbot.cli._Default object at 0x7f5efd084080> and installer <certbot.cli._Default object at 0x7f5efd084080>
+2019-09-02 19:38:22,293:DEBUG:certbot.storage:Should renew, less than 30 days before certificate expiry 2019-02-18 18:48:42 UTC.
+2019-09-02 19:38:22,293:INFO:certbot.renewal:Cert is due for renewal, auto-renewing...
+2019-09-02 19:38:22,293:DEBUG:certbot.plugins.selection:Requested authenticator apache and installer apache
+2019-09-02 19:38:22,383:DEBUG:certbot_apache.configurator:Apache version is 2.4.25
+2019-09-02 19:38:22,805:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7f5efd025ef0>
+Prep: True
+2019-09-02 19:38:22,807:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7f5efd025ef0>
+Prep: True
+2019-09-02 19:38:22,808:DEBUG:certbot.plugins.selection:Selected authenticator <certbot_apache.override_debian.DebianConfigurator object at 0x7f5efd025ef0> and installer <certbot_apache.override_debian.DebianConfigurator object at 0x7f5efd025ef0>
+2019-09-02 19:38:22,808:INFO:certbot.plugins.selection:Plugins selected: Authenticator apache, Installer apache
+2019-09-02 19:38:22,811:DEBUG:certbot.main:Picked account: <Account(RegistrationResource(body=Registration(status=None, only_return_existing=None, key=None, agreement=None, terms_of_service_agreed=None, contact=()), uri='https://acme-v02.api.letsencrypt.org/acme/acct/46161535', terms_of_service=None, new_authzr_uri=None), 70cf206806a56fea568d7a74e2c1188c, Meta(creation_dt=datetime.datetime(2018, 11, 20, 15, 52, 46, tzinfo=<UTC>), creation_host='arne-vandebemdt.uclllabs.be'))>
+2019-09-02 19:38:22,812:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2019-09-02 19:38:22,817:DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
+2019-09-02 19:39:09,088:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 658
+2019-09-02 19:39:09,089:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 658
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:09 GMT
+Connection: keep-alive
+
+{
+  "QbGeDkyR3_4": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2019-09-02 19:39:09,090:INFO:certbot.main:Renewing an existing certificate
+2019-09-02 19:39:09,237:DEBUG:certbot.crypto_util:Generating key (2048 bits): /etc/letsencrypt/keys/0222_key-certbot.pem
+2019-09-02 19:39:09,241:DEBUG:certbot.crypto_util:Creating CSR: /etc/letsencrypt/csr/0222_csr-certbot.pem
+2019-09-02 19:39:09,242:DEBUG:acme.client:Requesting fresh nonce
+2019-09-02 19:39:09,242:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2019-09-02 19:39:09,449:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2019-09-02 19:39:09,449:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: 01028PzogiXFyGtpSqbNRGndyaGdmcX6K-WLi3wtD93eZvs
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Content-Length: 0
+Expires: Mon, 02 Sep 2019 17:39:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:09 GMT
+Connection: keep-alive
+
+
+2019-09-02 19:39:09,450:DEBUG:acme.client:Storing nonce: 01028PzogiXFyGtpSqbNRGndyaGdmcX6K-WLi3wtD93eZvs
+2019-09-02 19:39:09,450:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "value": "arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "secure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    }\n  ]\n}'
+2019-09-02 19:39:09,453:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAyOFB6b2dpWEZ5R3RwU3FiTlJHbmR5YUdkbWNYNkstV0xpM3d0RDkzZVp2cyJ9",
+  "signature": "IYaINS5DOh00iIdRXDgXyKi4U2UaTSAndq4kVuFHvPlMMsFcfPYILhDfXqPrTnsgqaA3rnZmmXAxZ9xorVItQ4gePzLTz-wg9Vm3GlJGPedsUDdSuzitVAcIru0s1fhQrb2P0W3t2s7WBUSmNkz6LF-lpoMbXLjxjeFZVsJxrdx1Kb7UfUDBSPcnBd13oVYn3nCcimzC3Q04DsZsGrx8HncqggXJqmR5XhNaMGmwBbs7jqMYH09UNyaQqSvtVPKrvBJpX6jBifwtu7nDlJXncG7Oh6WvPLkG8Y8nR5rGsmzrEo0OHtqq8WDuWtDQCIR0SlmTycxw9C3dzjnmeusvVQ",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInZhbHVlIjogImFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0sCiAgICB7CiAgICAgICJ2YWx1ZSI6ICJzZWN1cmUuYXJuZS12YW5kZWJlbWR0LnNiLnVjbGxsYWJzLmJlIiwKICAgICAgInR5cGUiOiAiZG5zIgogICAgfSwKICAgIHsKICAgICAgInZhbHVlIjogInN1cGVyc2VjdXJlLmFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0KICBdCn0"
+}
+2019-09-02 19:39:09,785:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 201 676
+2019-09-02 19:39:09,786:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Content-Type: application/json
+Content-Length: 676
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Location: https://acme-v02.api.letsencrypt.org/acme/order/46161535/1010949580
+Replay-Nonce: 0101hUnXWgugcc-NNySnch5JdDKgbo6BwD8YshUUeng30X4
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:09 GMT
+Connection: keep-alive
+
+{
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09.663962672Z",
+  "identifiers": [
+    {
+      "type": "dns",
+      "value": "arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+    }
+  ],
+  "authorizations": [
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796"
+  ],
+  "finalize": "https://acme-v02.api.letsencrypt.org/acme/finalize/46161535/1010949580"
+}
+2019-09-02 19:39:09,786:DEBUG:acme.client:Storing nonce: 0101hUnXWgugcc-NNySnch5JdDKgbo6BwD8YshUUeng30X4
+2019-09-02 19:39:09,787:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-02 19:39:09,975:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-02 19:39:09,975:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:09 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:09 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-02 19:39:09,976:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-02 19:39:10,245:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-02 19:39:10,246:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:10 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:10 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-02 19:39:10,246:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:10,452:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:10,452:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:10 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:10 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:10,453:INFO:certbot.auth_handler:Performing the following challenges:
+2019-09-02 19:39:10,453:INFO:certbot.auth_handler:http-01 challenge for arne-vandebemdt.sb.uclllabs.be
+2019-09-02 19:39:10,453:INFO:certbot.auth_handler:http-01 challenge for secure.arne-vandebemdt.sb.uclllabs.be
+2019-09-02 19:39:10,453:INFO:certbot.auth_handler:http-01 challenge for supersecure.arne-vandebemdt.sb.uclllabs.be
+2019-09-02 19:39:10,508:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/000-default.conf
+2019-09-02 19:39:10,508:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: secure.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:10,509:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www2.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:10,509:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www1.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:10,509:DEBUG:certbot_apache.http_01:writing a pre config file with text:
+         RewriteEngine on
+        RewriteRule ^/\.well-known/acme-challenge/([A-Za-z0-9-_=]+)$ /var/lib/letsencrypt/http_challenges/$1 [END]
+    
+2019-09-02 19:39:10,510:DEBUG:certbot_apache.http_01:writing a post config file with text:
+         <Directory /var/lib/letsencrypt/http_challenges>
+            Require all granted
+        </Directory>
+        <Location /.well-known/acme-challenge>
+            Require all granted
+        </Location>
+    
+2019-09-02 19:39:10,566:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:10,566:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:10,567:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/000-default.conf
+2019-09-02 19:39:10,567:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-02 19:39:13,845:INFO:certbot.auth_handler:Waiting for verification...
+2019-09-02 19:39:13,846:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "keyAuthorization": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "type": "http-01"\n}'
+2019-09-02 19:39:13,848:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzY0NzQyNzYxL3hqSGFYUSIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAxaFVuWFdndWdjYy1OTnlTbmNoNUpkREtnYm82QndEOFlzaFVVZW5nMzBYNCJ9",
+  "signature": "Q9V_VglL5MvrwEOPCYEdBj0upkUZJhvOtTzCPylF9e9xlJg7Qr9h30iN6S3N4jEFpJXFQa4_tR6d5-PBN3WuwwSVUzSFE0a047WIk2etWhEFB-4sxt8w-B8qRU2T2z-eKXtetYsErzfQvigxZ9nfQgw0EUWpZOfvVi_VAihH8hfnOtdNjCWhLJBg9BtSstI-Om0fULxMOpno99Lxmm5tNfIgN-6WFqWQ0wpk-862JcXtiDpslp5cDBFWU98xCxxrywVGCnl4e8hWjL_RTAYglEWotcl7FGnv-iyFAfVNDYtnnoRROeMizMhPm7bF7o8qE4ki254dOqfK0MRTeGrcAQ",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJrZXlBdXRob3JpemF0aW9uIjogIm5BS2Z0eU16eXBuSk80RG93VVI5QzcwZzk3dWJ5SkVRYnpPZEVGUlRLaUEua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-02 19:39:14,047:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/64742761/xjHaXQ HTTP/1.1" 200 910
+2019-09-02 19:39:14,048:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 910
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ
+Replay-Nonce: 01024RlPtTvgaIKKMcz2KUQcn76PYfjcBL0jB4cftnqF_io
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:14 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:14 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+  "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+  "validationRecord": [
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "2001:6a8:2880:a077::84"
+    },
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-02 19:39:14,049:DEBUG:acme.client:Storing nonce: 01024RlPtTvgaIKKMcz2KUQcn76PYfjcBL0jB4cftnqF_io
+2019-09-02 19:39:14,049:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "keyAuthorization": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "type": "http-01"\n}'
+2019-09-02 19:39:14,051:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzc0ODc2MjI0L2JtWVotUSIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAyNFJsUHRUdmdhSUtLTWN6MktVUWNuNzZQWWZqY0JMMGpCNGNmdG5xRl9pbyJ9",
+  "signature": "MsMdWHIrj2zM1574cVHix9O4e4bDDBsyES1swyKClx1JVW7Y5YWgUh4d6-WKy5ZybApeB-paPvosxykcCrSmktHviZvKwy37R93Z8sgu9CduNDYxlg4lDfzbCDdFPTW16kiN8FuFwEWfuiGoKnzFulGA2j6BiR6FnCprihqH5Eagr87ghTIw3DcOn2vjFZby7YiSKb6jLEEwQroNcUlQ-Mx-tcak1MptwIKcnkWCR57DO_bpOp0UU6ozq66TEugSaKCkNwYGbzPgK8wFlT1djmFnCJzFRqesr4vrYTcsDyPJEzKOU1w1P3DrNDwon4HbWrpgGcfsM6B9fhd3AD4SQg",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJrZXlBdXRob3JpemF0aW9uIjogIjIxWlRSZlpSOUJ5SGxnMGRJUzNqWEd4NHlCY0ZwX254Tl9DZExmXzRtOW8ua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-02 19:39:14,251:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/74876224/bmYZ-Q HTTP/1.1" 200 536
+2019-09-02 19:39:14,251:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 536
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q
+Replay-Nonce: 0102jxiIU6lpjPRdFvOTFi249DhavcjG-pLmfi4iUKCcnkA
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:14 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:14 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+  "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+  "validationRecord": [
+    {
+      "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-02 19:39:14,252:DEBUG:acme.client:Storing nonce: 0102jxiIU6lpjPRdFvOTFi249DhavcjG-pLmfi4iUKCcnkA
+2019-09-02 19:39:14,252:DEBUG:acme.client:JWS payload:
+b'{\n  "resource": "challenge",\n  "keyAuthorization": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "type": "http-01"\n}'
+2019-09-02 19:39:14,254:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzE2NDc2ODc5Ni92enNES0EiLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvNDYxNjE1MzUiLCAibm9uY2UiOiAiMDEwMmp4aUlVNmxwalBSZEZ2T1RGaTI0OURoYXZjakctcExtZmk0aVVLQ2Nua0EifQ",
+  "signature": "qCkS17_LZf0rWIYdccplfDxSsK18vaG0ZoAOXYzu6wFn9pGpZ4FIuNf4s82O1oRGFo3A7qyhIxqFipNBNV-pG2dueADmeRyBOTXlYiwSo_hZSeNRMLVFOIRwWVNtavs689UwL0HforHhogE7gohST9xYVff8wrW3aTcmgfUrOEOpuBz66Z4bjyeWyHFWJ_0w9XyJoORF4bTM5MvWISpXvc12xQBmENBHsEe5hkKmKW_ZLti8QNAlda6bZZpu6-Pifntpc3RWbVMNOhQA5UXgQGT8UFonr9RmgijqTXZ5YIQTcaSugbL00nm4iUvptcGdi5210JUapxkU7tvr6RIwXA",
+  "payload": "ewogICJyZXNvdXJjZSI6ICJjaGFsbGVuZ2UiLAogICJrZXlBdXRob3JpemF0aW9uIjogIlJLU2pRekVlSTNtOUFjbEhyMWRIcmtCdjNWZndya041TlZZNWVoMDJJZEEua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-02 19:39:14,468:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/164768796/vzsDKA HTTP/1.1" 200 184
+2019-09-02 19:39:14,469:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 184
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA
+Replay-Nonce: 0101ImjG10JoPcF7oang7Ftb0HF1suMqlF7CueSEpwelAJc
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:14 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:14 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "pending",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+  "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+}
+2019-09-02 19:39:14,469:DEBUG:acme.client:Storing nonce: 0101ImjG10JoPcF7oang7Ftb0HF1suMqlF7CueSEpwelAJc
+2019-09-02 19:39:17,473:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-02 19:39:17,669:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-02 19:39:17,670:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:17 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:17 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-02 19:39:17,671:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-02 19:39:17,877:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-02 19:39:17,878:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:17 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:17 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-02 19:39:17,879:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:18,084:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:18,085:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:18 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:18 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:21,089:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:21,307:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:21,307:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:21 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:21 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:24,312:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:24,494:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:24,495:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:24 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:24 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:27,498:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:27,704:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:27,705:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:27 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:30,709:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:30,896:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:30,896:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:30 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:30 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:33,900:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:34,088:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:34,089:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:34 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:34 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:37,091:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:37,312:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:37,313:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:37 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:37 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:40,314:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:40,515:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:40,515:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:40 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:40 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:43,519:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:43,761:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 817
+2019-09-02 19:39:43,761:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:43 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:43 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:46,762:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/164768796.
+2019-09-02 19:39:46,960:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/164768796 HTTP/1.1" 200 1033
+2019-09-02 19:39:46,961:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1033
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 17:39:46 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 17:39:46 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "invalid",
+  "expires": "2019-09-09T17:39:09Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "invalid",
+      "error": {
+        "type": "urn:ietf:params:acme:error:connection",
+        "detail": "unknownHost :: No valid IP addresses found for supersecure.arne-vandebemdt.sb.uclllabs.be",
+        "status": 400
+      },
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/vzsDKA",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "dns-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/bFJTzQ",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/164768796/hQ4m4Q",
+      "token": "RKSjQzEeI3m9AclHr1dHrkBv3VfwrkN5NVY5eh02IdA"
+    }
+  ]
+}
+2019-09-02 19:39:46,962:DEBUG:certbot.reporter:Reporting to user: The following errors were reported by the server:
+
+Domain: supersecure.arne-vandebemdt.sb.uclllabs.be
+Type:   connection
+Detail: unknownHost :: No valid IP addresses found for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+To fix these errors, please make sure that your domain name was entered correctly and the DNS A/AAAA record(s) for that domain contain(s) the right IP address. Additionally, please check that your computer has a publicly routable IP address and that no firewalls are preventing the server from communicating with the client. If you're using the webroot plugin, you should also verify that you are serving files from the webroot path you provided.
+2019-09-02 19:39:46,962:DEBUG:certbot.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: unknownHost :: No valid IP addresses found for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+2019-09-02 19:39:46,962:DEBUG:certbot.error_handler:Calling registered functions
+2019-09-02 19:39:46,962:INFO:certbot.auth_handler:Cleaning up challenges
+2019-09-02 19:39:47,326:WARNING:certbot.renewal:Attempting to renew cert (arne-vandebemdt.sb.uclllabs.be) from /etc/letsencrypt/renewal/arne-vandebemdt.sb.uclllabs.be.conf produced an unexpected error: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: unknownHost :: No valid IP addresses found for supersecure.arne-vandebemdt.sb.uclllabs.be. Skipping.
+2019-09-02 19:39:47,328:DEBUG:certbot.renewal:Traceback was:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 430, in handle_renewal_request
+    main.renew_cert(lineage_config, plugins, renewal_candidate)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1168, in renew_cert
+    renewed_lineage = _get_and_save_cert(le_client, config, lineage=lineage)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 116, in _get_and_save_cert
+    renewal.renew_cert(config, domains, le_client, lineage)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 305, in renew_cert
+    new_cert, new_chain, new_key, _ = le_client.obtain_certificate(domains, new_key)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 335, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 371, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: unknownHost :: No valid IP addresses found for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+2019-09-02 19:39:47,330:ERROR:certbot.renewal:All renewal attempts failed. The following certs could not be renewed:
+2019-09-02 19:39:47,331:ERROR:certbot.renewal:  /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem (failure)
+2019-09-02 19:39:47,331:DEBUG:certbot.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 11, in <module>
+    load_entry_point('certbot==0.28.0', 'console_scripts', 'certbot')()
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1340, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1247, in renew
+    renewal.handle_renewal_request(config)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 455, in handle_renewal_request
+    len(renew_failures), len(parse_failures)))
+certbot.errors.Error: 1 renew failure(s), 0 parse failure(s)
+2019-09-03 00:29:52,986:DEBUG:certbot.main:certbot version: 0.28.0
+2019-09-03 00:29:52,987:DEBUG:certbot.main:Arguments: ['-q']
+2019-09-03 00:29:52,987:DEBUG:certbot.main:Discovered plugins: PluginsRegistry(PluginEntryPoint#apache,PluginEntryPoint#manual,PluginEntryPoint#null,PluginEntryPoint#standalone,PluginEntryPoint#webroot)
+2019-09-03 00:29:52,996:DEBUG:certbot.log:Root logging level set at 30
+2019-09-03 00:29:52,996:INFO:certbot.log:Saving debug log to /var/log/letsencrypt/letsencrypt.log
+2019-09-03 00:29:53,008:DEBUG:certbot.plugins.selection:Requested authenticator <certbot.cli._Default object at 0x7f34fc84b240> and installer <certbot.cli._Default object at 0x7f34fc84b240>
+2019-09-03 00:29:53,018:DEBUG:certbot.storage:Should renew, less than 30 days before certificate expiry 2019-02-18 18:48:42 UTC.
+2019-09-03 00:29:53,018:INFO:certbot.renewal:Cert is due for renewal, auto-renewing...
+2019-09-03 00:29:53,019:DEBUG:certbot.plugins.selection:Requested authenticator apache and installer apache
+2019-09-03 00:29:53,120:DEBUG:certbot_apache.configurator:Apache version is 2.4.25
+2019-09-03 00:29:53,541:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7f34fc84bf28>
+Prep: True
+2019-09-03 00:29:53,542:DEBUG:certbot.plugins.selection:Single candidate plugin: * apache
+Description: Apache Web Server plugin - Beta
+Interfaces: IAuthenticator, IInstaller, IPlugin
+Entry point: apache = certbot_apache.entrypoint:ENTRYPOINT
+Initialized: <certbot_apache.override_debian.DebianConfigurator object at 0x7f34fc84bf28>
+Prep: True
+2019-09-03 00:29:53,543:DEBUG:certbot.plugins.selection:Selected authenticator <certbot_apache.override_debian.DebianConfigurator object at 0x7f34fc84bf28> and installer <certbot_apache.override_debian.DebianConfigurator object at 0x7f34fc84bf28>
+2019-09-03 00:29:53,543:INFO:certbot.plugins.selection:Plugins selected: Authenticator apache, Installer apache
+2019-09-03 00:29:53,545:DEBUG:certbot.main:Picked account: <Account(RegistrationResource(terms_of_service=None, new_authzr_uri=None, uri='https://acme-v02.api.letsencrypt.org/acme/acct/46161535', body=Registration(status=None, only_return_existing=None, contact=(), key=None, terms_of_service_agreed=None, agreement=None)), 70cf206806a56fea568d7a74e2c1188c, Meta(creation_host='arne-vandebemdt.uclllabs.be', creation_dt=datetime.datetime(2018, 11, 20, 15, 52, 46, tzinfo=<UTC>)))>
+2019-09-03 00:29:53,546:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/directory.
+2019-09-03 00:29:53,552:DEBUG:requests.packages.urllib3.connectionpool:Starting new HTTPS connection (1): acme-v02.api.letsencrypt.org
+2019-09-03 00:29:57,965:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /directory HTTP/1.1" 200 658
+2019-09-03 00:29:57,966:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 658
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:29:57 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:57 GMT
+Connection: keep-alive
+
+{
+  "5UfCgerRscQ": "https://community.letsencrypt.org/t/adding-random-entries-to-the-directory/33417",
+  "keyChange": "https://acme-v02.api.letsencrypt.org/acme/key-change",
+  "meta": {
+    "caaIdentities": [
+      "letsencrypt.org"
+    ],
+    "termsOfService": "https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf",
+    "website": "https://letsencrypt.org"
+  },
+  "newAccount": "https://acme-v02.api.letsencrypt.org/acme/new-acct",
+  "newNonce": "https://acme-v02.api.letsencrypt.org/acme/new-nonce",
+  "newOrder": "https://acme-v02.api.letsencrypt.org/acme/new-order",
+  "revokeCert": "https://acme-v02.api.letsencrypt.org/acme/revoke-cert"
+}
+2019-09-03 00:29:57,967:INFO:certbot.main:Renewing an existing certificate
+2019-09-03 00:29:58,208:DEBUG:certbot.crypto_util:Generating key (2048 bits): /etc/letsencrypt/keys/0223_key-certbot.pem
+2019-09-03 00:29:58,212:DEBUG:certbot.crypto_util:Creating CSR: /etc/letsencrypt/csr/0223_csr-certbot.pem
+2019-09-03 00:29:58,212:DEBUG:acme.client:Requesting fresh nonce
+2019-09-03 00:29:58,212:DEBUG:acme.client:Sending HEAD request to https://acme-v02.api.letsencrypt.org/acme/new-nonce.
+2019-09-03 00:29:58,387:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "HEAD /acme/new-nonce HTTP/1.1" 200 0
+2019-09-03 00:29:58,388:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Replay-Nonce: 01021E3LxYJauvbZpJ01QueEQ-UwFwGboKfDOIh3X7eZfwg
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Content-Length: 0
+Expires: Mon, 02 Sep 2019 22:29:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:58 GMT
+Connection: keep-alive
+
+
+2019-09-03 00:29:58,388:DEBUG:acme.client:Storing nonce: 01021E3LxYJauvbZpJ01QueEQ-UwFwGboKfDOIh3X7eZfwg
+2019-09-03 00:29:58,388:DEBUG:acme.client:JWS payload:
+b'{\n  "identifiers": [\n    {\n      "value": "arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "secure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    },\n    {\n      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be",\n      "type": "dns"\n    }\n  ]\n}'
+2019-09-03 00:29:58,391:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/new-order:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL25ldy1vcmRlciIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAyMUUzTHhZSmF1dmJacEowMVF1ZUVRLVV3RndHYm9LZkRPSWgzWDdlWmZ3ZyJ9",
+  "signature": "rc7tnT9zBF5fjrlgaDEazKGT3TywXL22r_n-nFierVyoNkZkF30-QJQSx1Q2SvI0JynjVyTpl4rJM5lq1KpNPSPrm78NxdF4uyGTQiw55GeHqvQ8g23tRsZ7KyuDrDIH8MykYx8h9__dASDiDcig-dcfDbNJcNr8cv5F_sjLrpc4d8EIL17I63e0SpKqhU6ghKQoHwBI3LaHPhkIq4Obd45W5I6yPruK9BMMRP8dSdkJ3ms1BsxaERGYQ9lYcmBCk7nelJERzDUKhqDpCz6asaJAt02RT-oumiRdd_OCd6cd9UU_ZAmQvmpA8Nic6x_NhVu4ILLZVMqdfKGMxsETgw",
+  "payload": "ewogICJpZGVudGlmaWVycyI6IFsKICAgIHsKICAgICAgInZhbHVlIjogImFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0sCiAgICB7CiAgICAgICJ2YWx1ZSI6ICJzZWN1cmUuYXJuZS12YW5kZWJlbWR0LnNiLnVjbGxsYWJzLmJlIiwKICAgICAgInR5cGUiOiAiZG5zIgogICAgfSwKICAgIHsKICAgICAgInZhbHVlIjogInN1cGVyc2VjdXJlLmFybmUtdmFuZGViZW1kdC5zYi51Y2xsbGFicy5iZSIsCiAgICAgICJ0eXBlIjogImRucyIKICAgIH0KICBdCn0"
+}
+2019-09-03 00:29:58,725:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/new-order HTTP/1.1" 201 676
+2019-09-03 00:29:58,726:DEBUG:acme.client:Received response:
+HTTP 201
+Server: nginx
+Content-Type: application/json
+Content-Length: 676
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+Location: https://acme-v02.api.letsencrypt.org/acme/order/46161535/1012185884
+Replay-Nonce: 0101Az1u6_XvcShzOfQtYtLwi1RnfMedf8ywAobHYiAKoYI
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:29:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:58 GMT
+Connection: keep-alive
+
+{
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58.605212776Z",
+  "identifiers": [
+    {
+      "type": "dns",
+      "value": "arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+    },
+    {
+      "type": "dns",
+      "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+    }
+  ],
+  "authorizations": [
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224",
+    "https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110"
+  ],
+  "finalize": "https://acme-v02.api.letsencrypt.org/acme/finalize/46161535/1012185884"
+}
+2019-09-03 00:29:58,726:DEBUG:acme.client:Storing nonce: 0101Az1u6_XvcShzOfQtYtLwi1RnfMedf8ywAobHYiAKoYI
+2019-09-03 00:29:58,726:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-03 00:29:58,988:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-03 00:29:58,988:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:29:58 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:58 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-03 00:29:58,989:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-03 00:29:59,262:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-03 00:29:59,262:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:29:59 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:59 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-03 00:29:59,263:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:29:59,499:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:29:59,499:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:29:59 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:29:59 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:29:59,500:INFO:certbot.auth_handler:Performing the following challenges:
+2019-09-03 00:29:59,500:INFO:certbot.auth_handler:http-01 challenge for arne-vandebemdt.sb.uclllabs.be
+2019-09-03 00:29:59,500:INFO:certbot.auth_handler:http-01 challenge for secure.arne-vandebemdt.sb.uclllabs.be
+2019-09-03 00:29:59,500:INFO:certbot.auth_handler:http-01 challenge for supersecure.arne-vandebemdt.sb.uclllabs.be
+2019-09-03 00:29:59,550:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/000-default.conf
+2019-09-03 00:29:59,551:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: secure.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:29:59,551:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www2.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:29:59,551:DEBUG:certbot_apache.http_01:Adding a temporary challenge validation Include for name: www1.arne-vandebemdt.sb.uclllabs.be in: /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:29:59,552:DEBUG:certbot_apache.http_01:writing a pre config file with text:
+         RewriteEngine on
+        RewriteRule ^/\.well-known/acme-challenge/([A-Za-z0-9-_=]+)$ /var/lib/letsencrypt/http_challenges/$1 [END]
+    
+2019-09-03 00:29:59,552:DEBUG:certbot_apache.http_01:writing a post config file with text:
+         <Directory /var/lib/letsencrypt/http_challenges>
+            Require all granted
+        </Directory>
+        <Location /.well-known/acme-challenge>
+            Require all granted
+        </Location>
+    
+2019-09-03 00:29:59,602:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www2.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:29:59,602:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/www1.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:29:59,603:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/000-default.conf
+2019-09-03 00:29:59,603:DEBUG:certbot.reverter:Creating backup of /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be.conf
+2019-09-03 00:30:02,881:INFO:certbot.auth_handler:Waiting for verification...
+2019-09-03 00:30:02,884:DEBUG:acme.client:JWS payload:
+b'{\n  "keyAuthorization": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "resource": "challenge",\n  "type": "http-01"\n}'
+2019-09-03 00:30:02,895:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzY0NzQyNzYxL3hqSGFYUSIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAxQXoxdTZfWHZjU2h6T2ZRdFl0THdpMVJuZk1lZGY4eXdBb2JIWWlBS29ZSSJ9",
+  "signature": "RuAG3zAvpM-iQ18UhqfsWaLZgd4R3zi5fXsGw2oP_h1SPiUzKKRe9wllUtByyKSJhQqSvDYuI-uxzn-ij7cAutGD0BiFP2UMdOq53-dVHtWATWTBfYW0h8iRAptNbKtrlXdeusl7voWXg8xyCnEp7-epax01wtBlczvF0vo6OtQT6fYvD3TgVWSghy6P1e9Utw6GuOujNZYr9iCBJ4NIVJ64yFut7_fqf0M27awYOIWQpgY-J_vGk_erLPgH5vYlyn_knMpqjPyIaewpKPr1huqgm3Zzvx3yGUvo49T6w3Hy6TaGdaQWcV8_PL8F1ID8WooLeltVy-DYL2LN2Y9n1A",
+  "payload": "ewogICJrZXlBdXRob3JpemF0aW9uIjogIm5BS2Z0eU16eXBuSk80RG93VVI5QzcwZzk3dWJ5SkVRYnpPZEVGUlRLaUEua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInJlc291cmNlIjogImNoYWxsZW5nZSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-03 00:30:04,544:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/64742761/xjHaXQ HTTP/1.1" 200 910
+2019-09-03 00:30:04,544:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 910
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ
+Replay-Nonce: 0101CIB-FMz1N3Ua3PYl2rz4AvI40juGa8o4DYznogx6LTc
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:04 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:04 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+  "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+  "validationRecord": [
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "2001:6a8:2880:a077::84"
+    },
+    {
+      "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "hostname": "arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132",
+        "2001:6a8:2880:a077::84"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-03 00:30:04,545:DEBUG:acme.client:Storing nonce: 0101CIB-FMz1N3Ua3PYl2rz4AvI40juGa8o4DYznogx6LTc
+2019-09-03 00:30:04,545:DEBUG:acme.client:JWS payload:
+b'{\n  "keyAuthorization": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "resource": "challenge",\n  "type": "http-01"\n}'
+2019-09-03 00:30:04,547:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzc0ODc2MjI0L2JtWVotUSIsICJraWQiOiAiaHR0cHM6Ly9hY21lLXYwMi5hcGkubGV0c2VuY3J5cHQub3JnL2FjbWUvYWNjdC80NjE2MTUzNSIsICJub25jZSI6ICIwMTAxQ0lCLUZNejFOM1VhM1BZbDJyejRBdkk0MGp1R2E4bzREWXpub2d4NkxUYyJ9",
+  "signature": "C-pHlLoHZfKWQxQ345m0Sbop2nRjvEzZKY0ApgoUPMtjJpHhOxeOndt01ZWs5RG8-UZCo5Uds9U8EXRx9NfMFyNuN42YPOLZe2Gtae7kBETmn2ZLZ-Fiq-YQvDz6sb2TNRG1yod7KUa5OXNQvRhBtaAQWxiB-oolZQKihLaSwlC4gbUm_PjlPkCsqxwTWN2CrmSxYqXIZbyxrqQ6d9j_EI2DF-VmmYTR-37l6SlFuVeYFwaiKwrgGkTPEqRGzM0rawI1EWMA-Ear-yE6Dic3ARYX0F8a99Mm2LzY1e81cLLGKRqHvhWSdzly80wvmotroX2uaCYbITZDxgqksQOxLg",
+  "payload": "ewogICJrZXlBdXRob3JpemF0aW9uIjogIjIxWlRSZlpSOUJ5SGxnMGRJUzNqWEd4NHlCY0ZwX254Tl9DZExmXzRtOW8ua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInJlc291cmNlIjogImNoYWxsZW5nZSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-03 00:30:04,785:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/74876224/bmYZ-Q HTTP/1.1" 200 536
+2019-09-03 00:30:04,786:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 536
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q
+Replay-Nonce: 0102xqu-2jtChf_16MtogEujkELOE8-InMYxU3XqgyY0Y9Q
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:04 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:04 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "valid",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+  "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+  "validationRecord": [
+    {
+      "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+      "port": "80",
+      "addressesResolved": [
+        "193.191.177.132"
+      ],
+      "addressUsed": "193.191.177.132"
+    }
+  ]
+}
+2019-09-03 00:30:04,786:DEBUG:acme.client:Storing nonce: 0102xqu-2jtChf_16MtogEujkELOE8-InMYxU3XqgyY0Y9Q
+2019-09-03 00:30:04,786:DEBUG:acme.client:JWS payload:
+b'{\n  "keyAuthorization": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg.kCOilg2HeP2mSBdN_Jfc3qHkkGf5p7-Icl3ib5DIDPM",\n  "resource": "challenge",\n  "type": "http-01"\n}'
+2019-09-03 00:30:04,788:DEBUG:acme.client:Sending POST request to https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow:
+{
+  "protected": "eyJhbGciOiAiUlMyNTYiLCAidXJsIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2NoYWxsLXYzLzE2NzQxMDExMC9PZV9fb3ciLCAia2lkIjogImh0dHBzOi8vYWNtZS12MDIuYXBpLmxldHNlbmNyeXB0Lm9yZy9hY21lL2FjY3QvNDYxNjE1MzUiLCAibm9uY2UiOiAiMDEwMnhxdS0yanRDaGZfMTZNdG9nRXVqa0VMT0U4LUluTVl4VTNYcWd5WTBZOVEifQ",
+  "signature": "CTVlNOadqzJSNxS1wDs22slaG_j0PQdQvTloJP26bhvmCRwn9xoNhUO1VNxbBuXV5C4p7XsGD7d9_x4BHXh3Alc-UHX2R3sDr8uiV45fwzVUxu5FEkz87XqYtG9MYWGM14ph7j5YtRoXNASsw23hOdLubyqtfsO8iQTDMYP1wsF0RrJjx00QBBzx2L3ELfJ2g8T77DEi4etfsZ3Ss7qwyxdsw6rcD59Nt9ei07CpUW8G8wGhJ4z0SkvdduLLGR3L-p_I7vkR3sQk3_xW_3x4Ie9pH0RJ7FlqTOh_K7Nf5tM5gKnJEEIu6iXTnT2_qgqSUiVmdpBXSQBfuqYXUL5JdA",
+  "payload": "ewogICJrZXlBdXRob3JpemF0aW9uIjogIlNfU0J3V3V5RUpLSmF3SDZGb2JnZnRlbjIyWlI5dENYdHlLdmotVmdmamcua0NPaWxnMkhlUDJtU0JkTl9KZmMzcUhra0dmNXA3LUljbDNpYjVESURQTSIsCiAgInJlc291cmNlIjogImNoYWxsZW5nZSIsCiAgInR5cGUiOiAiaHR0cC0wMSIKfQ"
+}
+2019-09-03 00:30:05,027:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "POST /acme/chall-v3/167410110/Oe__ow HTTP/1.1" 200 184
+2019-09-03 00:30:05,028:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 184
+Boulder-Requester: 46161535
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index", <https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110>;rel="up"
+Location: https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow
+Replay-Nonce: 0102o7Ek_zFVIPadifjIDytB1GWoNAJlLqQuyeV3NZohUPI
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:05 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:05 GMT
+Connection: keep-alive
+
+{
+  "type": "http-01",
+  "status": "pending",
+  "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+  "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+}
+2019-09-03 00:30:05,028:DEBUG:acme.client:Storing nonce: 0102o7Ek_zFVIPadifjIDytB1GWoNAJlLqQuyeV3NZohUPI
+2019-09-03 00:30:08,029:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/64742761.
+2019-09-03 00:30:08,267:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/64742761 HTTP/1.1" 200 1615
+2019-09-03 00:30:08,268:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1615
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:08 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:08 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-02T14:33:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/xjHaXQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+      "validationRecord": [
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "2001:6a8:2880:a077::84"
+        },
+        {
+          "url": "http://arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA",
+          "hostname": "arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132",
+            "2001:6a8:2880:a077::84"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/T4XOvw",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/64742761/ixszoQ",
+      "token": "nAKftyMzypnJO4DowUR9C70g97ubyJEQbzOdEFRTKiA"
+    }
+  ]
+}
+2019-09-03 00:30:08,268:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/74876224.
+2019-09-03 00:30:08,453:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/74876224 HTTP/1.1" 200 1204
+2019-09-03 00:30:08,453:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1204
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:08 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:08 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "secure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "valid",
+  "expires": "2019-10-03T07:32:53Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "valid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/bmYZ-Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+      "validationRecord": [
+        {
+          "url": "http://secure.arne-vandebemdt.sb.uclllabs.be/.well-known/acme-challenge/21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o",
+          "hostname": "secure.arne-vandebemdt.sb.uclllabs.be",
+          "port": "80",
+          "addressesResolved": [
+            "193.191.177.132"
+          ],
+          "addressUsed": "193.191.177.132"
+        }
+      ]
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/6g-AGQ",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/74876224/RGg03Q",
+      "token": "21ZTRfZR9ByHlg0dIS3jXGx4yBcFp_nxN_CdLf_4m9o"
+    }
+  ]
+}
+2019-09-03 00:30:08,454:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:08,674:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:08,675:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:08 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:08 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:11,676:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:11,863:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:11,863:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:11 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:11 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:14,867:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:15,063:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:15,064:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:15 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:15 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:18,068:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:18,247:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:18,247:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:18 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:18 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:21,251:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:21,448:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:21,448:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:21 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:21 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:24,450:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:24,655:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:24,656:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:24 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:24 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:27,657:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:27,840:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:27,840:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:27 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:27 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:30,845:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:31,025:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:31,026:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:31 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:31 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:34,030:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:34,228:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 817
+2019-09-03 00:30:34,228:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 817
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:34 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:34 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "pending",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "pending",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:37,230:DEBUG:acme.client:Sending GET request to https://acme-v02.api.letsencrypt.org/acme/authz-v3/167410110.
+2019-09-03 00:30:37,469:DEBUG:requests.packages.urllib3.connectionpool:https://acme-v02.api.letsencrypt.org:443 "GET /acme/authz-v3/167410110 HTTP/1.1" 200 1039
+2019-09-03 00:30:37,470:DEBUG:acme.client:Received response:
+HTTP 200
+Server: nginx
+Content-Type: application/json
+Content-Length: 1039
+Link: <https://acme-v02.api.letsencrypt.org/directory>;rel="index"
+X-Frame-Options: DENY
+Strict-Transport-Security: max-age=604800
+Expires: Mon, 02 Sep 2019 22:30:37 GMT
+Cache-Control: max-age=0, no-cache, no-store
+Pragma: no-cache
+Date: Mon, 02 Sep 2019 22:30:37 GMT
+Connection: keep-alive
+
+{
+  "identifier": {
+    "type": "dns",
+    "value": "supersecure.arne-vandebemdt.sb.uclllabs.be"
+  },
+  "status": "invalid",
+  "expires": "2019-09-09T22:29:58Z",
+  "challenges": [
+    {
+      "type": "http-01",
+      "status": "invalid",
+      "error": {
+        "type": "urn:ietf:params:acme:error:connection",
+        "detail": "dns :: DNS problem: query timed out looking up A for supersecure.arne-vandebemdt.sb.uclllabs.be",
+        "status": 400
+      },
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/Oe__ow",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "dns-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/K6CNFQ",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    },
+    {
+      "type": "tls-alpn-01",
+      "status": "invalid",
+      "url": "https://acme-v02.api.letsencrypt.org/acme/chall-v3/167410110/aE-74Q",
+      "token": "S_SBwWuyEJKJawH6Fobgften22ZR9tCXtyKvj-Vgfjg"
+    }
+  ]
+}
+2019-09-03 00:30:37,471:DEBUG:certbot.reporter:Reporting to user: The following errors were reported by the server:
+
+Domain: supersecure.arne-vandebemdt.sb.uclllabs.be
+Type:   connection
+Detail: dns :: DNS problem: query timed out looking up A for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+To fix these errors, please make sure that your domain name was entered correctly and the DNS A/AAAA record(s) for that domain contain(s) the right IP address. Additionally, please check that your computer has a publicly routable IP address and that no firewalls are preventing the server from communicating with the client. If you're using the webroot plugin, you should also verify that you are serving files from the webroot path you provided.
+2019-09-03 00:30:37,471:DEBUG:certbot.error_handler:Encountered exception:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: dns :: DNS problem: query timed out looking up A for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+2019-09-03 00:30:37,471:DEBUG:certbot.error_handler:Calling registered functions
+2019-09-03 00:30:37,472:INFO:certbot.auth_handler:Cleaning up challenges
+2019-09-03 00:30:37,784:WARNING:certbot.renewal:Attempting to renew cert (arne-vandebemdt.sb.uclllabs.be) from /etc/letsencrypt/renewal/arne-vandebemdt.sb.uclllabs.be.conf produced an unexpected error: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: dns :: DNS problem: query timed out looking up A for supersecure.arne-vandebemdt.sb.uclllabs.be. Skipping.
+2019-09-03 00:30:37,786:DEBUG:certbot.renewal:Traceback was:
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 430, in handle_renewal_request
+    main.renew_cert(lineage_config, plugins, renewal_candidate)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1168, in renew_cert
+    renewed_lineage = _get_and_save_cert(le_client, config, lineage=lineage)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 116, in _get_and_save_cert
+    renewal.renew_cert(config, domains, le_client, lineage)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 305, in renew_cert
+    new_cert, new_chain, new_key, _ = le_client.obtain_certificate(domains, new_key)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 335, in obtain_certificate
+    orderr = self._get_order_and_authorizations(csr.data, self.config.allow_subset_of_names)
+  File "/usr/lib/python3/dist-packages/certbot/client.py", line 371, in _get_order_and_authorizations
+    authzr = self.auth_handler.handle_authorizations(orderr, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 82, in handle_authorizations
+    self._respond(aauthzrs, resp, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 161, in _respond
+    self._poll_challenges(aauthzrs, chall_update, best_effort)
+  File "/usr/lib/python3/dist-packages/certbot/auth_handler.py", line 232, in _poll_challenges
+    raise errors.FailedChallenges(all_failed_achalls)
+certbot.errors.FailedChallenges: Failed authorization procedure. supersecure.arne-vandebemdt.sb.uclllabs.be (http-01): urn:ietf:params:acme:error:connection :: The server could not connect to the client to verify the domain :: dns :: DNS problem: query timed out looking up A for supersecure.arne-vandebemdt.sb.uclllabs.be
+
+2019-09-03 00:30:37,788:ERROR:certbot.renewal:All renewal attempts failed. The following certs could not be renewed:
+2019-09-03 00:30:37,788:ERROR:certbot.renewal:  /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem (failure)
+2019-09-03 00:30:37,789:DEBUG:certbot.log:Exiting abnormally:
+Traceback (most recent call last):
+  File "/usr/bin/certbot", line 11, in <module>
+    load_entry_point('certbot==0.28.0', 'console_scripts', 'certbot')()
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1340, in main
+    return config.func(config, plugins)
+  File "/usr/lib/python3/dist-packages/certbot/main.py", line 1247, in renew
+    renewal.handle_renewal_request(config)
+  File "/usr/lib/python3/dist-packages/certbot/renewal.py", line 455, in handle_renewal_request
+    len(renew_failures), len(parse_failures)))
+certbot.errors.Error: 1 renew failure(s), 0 parse failure(s)

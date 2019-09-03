@@ -1,0 +1,17 @@
+2019-09-03 06:39:31 startup archives unpack
+2019-09-03 06:39:31 upgrade libnghttp2-14:amd64 1.18.1-1 1.18.1-1+deb9u1
+2019-09-03 06:39:31 status triggers-pending libc-bin:amd64 2.24-11+deb9u3
+2019-09-03 06:39:31 status half-configured libnghttp2-14:amd64 1.18.1-1
+2019-09-03 06:39:31 status unpacked libnghttp2-14:amd64 1.18.1-1
+2019-09-03 06:39:31 status half-installed libnghttp2-14:amd64 1.18.1-1
+2019-09-03 06:39:31 status half-installed libnghttp2-14:amd64 1.18.1-1
+2019-09-03 06:39:31 status unpacked libnghttp2-14:amd64 1.18.1-1+deb9u1
+2019-09-03 06:39:31 status unpacked libnghttp2-14:amd64 1.18.1-1+deb9u1
+2019-09-03 06:39:31 startup packages configure
+2019-09-03 06:39:31 configure libnghttp2-14:amd64 1.18.1-1+deb9u1 <none>
+2019-09-03 06:39:31 status unpacked libnghttp2-14:amd64 1.18.1-1+deb9u1
+2019-09-03 06:39:31 status half-configured libnghttp2-14:amd64 1.18.1-1+deb9u1
+2019-09-03 06:39:31 status installed libnghttp2-14:amd64 1.18.1-1+deb9u1
+2019-09-03 06:39:31 trigproc libc-bin:amd64 2.24-11+deb9u3 <none>
+2019-09-03 06:39:31 status half-configured libc-bin:amd64 2.24-11+deb9u3
+2019-09-03 06:39:31 status installed libc-bin:amd64 2.24-11+deb9u3

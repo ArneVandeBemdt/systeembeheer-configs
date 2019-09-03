@@ -1,0 +1,9 @@
+<VirtualHost *:80>
+    Include /etc/apache2/le_http_01_challenge_pre.conf
+    ServerAdmin admin@mail.arne-vandebemdt.sb.uclllabs.be
+    ServerName secure.arne-vandebemdt.sb.uclllabs.be
+    DocumentRoot /var/www/secure.arne-vandebemdt.sb.uclllabs.be/html
+    ErrorLog ${APACHE_LOG_DIR}/secure-error.log
+CustomLog ${APACHE_LOG_DIR}/secure-access.log combined
+Include /etc/apache2/le_http_01_challenge_post.conf
+</VirtualHost>

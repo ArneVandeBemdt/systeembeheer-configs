@@ -1,0 +1,21 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+	(remove)
+	remove-shell /bin/zsh
+	remove-shell /usr/bin/zsh
+
+	# Remove hardcoded symlink again
+	if [ -L /usr/bin/zsh ]; then
+	  rm -f /usr/bin/zsh
+	fi
+
+	;;
+esac
+
+# Automatically added by dh_installdeb
+dpkg-maintscript-helper symlink_to_dir /usr/share/doc/zsh zsh-common 5.0.7-3 -- "$@"
+# End automatically added section
+

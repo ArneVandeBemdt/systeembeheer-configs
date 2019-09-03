@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/bin/ntpstat
+/usr/share
+/usr/share/doc
+/usr/share/doc/ntpstat
+/usr/share/doc/ntpstat/changelog.Debian.amd64.gz
+/usr/share/doc/ntpstat/changelog.Debian.gz
+/usr/share/doc/ntpstat/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/ntpstat.1.gz

@@ -1,0 +1,328 @@
+Package: libmysqlcppconn-dev
+Source: mysql-connector-c++
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 21300
+Depends: libmysqlcppconn7 (= 8.0.15-1debian9), libmysqlcppconn8-1 (= 8.0.15-1debian9)
+Multi-Arch: same
+Homepage: https://dev.mysql.com/doc/connector-cpp/en/
+Priority: optional
+Section: libdevel
+Filename: pool/mysql-tools/m/mysql-connector-c++/libmysqlcppconn-dev_8.0.15-1debian9_amd64.deb
+Size: 2282380
+SHA256: fa55d1c371fa4861928ff1c36cf2ecfe3a561f754b1f63d20020ad5136cb3a51
+SHA1: b277142964af6f4809714a511d35192c09571f97
+MD5sum: d20cfac42b5e64bd4586b75a1f2ead49
+Description: Development header files and libraries for MySQL C++ client applications
+ This package contains the development header files and libraries necessary
+ to develop MySQL client applications in C++.
+
+Package: libmysqlcppconn7
+Source: mysql-connector-c++
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 6189
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Breaks: libmysqlcppconn7v5
+Replaces: libmysqlcppconn7v5
+Multi-Arch: same
+Homepage: https://dev.mysql.com/doc/connector-cpp/en/
+Priority: optional
+Section: libs
+Filename: pool/mysql-tools/m/mysql-connector-c++/libmysqlcppconn7_8.0.15-1debian9_amd64.deb
+Size: 1033336
+SHA256: 3b4ab52088faaa05d4891e246bf3ef5604d603f6527693b1e5abc101e3ac5bea
+SHA1: 906d7873832ac18b1377f8d695c8e86f19baafb3
+MD5sum: 9c4bb29c631ae98fe11bfaae07026675
+Description: MySQL Driver for C++ which mimics the JDBC 4.0 API
+ This MySQL Driver for C++ mimics the JDBC 4.0 API.
+
+Package: libmysqlcppconn8-1
+Source: mysql-connector-c++
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 1858
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Multi-Arch: same
+Homepage: https://dev.mysql.com/doc/connector-cpp/en/
+Priority: optional
+Section: libs
+Filename: pool/mysql-tools/m/mysql-connector-c++/libmysqlcppconn8-1_8.0.15-1debian9_amd64.deb
+Size: 484508
+SHA256: eba14ae04ce2bb78bc471c70d695f75cc769df0b92fe367884ac2ffbd26ee245
+SHA1: 53e55b8f477760db92ede93580a9185e403f872f
+MD5sum: c015459a4dd8795b2f4f090e8f2145ff
+Description: MySQL database connector for C++
+ A C++ interface for communicating with MySQL servers.
+
+Package: mysql-connector-java
+Version: 8.0.15-1debian9
+Architecture: all
+Maintainer: Oracle MySQL Product Engineering Team <mysql-build@oss.oracle.com>
+Installed-Size: 2293
+Homepage: http://dev.mysql.com/downloads/connector/j/
+Priority: optional
+Section: database
+Filename: pool/mysql-tools/m/mysql-connector-java/mysql-connector-java_8.0.15-1debian9_all.deb
+Size: 2119510
+SHA256: a65135a52de9eeb8022169c5bd8f893dd0df2a5064730feb146c1a1d23e96651
+SHA1: 9b57353719bc0c52447e8bd13428bf7147e4a3f6
+MD5sum: 0c1bd4f9e03b3d16b701e22cbb963a39
+Description: MySQL Connector/J
+ Standardized MySQL database driver for Java
+
+Package: mysql-connector-python
+Version: 8.0.15-1debian9
+Architecture: all
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 1289
+Depends: python2.6 | python2.7, python (>= 2.6.3)
+Conflicts: mysql-connector-python-commercial, python-mysql.connector
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: python
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python_8.0.15-1debian9_all.deb
+Size: 184404
+SHA256: 5c5b849bf84fdfaf4ee11341250298e4f2c1c7ad19658c83607f2cb1e2f1589f
+SHA1: e69840579c8043e8417b08802979a04add0682f3
+MD5sum: 87f7c61e803a68c673f243a0620cf8de
+Description: MySQL database driver written in pure Python
+ This is a release of MySQL Connector/Python, Oracle's dual-
+ license Python Driver for MySQL. For the avoidance of
+ doubt, this particular copy of the software is released
+ under the version 2 of the GNU General Public License.
+ MySQL Connector/Python is brought to you by Oracle.
+
+Package: mysql-connector-python-cext
+Source: mysql-connector-python
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 7023
+Depends: python2.6 | python2.7, python (>= 2.6.3)
+Conflicts: mysql-connector-python-cext-commercial
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: python
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python-cext_8.0.15-1debian9_amd64.deb
+Size: 1235828
+SHA256: 2efbda7f713474f701eb5582002e4da066dd48cd9808bc0311e80260bd9f8efb
+SHA1: 6d8d49b168a89e7a7115e3fc71019ee561319235
+MD5sum: 6886cf6359fbbd9ad5ada5ca9edb57aa
+Description: MySQL database driver written in Python with C Extension
+ This is a release of MySQL Connector/Python, Oracle's dual-
+ license Python Driver for MySQL. For the avoidance of
+ doubt, this particular copy of the software is released
+ under the version 2 of the GNU General Public License.
+ MySQL Connector/Python is brought to you by Oracle.
+
+Package: mysql-connector-python-cext-dbgsym
+Source: mysql-connector-python
+Version: 8.0.15-1debian9
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 4006
+Depends: mysql-connector-python-cext (= 8.0.15-1debian9)
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: debug
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python-cext-dbgsym_8.0.15-1debian9_amd64.deb
+Size: 3527244
+SHA256: 9cb3ab959d0364dac37ebeaba672af703f0ab8d36e42612928e422f32cab3593
+SHA1: a30349b50796bcd468892d3ee30860e05d46cd79
+MD5sum: f7fdafcdd2e2d8e1c0996da15c8888b1
+Description: Debug symbols for mysql-connector-python-cext
+Build-Ids: 605df8f7a7b49e66115e39646919d4c86d326d33 957826fb89878543ef52bd81ad80e6528961ab9e
+
+Package: mysql-connector-python-cext-py3
+Source: mysql-connector-python
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 7024
+Depends: python3 (<< 3.6), python3 (>= 3.5~), python3:any (>= 3.3~)
+Conflicts: mysql-connector-python-cext-commercial-py3
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: python
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python-cext-py3_8.0.15-1debian9_amd64.deb
+Size: 1236948
+SHA256: da1c5c68208b3c96e79fb060cfefa6d8ce3b71c2548074f2281bc22eb96533bd
+SHA1: 9e133fed9f8bbe5498224a99f0c6a6645d7acced
+MD5sum: 2329b5daa1c821ae4075dfe07d674d19
+Description: MySQL database driver written in Python 3 with C Extension
+ This is a release of MySQL Connector/Python, Oracle's dual-
+ license Python Driver for MySQL. For the avoidance of
+ doubt, this particular copy of the software is released
+ under the version 2 of the GNU General Public License.
+ MySQL Connector/Python is brought to you by Oracle.
+
+Package: mysql-connector-python-cext-py3-dbgsym
+Source: mysql-connector-python
+Version: 8.0.15-1debian9
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 4012
+Depends: mysql-connector-python-cext-py3 (= 8.0.15-1debian9)
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: debug
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python-cext-py3-dbgsym_8.0.15-1debian9_amd64.deb
+Size: 3533292
+SHA256: 424941dbcd8d908ffb73e94bf8664a60e49b0ec5c0a4b15be77631753e2868ac
+SHA1: ec8bea57d8a685361afa1fa110dec2f9343f8149
+MD5sum: dc16b717dc02a424bad824b52c29ec85
+Description: Debug symbols for mysql-connector-python-cext-py3
+Build-Ids: 1573a33ef4da34d2b9ff324558d9d015e442dafc 9782ef250e05e8f1e50778997f71aa570af049b7
+
+Package: mysql-connector-python-py3
+Source: mysql-connector-python
+Version: 8.0.15-1debian9
+Architecture: all
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 1286
+Depends: python3-protobuf, python3:any (>= 3.3.2-2~), python3 (>= 3.3)
+Conflicts: mysql-connector-python-commercial-py3, python3-mysql.connector
+Homepage: http://dev.mysql.com/downloads/connector/python/
+Priority: extra
+Section: python
+Filename: pool/mysql-tools/m/mysql-connector-python/mysql-connector-python-py3_8.0.15-1debian9_all.deb
+Size: 183964
+SHA256: 6835bc044acb89b38b6d9441b9f44f3f135dd7bc1ac6073ec148d05a80041b37
+SHA1: e112abf7b7f9945a73ccd41a0fd84cb764de27b9
+MD5sum: c901db045bf934645bd293f20c34ad80
+Description: MySQL database driver written in pure Python 3
+ This is a release of MySQL Connector/Python, Oracle's dual-
+ license Python Driver for MySQL. For the avoidance of
+ doubt, this particular copy of the software is released
+ under the version 2 of the GNU General Public License.
+ MySQL Connector/Python is brought to you by Oracle.
+
+Package: mysql-router
+Source: mysql-community
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 37
+Depends: mysql-router-community
+Homepage: http://www.mysql.com/
+Priority: optional
+Section: database
+Filename: pool/mysql-tools/m/mysql-community/mysql-router_8.0.15-1debian9_amd64.deb
+Size: 30642
+SHA256: f937ac5474cd398e9a725638fc0098ffc7e871520b06a2b366628fa3beb548cf
+SHA1: d83d10b9795f57da509904ed22227662773c1be0
+MD5sum: 09bc453c3f7cd27b6a42b09bcd86d959
+Description: MySQL Router Metapackage
+ The MySQL(TM) Router software delivers a fast, multi-threaded way of
+ routing connections from MySQL Clients to MySQL Servers. MySQL is a
+ trademark of Oracle. This is the shared router metapackage, used for
+ dependency handling.
+
+Package: mysql-router-community
+Source: mysql-community
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 12796
+Depends: libc6 (>= 2.15), libgcc1 (>= 1:3.0), libssl1.1 (>= 1.1.0), libstdc++6 (>= 6)
+Conflicts: mysql-router (<< 8.0.3), mysql-router-commercial
+Breaks: mysql-router-community
+Replaces: mysql-router-community
+Homepage: http://www.mysql.com/
+Priority: optional
+Section: database
+Filename: pool/mysql-tools/m/mysql-community/mysql-router-community_8.0.15-1debian9_amd64.deb
+Size: 1595032
+SHA256: 6c7eb3588a7c60627a0b18a7d6fd4e9cb6be2d77cba5921f45620aa16be8a2fe
+SHA1: 26e2e0c9231ca341c84225b683c9571e64970127
+MD5sum: 392b24588ddd5dc51884e822058c7999
+Description: MySQL Router
+ The MySQL(TM) Router software delivers a fast, multi-threaded way of
+ routing connections from MySQL Clients to MySQL Servers. MySQL is a
+ trademark of Oracle.
+
+Package: mysql-router-community-dbgsym
+Source: mysql-community
+Version: 8.0.15-1debian9
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 10660
+Depends: mysql-router-community (= 8.0.15-1debian9)
+Homepage: http://www.mysql.com/
+Priority: extra
+Section: debug
+Filename: pool/mysql-tools/m/mysql-community/mysql-router-community-dbgsym_8.0.15-1debian9_amd64.deb
+Size: 10065366
+SHA256: 6473dd00b1d456eddca88cb5c99104e1440c5fcf598fae6cca180acf6edf1b40
+SHA1: 5b703a2daa1d4360ac3317c435e1bf0f4a436505
+MD5sum: 9fb7185a966801141fd902156812fad6
+Description: Debug symbols for mysql-router-community
+Build-Ids: 154f0308846ff8c9d56319d3e642016e7106cfeb 2c034dbb6d899bffd5bceeb2da02865192fcc4c5 3c226a3c92ef1c2d35baffe0ae14ec5d2335ede9 4b2b7a11d07eb35b6a98cf7042a87a080910fd37 62cbde11b3601be102d63927750da91cb0297f1d 6ced6953b6f6c6d9bfaf55f4004361a1e035921d 739db2a3b96849ddab4fecc96935ad841f805232 ba1a91fd8af4465cff94f4c74d4cfcd3d593fb7b ea3cc50b44341f707440d2223c9ffa450d9e56e4
+
+Package: mysql-router-community-dev
+Source: mysql-community
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: MySQL Release Engineering <mysql-build@oss.oracle.com>
+Installed-Size: 1456
+Conflicts: mysql-router-commercial-dev
+Homepage: http://www.mysql.com/
+Priority: optional
+Section: database
+Filename: pool/mysql-tools/m/mysql-community/mysql-router-community-dev_8.0.15-1debian9_amd64.deb
+Size: 243414
+SHA256: 60f69fcc0fd01e6ecfe36ec55cfbeecee9e8f5f5ec00597e6ea10db37a5c1832
+SHA1: 6a07227c96121ba91c41e7e34ecc626a4bfa2878
+MD5sum: 212d2c52ee0faef0569acb2d05957de8
+Description: MySQL Router development files
+ The MySQL(TM) Router software delivers a fast, multi-threaded way of
+ routing connections from MySQL Clients to MySQL Servers. MySQL is a
+ trademark of Oracle.
+
+Package: mysql-shell
+Version: 8.0.15-1debian9
+Architecture: amd64
+Maintainer: Oracle MySQL Product Engineering Team <mysql-build@oss.oracle.com>
+Installed-Size: 35318
+Depends: libc6 (>= 2.14), libgcc1 (>= 1:3.4), libpython2.7 (>= 2.7), libssl1.1 (>= 1.1.0), libstdc++6 (>= 5.2)
+Conflicts: mysql-shell-commercial
+Replaces: mysql-shell-commercial
+Multi-Arch: same
+Homepage: http://dev.mysql.com/downloads/shell
+Priority: optional
+Section: database
+Filename: pool/mysql-tools/m/mysql-shell/mysql-shell_8.0.15-1debian9_amd64.deb
+Size: 8382476
+SHA256: fd75886c9039a83dd1ef7586f2cea2efa7bba21b6132c93a22fa37d8017502b3
+SHA1: bdc8ae05fca25d65ae6c181d31d6e63781841c3d
+MD5sum: 76d744ccb09ff7775469ab34679307b2
+Description: MySQL Shell (part of MySQL Server) 8.0
+ MySQL query and administration shell client and framework.
+
+Package: mysql-shell-dbgsym
+Source: mysql-shell
+Version: 8.0.15-1debian9
+Auto-Built-Package: debug-symbols
+Architecture: amd64
+Maintainer: Oracle MySQL Product Engineering Team <mysql-build@oss.oracle.com>
+Installed-Size: 250648
+Depends: mysql-shell (= 8.0.15-1debian9)
+Multi-Arch: same
+Homepage: http://dev.mysql.com/downloads/shell
+Priority: extra
+Section: debug
+Filename: pool/mysql-tools/m/mysql-shell/mysql-shell-dbgsym_8.0.15-1debian9_amd64.deb
+Size: 250403686
+SHA256: e198db14d5ac449a616885ec2ee28b134cbf573d898bfea39f954776432ce964
+SHA1: aacc03d675030811b591a7f769eff4bac4cb5f4a
+MD5sum: 41fa963a6c25a48b7c129ebb82c6e748
+Description: Debug symbols for mysql-shell
+Build-Ids: 8fb6c5528bcf05f7e2fa5cc7b3df79bc72b961e6 fdc61fdf0e2fabd665bf7e9baf43f0fd27beefad
+

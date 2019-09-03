@@ -1,0 +1,6 @@
+a3b5e91a875742fe32bf8dc15d784e00  usr/lib/x86_64-linux-gnu/libwscodecs.so.2.0.0
+038dde5f3e4fec8ef73db1c58e2544ed  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/codecs/l16mono.so
+f54b1450b3bc332421e25c9c47e924b4  usr/share/doc/libwscodecs2/changelog.Debian.gz
+ae67ad44f6e7d3994c84d8c30e7c0444  usr/share/doc/libwscodecs2/changelog.gz
+1bba89df958cbfd49d3a536598af175d  usr/share/doc/libwscodecs2/copyright
+67e3e17cadd9b346125cefa69d995548  usr/share/lintian/overrides/libwscodecs2

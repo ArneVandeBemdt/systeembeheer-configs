@@ -1,0 +1,16 @@
+a9638a7b750a0bddbaa5d6a8788e5ada  usr/lib/x86_64-linux-gnu/libwireshark.so.11.1.7
+7e637975dadafb8dbd6f9c102fc9a0cf  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/ethercat.so
+fc7ff5b18b6e63ec3de6febd8aebb399  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/gryphon.so
+2e6fe3e56e881994d2ead49e54967e1b  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/irda.so
+ba0eaa87c105d7d4da882c5ce294dae7  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/mate.so
+1c549e4f8a62cd96737f09a8525bbd9c  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/opcua.so
+d490cea2c972f48f22f1241106b79d7c  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/profinet.so
+cd8224b84602eaabc7f256ab4d1dce99  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/stats_tree.so
+56ae477329a97db8b9439af91d47819a  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/transum.so
+d90e13c689d73124f1c548f3fd9a76b8  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/unistim.so
+c95695c7573f2cb2b85afcfb37c722bf  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/wimax.so
+ec69d48dcd5a630a82e61b772ddbe105  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/wimaxasncp.so
+44bc6a1b1f1dfcf309e512fe89655d95  usr/lib/x86_64-linux-gnu/wireshark/plugins/2.6/epan/wimaxmacphy.so
+f54b1450b3bc332421e25c9c47e924b4  usr/share/doc/libwireshark11/changelog.Debian.gz
+ae67ad44f6e7d3994c84d8c30e7c0444  usr/share/doc/libwireshark11/changelog.gz
+1bba89df958cbfd49d3a536598af175d  usr/share/doc/libwireshark11/copyright

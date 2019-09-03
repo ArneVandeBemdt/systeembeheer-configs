@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#script to restore default values in iptables, allow everything
+#Arne Van de Bemdt
+
+iptables-restore < default_rules.v4
+ip6tables-restore < default_rules.v6
+
+# enable tcp syn cookies
+awk -i inplace '/net.ipv4.tcp_syncookies/ { gsub("net.ipv4.tcp_syncookies=1", "#net.ipv4.tcp_syncookies=1") }1' /etc/sysctl.conf
+sysctl -p

@@ -1,0 +1,12 @@
+458279c2903a435fed574cbccc48a2ac  lib/systemd/system/sshguard.service
+f9d7a0b98f7eafd6f3dfde9e41135f0f  usr/lib/sshguard/firewall
+826093f2589b39a7ed44a6df984ed704  usr/lib/sshguard/sshguard-journalctl
+4c348c79f3996c91419626ce72e7e4a7  usr/lib/x86_64-linux-gnu/sshg-fw
+b42e28a906cff9cfb767a779c60b9cdb  usr/lib/x86_64-linux-gnu/sshg-logtail
+b800af1ef14aa67662150d6c2acb82f9  usr/lib/x86_64-linux-gnu/sshg-parser
+5e979c4fbcd3e5fdbdd65b608f25b947  usr/sbin/sshguard
+767985d8d5ab380414c9cf24ef387459  usr/share/doc/sshguard/changelog.Debian.gz
+34cefd09a434997025cb4d5b595a68e4  usr/share/doc/sshguard/changelog.gz
+defaa447e5d4c65c17ec40b9cae7d6b1  usr/share/doc/sshguard/copyright
+1965d023ddb3ef6cb953d020d514d6fc  usr/share/doc/sshguard/examples/whitelistfile.example
+8f0b1378377d0d85c8ed34dbb6be5b8c  usr/share/man/man8/sshguard.8.gz

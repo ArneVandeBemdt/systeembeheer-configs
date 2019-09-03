@@ -1,0 +1,7 @@
+        <Directory /var/lib/letsencrypt/http_challenges>
+            Require all granted
+        </Directory>
+        <Location /.well-known/acme-challenge>
+            Require all granted
+        </Location>
+    

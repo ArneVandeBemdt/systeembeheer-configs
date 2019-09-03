@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/python3
+/usr/lib/python3/dist-packages
+/usr/lib/python3/dist-packages/augeas.py
+/usr/lib/python3/dist-packages/python_augeas-0.5.0.egg-info
+/usr/share
+/usr/share/doc
+/usr/share/doc/python3-augeas
+/usr/share/doc/python3-augeas/copyright
+/usr/share/doc/python3-augeas/changelog.Debian.gz

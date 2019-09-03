@@ -1,0 +1,13 @@
+2f65e14f3b740fc6b40780b8697bdac6  usr/lib/python3/dist-packages/pysimplesoap/__init__.py
+cac8c83e0bce6ecbf11fbd7d9aaba583  usr/lib/python3/dist-packages/pysimplesoap/c14n.py
+cb263e9ddbe756b7201ce00500c497d9  usr/lib/python3/dist-packages/pysimplesoap/client.py
+cbab1e72f9e0bb662a0480293320db59  usr/lib/python3/dist-packages/pysimplesoap/helpers.py
+2f13e946d767768136153fd56958e443  usr/lib/python3/dist-packages/pysimplesoap/server.py
+bbb19d1b7241e0c65eddb67e55cc2fd9  usr/lib/python3/dist-packages/pysimplesoap/simplexml.py
+29bc2b319f80d2273541fb6ef31d2c80  usr/lib/python3/dist-packages/pysimplesoap/transport.py
+800e0032f5811889b4aaba3c5e72a0f4  usr/lib/python3/dist-packages/pysimplesoap/wsse.py
+5567b873d69cf6c6875dbea9aec84bac  usr/lib/python3/dist-packages/pysimplesoap/xmlsec.py
+dfe1c5ee69edc8f3e0a4e3186c6c9b3a  usr/share/doc/python3-pysimplesoap/README.md
+76fcd292cf105fceb3923e9253963b5d  usr/share/doc/python3-pysimplesoap/changelog.Debian.gz
+cca54cc4b632e93dbeddc6f1535c2a8a  usr/share/doc/python3-pysimplesoap/copyright
+19ab9281e7b4af633399a511af0b9bec  usr/share/doc/python3-pysimplesoap/examples/wsaa_py.py

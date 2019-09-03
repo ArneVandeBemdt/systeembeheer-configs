@@ -1,0 +1,37 @@
+### BEGIN INIT INFO
+# Required-Start:    $all
+# Required-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:
+# Description: firewall service
+### END INIT INFO
+
+#!/bin/bash
+# description: Firewall service for adding and removing rules
+
+start() {
+	echo "configuring firewall..."
+	/bin/bash /etc/scripts/firewall_start
+}
+
+stop() {
+	echo "stopping firewall..."
+	/bin/bash /etc/scripts/firewall_stop
+}
+
+case "$1" in
+	start)
+		start
+		;;
+	stop)
+		stop
+		;;
+	restart)
+		stop
+		start
+		;;
+	*)
+		start
+esac
+
+exit 0

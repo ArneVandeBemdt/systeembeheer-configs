@@ -1,0 +1,13 @@
+4719a6782fa40a7619b379c032f6c0d0  usr/lib/python3/dist-packages/zope.event-4.2.0-nspkg.pth
+a9a9e2c0abc7a44106cdac8b05da7af3  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/PKG-INFO
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/dependency_links.txt
+90b425bf5a228d74998925659a5e2ebb  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/namespace_packages.txt
+68b329da9893e34099c7d8ad5cb9c940  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/not-zip-safe
+03aa00a4fb90ff2094a4434842418b49  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/requires.txt
+90b425bf5a228d74998925659a5e2ebb  usr/lib/python3/dist-packages/zope.event-4.2.0.egg-info/top_level.txt
+e3e89e94a44839c13ed875e5b26bd5a9  usr/lib/python3/dist-packages/zope/event/__init__.py
+3457fb2d23891f269282b7b0bf1347a2  usr/lib/python3/dist-packages/zope/event/classhandler.py
+8e4ad957c1a3cfd5e28847d3ab6759f9  usr/lib/python3/dist-packages/zope/event/tests.py
+09ed92730860770cc394e9425c34f88f  usr/share/doc/python3-zope.event/changelog.Debian.gz
+fd0335edc30e087f91fd42c255e5882c  usr/share/doc/python3-zope.event/changelog.gz
+1c57959fba61914947c5df3ce12d8ee9  usr/share/doc/python3-zope.event/copyright

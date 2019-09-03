@@ -1,0 +1,7 @@
+3fa913c12aad6e1ce5c820d607cd1a41  usr/lib/x86_64-linux-gnu/libGeoIP.so.1.6.9
+c1a5a5c9b807597fafd29495e02fe90c  usr/share/doc/libgeoip1/README.Debian
+0b68b6be390df72f22ce2c69e45081ed  usr/share/doc/libgeoip1/README.md.gz
+d3a5312be7c2902b2aebf75deb1fe0e0  usr/share/doc/libgeoip1/changelog.Debian.gz
+2fed3233a24fdf66a188f5f6ddf72287  usr/share/doc/libgeoip1/changelog.gz
+e347988a3c9eb82024f35abe7e912876  usr/share/doc/libgeoip1/copyright
+abf55315926bb7c6ae086a4820c681e1  usr/share/lintian/overrides/libgeoip1

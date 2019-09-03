@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+. /usr/share/debconf/confmodule
+
+# get some of our helper functions
+. /usr/share/dbconfig-common/dpkg/common
+dbc_config dbconfig-common "$@"
+
+db_get dbconfig-common/remember-admin-pass
+dbc_remember_admin_pass="$RET"
+db_get dbconfig-common/remote-questions-default
+dbc_remote_questions_default="$RET"
+
+dbc_write_global_config
+
+# Previously dumped databases in /var/cache/dbconfig-common/backups may
+# (depending on the local umask) be readable by everybody (bts: #805638). Limit
+# the permissions here on all files in that folder, but only if we are for the
+# first time upgrading to a fixed version:
+# sid: 2.0.0
+# jessie: 1.8.47+nmu3+deb8u1
+# wheezy: 1.8.47+nmu1+deb7u1
+# squeeze: 1.8.46+squeeze.1
+if dpkg --compare-versions "$2" lt "2.0.0" && \
+        dpkg --compare-versions "$2" gt "1.8.47+nmu3+deb9u1~" ; then
+    if [ -d /var/cache/dbconfig-common/backups/ ] ; then
+        find /var/cache/dbconfig-common/backups/ -type f -exec chmod 600 {} \;
+    fi
+fi
+
+

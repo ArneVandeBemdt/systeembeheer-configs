@@ -1,0 +1,198 @@
+#!/bin/sh
+# vim:set fileencoding=utf-8 et ts=4 sts=4 sw=4:
+
+set -e
+
+PREFERENCES=/etc/apt/listchanges.conf
+
+. /usr/share/debconf/confmodule
+
+runPython()
+{
+    tempdir=`mktemp --directory --suffix=.aptlc`
+    trap "rm -rf $tempdir" EXIT
+    temp="$tempdir/debconf-helper.py"
+    cat > "$temp" << 'EOF'
+#!/usr/bin/python3
+# vim:set fileencoding=utf-8 et ts=4 sts=4 sw=4:
+# This file is shared between postinst and config
+
+import configparser
+import debconf
+import os
+import sys
+
+PREFIX_SIZE=len('apt-listchannges')
+DEFAULT_SEEN_DB='/var/lib/apt/listchanges.db'
+SECTION='apt'
+
+def _tmpl2Key(name):
+    return name[PREFIX_SIZE:].replace('-', '_')
+
+def _debug(*args):
+    if 'APT_LISTCHANGES_DEBCONF_DEBUG' in os.environ:
+        print(*args, file=sys.stderr)
+
+def _handleString(cfgkey, config, template, db, fromConfig):
+    _debug("handleString(", template, cfgkey, fromConfig, ")")
+    if fromConfig:
+        value = config.get(SECTION, cfgkey)
+        if value == 'none': value = ''
+        db.set(template, value)
+    else:
+        value = db.getString(template)
+        if value == '': value = 'none'
+        config.set(SECTION, cfgkey, value)
+
+def _handleList(cfgkey, config, template, db, fromConfig):
+    _debug("handleList(", template, cfgkey, fromConfig, ")")
+    if fromConfig:
+        value = config.get(SECTION, cfgkey)
+        db.set(template, value.lower())
+    else:
+        value = db.getString(template)
+        config.set(SECTION, cfgkey, value)
+
+def _handleBoolean(cfgkey, config, template, db, fromConfig):
+    value = config.getboolean(SECTION, cfgkey, fallback=None)
+    _debug("handleBoolean(", template, cfgkey, fromConfig, "), old config value:", value)
+    if fromConfig:
+        db.set(template, str(value).lower())
+    else:
+        newvalue =  db.getBoolean(template)
+        if value == None or value != newvalue:
+            config.set(SECTION, cfgkey, str(newvalue).lower())
+
+def _handleSeen(cfgkey, config, template, db, fromConfig):
+    # The 'save-seen' is very special: a path in config file,
+    # but in debconf is stored as boolean...
+    value = config.get(SECTION, cfgkey, fallback=None)
+    _debug("handleSeen(", template, cfgkey, fromConfig, "), old config value:", value)
+    if fromConfig:
+        db.set(template, str(value and value != 'none').lower())
+    elif not db.getBoolean(template):
+        value = 'none'
+    elif not value or value == 'none':
+        value = DEFAULT_SEEN_DB
+    config.set(SECTION, cfgkey, value)
+
+NAMES = {'apt-listchanges/frontend'     : _handleList,
+         'apt-listchanges/confirm'      : _handleBoolean,
+         'apt-listchanges/email-address': _handleString,
+         'apt-listchanges/save-seen'    : _handleSeen,
+         'apt-listchanges/which'        : _handleList }
+
+def _updateDebconfFromConfig(config, db):
+    _debug("updateDebconfFromConfig()")
+    for tmpl in sorted(NAMES):
+        cfgkey = _tmpl2Key(tmpl)
+        if config.has_option(SECTION, cfgkey):
+            NAMES[tmpl](cfgkey, config, tmpl, db, True)
+
+def _communicateWithDebconf(config, db, is_postinst):
+    _debug("communicateWithDebconf(", is_postinst, ")")
+
+    # Handle frontend first
+    tmpl = 'apt-listchanges/frontend'
+    if not is_postinst:
+        db.forceInput(debconf.MEDIUM, tmpl)
+        db.go()
+
+    frontend = db.get(tmpl)
+    if is_postinst:
+        NAMES[tmpl](_tmpl2Key(tmpl), config, tmpl, db, False)
+    del NAMES[tmpl]
+
+    if frontend == 'none':
+        return
+
+    if frontend == 'mail':
+        del NAMES['apt-listchanges/confirm']
+
+    # Handle remaining variables
+    if not is_postinst:
+        for tmpl in sorted(NAMES):
+            db.forceInput(debconf.LOW, tmpl)
+        db.go()
+    else:
+        for tmpl in sorted(NAMES):
+            NAMES[tmpl](_tmpl2Key(tmpl), config, tmpl, db, False)
+
+def main(argv):
+    if len(argv) < 3:
+        print("Usage: script postinst|config config_file mainscript_params",
+              file=sys.stderr)
+        sys.exit(1)
+
+    debconf.runFrontEnd()
+
+    is_postinst = argv[1] == 'postinst' # otherwise it is config
+    config_file = argv[2]
+    _debug("apt-listchanges debconf script started(", is_postinst, config_file, ")")
+
+    config = configparser.ConfigParser()
+    config.read(config_file)
+
+    if not config.has_section(SECTION):
+        config.add_section(SECTION)
+
+    try:
+        output = os.fdopen(3, "wt")
+    except Exception as ex:
+        _debug("failed to open file descriptor 3", str(ex))
+        output = sys.stdout
+
+    db = debconf.Debconf(write=output)
+
+    if not is_postinst:
+        _updateDebconfFromConfig(config, db)
+
+    _communicateWithDebconf(config, db, is_postinst)
+
+    if is_postinst:
+        with open(config_file + '.new', 'wt') as newfile:
+            config.write(newfile, space_around_delimiters=False)
+            os.fchmod(newfile.fileno(), 0o644)
+
+if __name__ == "__main__":
+    main(sys.argv)
+    sys.exit(0)
+EOF
+    python3 -B "$temp" "$@"
+}
+
+    
+if [ "$1" = "configure" ]
+then
+    runPython postinst "$PREFERENCES" "$@"
+    ucfr 'apt-listchanges' "$PREFERENCES"
+    # Ignore whitespace-only difference (see #823514)
+    diff -qwB "$PREFERENCES".new "$PREFERENCES" >/dev/null 2>&1 || \
+      ucf --debconf-ok "$PREFERENCES".new "$PREFERENCES"
+    rm -f "$PREFERENCES".new
+fi
+
+[ -z "$DEBCONF_RECONFIGURE" ] || exit 0
+
+# Fix a bug introduced in 3.0
+dbfile=/var/lib/apt/listchanges.db
+if [ "$1" = "configure" ] && [ "$2" = "3.0" ] && [ "$dbfile.db" -nt "$dbfile" ]; then
+    mv -f "$dbfile.db" "$dbfile"
+fi
+
+
+# Automatically added by dh_python3:
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p apt-listchanges /usr/share/apt-listchanges -V 3.5-
+fi
+
+# End automatically added section
+
+
+exit 0
+# Make lintian happy
+db_get apt-listchanges/frontend
+db_get apt-listchanges/confirm
+db_get apt-listchanges/email-address
+db_get apt-listchanges/save-seen
+db_get apt-listchanges/which

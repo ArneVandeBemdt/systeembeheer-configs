@@ -1,0 +1,231 @@
+
+Template: wireshark-common/install-setuid
+Type: boolean
+Default: false
+Description: Should non-superusers be able to capture packets?
+ Dumpcap can be installed in a way that allows members of the "wireshark"
+ system group to capture packets. This is recommended over the
+ alternative of running Wireshark/Tshark directly as root, because
+ less of the code will run with elevated privileges.
+ .
+ For more detailed information please see
+ /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Enabling this feature may be a security risk, so it is disabled by
+ default. If in doubt, it is suggested to leave it disabled.
+Description-cs.UTF-8: Mohou obyčejní uživatelé zachytávat pakety?
+ Dumpcap můžete nainstalovat tak, že budou moci zachytávat pakety pouze členové skupiny „wireshark“. Tento způsob zachytávání paketů pomocí Wireshark/Tshark se obecně doporučuje. Druhou možností je spuštění programu přímo pod superuživatelem, to ovšem nelze doporučit, protože je pak pod tímto uživatelem spuštěna větší část potencionálně nebezpečného kódu.
+ .
+ Pro více informací se prosím podívejte na /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Povolení této možnosti může být bezpečnostním rizikem a tak je ve výchozím nastavení vypnuté. Jste-li na pochybách, doporučuje se nechat volbu vypnutou.
+Description-da.UTF-8: Skal brugere, der ikke er superbrugere, kunne fange pakker?
+ Dumpcap kan installeres på en måde som tillader medlemmer af systemgruppen »wireshark« at fange pakker. Dette anbefales frem for alternativet med at køre Wireshark/Tshark direkte som rod (root), da mindre af koden vil køre med ophøjede privilegier.
+ .
+ For mere detaljerede information se venligst /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Aktivering af denne funktion kan udgøre en sikkerhedsrisiko, så som standard er den deaktiveret. Hvis du er i tvivl, anbefales det at lade den være deaktiveret.
+Description-de.UTF-8: Sollen außer dem Superuser noch andere Benutzer Pakete mitschreiben können?
+ Dumpcap kann so installiert werden, dass Mitglieder der Systemgruppe »wireshark« Pakete mitschreiben können. Dies wird gegenüber der Methode, Wireshark/Tshark direkt als Root zu betreiben, empfohlen, da so weniger Code mit erhöhten Rechten läuft.
+ .
+ Detailliertere Informationen finden Sie in /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Die Aktivierung dieser Funktionalität kann ein Sicherheitsrisiko darstellen, daher ist sie standardmäßig deaktiviert. Im Zweifelsfall wird empfohlen, sie deaktiviert zu lassen.
+Description-es.UTF-8: ¿Los usuarios sin privilegios de administración deberían poder capturar paquetes?
+ Dumpcap se puede instalar de un modo que permite a los miembros del grupo «wireshark» capturar paquetes. Se recomienda usar esto en lugar de ejecutar Wireshark/Tshark directamente como administrador («root»), porque se ejecutará menos código con privilegios de administración.
+ .
+ Para más información, vea el archivo «/usr/share/doc/wireshark-common/README.Debian».
+ .
+ Activar esta funcionalidad puede ser un riesgo de seguridad, por lo que de forma predeterminada está desactivada. En caso de duda, se recomienda dejarla desactivada.
+Description-eu.UTF-8: Supererabiltzailea ez direnak paketeak kapturatzeko gai izan daitezke?
+ Sistemako "wireshark" taldeko partaideek paketeak kapturatzea baimentzeko modu batean instala daiteke Dumpcap. Wireshark/Tshark erabiliz paketeak supererabiltzaile gisa kapturatzeko modu hau gomendatuta dago, pribilegio handiekin kode gutxiago exekutatzen da eta.
+ .
+ Informazio gehiagorako, irakurri usr/share/doc/wireshark-common/README.Debian.
+ .
+ Eginbide hau gaitzean segurtasuneko arrisku bat sor daiteke, hau dela eta desgaituta dago lehenespenez. Zalantzako kasuan, desgaituta uztea gomendantzen da.
+Description-fr.UTF-8: Autoriser les utilisateurs non privilégiés à capturer des paquets ?
+ Dumpcap peut être installé afin d'autoriser les membres du groupe « wireshark » à capturer des paquets. Cette méthode de capture est préférable à l'exécution de Wireshark ou Tshark avec les droits du superutilisateur, car elle permet d'exécuter moins de code avec des droits importants.
+ .
+ Pour plus d'informations, veuillez consulter /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Cette fonctionnalité constitue un risque pour la sécurité, c'est pourquoi elle est désactivée par défaut. En cas de doute, il est suggéré de la laisser désactivée.
+Description-hu.UTF-8: A rendszergazdán kívül más felhasználók is képesek legyenek lehallgatni ahálózati forgalmat?
+ A dumpcap segédprogramot úgy is be lehet állítani telepítéskor, hogy lehetővétegye a "wireshark" rendszer-csoport tagjainak, hogy lehallgassák ahálózati forgalmat. Ez biztonságosabb, mint rendszergazdaként futtatni aWireshark/Tshark programokat, mivel kevesebb kód fut így rendszergazdaijogokkal ellátva.
+ .
+ Részletesebb információk a usr/share/doc/wireshark-common/README.Debianfájlban találhatók.
+ .
+ Ennek a beállításnak az engedélyezése biztonsági kockázatot hordoz.Ha bizonytalan vagy, inkább ne engedélyezd.
+Description-id.UTF-8: Bolehkan pengguna non-superuser untuk menangkap paket?
+ Dumpcap dapat dipasang dengan cara memperbolehkan anggota dari grup system "wireshark" untuk menangkap paket. Hal ini dianjurkan sebagai alternatif untuk menjalankan Wireshark/Tshark sebagai root, karena sedikit kode yang berjalan dengan hak tertinggi
+ .
+ Untuk informasi lebih lanjut silakan lihat /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Mengaktifkan fitur ini akan menyebabkan resiko keamanan, jadi secara bawaan akan di non-aktifkan. Jika ragu, disarankan untuk dibiarkan dinonaktifkan
+Description-it.UTF-8: Permettere ai non-superuser di catturare i pacchetti?
+ Dumpcap può essere installato in modo da permettere agli utenti appartenenti al gruppo di sistema "wireshark" di catturare i pacchetti. Questa modalità d'uso di Wireshark/Tshark è raccomandata rispetto all'esecuzione diretta da root perché viene eseguito con privilegi elevati meno codice.
+ .
+ Per informazioni più dettagliate si consulti /usr/share/doc/wireshark-common/README.Debian.
+ .
+ L'attivazione di questa funzionalità potrebbe essere rischiosa per la sicurezza e quindi normalmente non è attiva. Nel dubbio, si suggerisce di lasciarla disattivata.
+Description-ja.UTF-8: 非特権ユーザ (root 以外のユーザ) がパケットをキャプチャできるようにしますか?
+ 「wireshark」システムグループのメンバーがパケットをキャプチャできる設定で dumpcap をインストールすることができます。直接 root ユーザとして動かす別の方法と比較すると、この方が高くなった権限上で動作するコードが少なくなるのでお勧めです。
+ .
+ より詳細な情報については /usr/share/doc/wireshark-common/README.Debian を参照してください。
+ .
+ この機能を有効にするのはセキュリティ上のリスクになる可能性があるので、デフォルトでは無効にされています。分からない場合は無効のままにしておくことをお勧めします。
+Description-ko.UTF-8: 일반사용자가 패킷을 캡처 할 수 있도록 하시겠습니까?
+ root로 직접 Wireshark/Tshark를 실행시키는 것의 대안으로 좀 더 적은 권한으로 패킷캡처를 하기위해 "wireshark" 시스템 그룹의 일원인 Dumpcap이 설치될 수 있습니다.
+ .
+ 세부정보는 /usr/share/doc/wireshark-common/README.Debian파일을 참조하세요.
+ .
+ 활성화 하는 것은 보안상 위험할 수 있기 때문에 기본적으로 비활성화 되어 있습니다. 비활성화로 두는 것을 추천합니다.
+Description-nl.UTF-8: Moet het voor niet-systeembeheerders mogelijk zijn om pakketjes te onderscheppen?
+ Dumpcap kan zodanig worden geïnstalleerd dat leden van de systeemgroep "wireshark" netwerkpakketjes mogen onderscheppen. Dit wordt aanbevolen boven het rechtstreeks uitvoeren van Wireshark/Tshark als systeembeheerder, omdat op deze manier minder code wordt uitgevoerd met verhoogde privileges.
+ .
+ Uitgebreide informatie hierover is te vinden in /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Het activeren van deze functionaliteit kan een beveiligingsrisico inhouden en daarom staat dit niet standaard aan. Bij twijfel is het aangeraden om dit niet te activeren.
+Description-pt.UTF-8: Devem os utilizadores regulares conseguir capturar pacotes?
+ O dumpcap pode ser instalado de maneira que os membros do grupo de sistema "wireshark" possam capturar pacotes. Este é o modo recomendado em vez da alternativa de correr o Wireshark/Tshark directamente como root, porque menos código será executado com privilégios elevados.
+ .
+ Para informação mais detalhada, leia por favor /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Activar esta característica pode ser um risco de segurança, por isso vem desactivada por predefinição. Em caso de dúvida, sugere-se deixá-la desactivada.
+Description-pt_BR.UTF-8: Não-superusuários deverão ser capazes de capturar pacotes?
+ O dumpcap pode ser instalado em um modo que permite a membros do grupo de sistema "wireshark" capturar pacotes. Isto é recomendado em vez da alternativa de executar o Wireshark/Tshark diretamente como root, porque menos código será executado com privilégios elevados.
+ .
+ Para informações mais detalhadas, por favor veja /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Habilitar este recurso pode ser um risco de segurança, portanto ele é desabilitado por padrão. Se estiver em dúvida, é sugerido deixá-lo desabilitado.
+Description-ru.UTF-8: Позволить не-суперпользователям захватывать пакеты?
+ Dumpcap можно установить таким образом, чтобы члены группы «wireshark» смогли захватывать пакеты. Этот способ является наиболее рекомендованным для захвата пакетов с помощью Wireshark/Tshark, чем другой вариант — запуск самого Wireshark/Tshark с правами администратора, так как это позволяет выполнить почти весь код с меньшими правами.
+ .
+ Дополнительную информацию можно найти в файле /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Использование данной возможности влияет на безопасность, поэтому по умолчанию она не используется. Если сомневаетесь, то оставьте выключенной.
+Description-sk.UTF-8: Môžu bežní používatelia zachytávať pakety?
+ Dumpcap možno nainštalovať spôsobom, ktorý dovolí zachytávať pakety členom systémovej skupiny „wireshark”. Toto je odporúčané oproti alternatívnemu spúšťaniu Wireshark/Tshark priamo s právami root, pretože bude menej kódu bežať s neobmedzenými právami.
+ .
+ Ďalšie, podrobnejšie informácie nájdete v /usr/share/doc/wireshark-common/README.Debian.
+ .
+ Zapnutie tejto vlastnosti môže byť bezpečnostným rizikom, aj preto je predvolene vypnutá. Ak si nie ste istý, odporúčame ponechať ju vypnutú.
+Description-sv.UTF-8: Ska icke-superanvändare kunna fånga paket?
+ Dumpcap kan installeras på ett sätt som tillåter medlemmar i systemgruppen "wireshark" att fånga paket. Detta rekommenderas framför alternativet, att köra Wireshark/Tshark direkt som root, eftersom en mindre del av koden kommer köras med utökade rättigheter.
+ .
+ Se /usr/share/doc/wireshark-common/README.Debian för mer detaljerad information.
+ .
+ Att aktivera denna funktion kan vara en säkerhetsrisk, så den är avaktiverad som standard. Vid tvivel rekommenderas att den lämnas avaktiverad.
+Description-tr.UTF-8: Süper kullanıcı olmayan kullanıcılar da paket yakalayabilsin mi?
+ Dumpcap "wireshark" sistem grubundaki kullanıcıların paket yakalamalarına izin verecek şekilde kurulabilir. Wireshark/Tshark'ı root olarak çalıştırmaktansa bu yolu seçmeniz önerilir, çünkü bu sayede daha az kod yüksek yetkilerle çalışacaktır.
+ .
+ Daha fazla bilgi için lütfen /usr/share/doc/wireshark-common/README.Debian dosyasına bakın.
+ .
+ Bu seçeneği etkinleştirmek bir güvenlik riski oluşturabilir, bu nedenle öntanımlı olarak kapalı haldedir. Kararsız kaldığınız takdirde bu seçeneği kapalı halde tutmanız önerilir.
+Description-vi.UTF-8: Người dùng không phải siêu người dùng nên có quyền bắt gói tin không?
+ Dumpcap có thể được cài đặt bằng một cách cấp cho các thành viên của nhóm « wireshark » có quyền bắt gói tin. Thiết lập này khuyến khích, so với chạy Wireshark/Tshark trực tiếp dưới người chủ, vì ít mã nguồn hơn sẽ chạy với quyền truy cập cao.
+ .
+ Để tìm chi tiết, xem tài liệu Đọc Đi « /usr/share/doc/wireshark-common/README.Debian ».
+ .
+ Bật tính năng này có thể rủi ro bảo mật thì nó bị tắt theo mặc định. Chưa chắc nên để lại bị tắt.
+
+Template: wireshark-common/addgroup-failed
+Type: error
+Description: Creating the wireshark system group failed
+ The wireshark group does not exist, and creating it failed, so
+ Wireshark cannot be configured to capture traffic as an unprivileged
+ user.
+ .
+ Please create the wireshark system group and try configuring
+ wireshark-common again.
+Description-de.UTF-8: Erstellen der Systemgruppe wireshark fehlgeschlagen
+ Die Gruppe wireshark existiert nicht und das Erstellen schlug fehl. Daher kann Wireshark nicht konfiguriert werden, um Datenverkehr als unprivilegierter Benutzer mitzuschreiben.
+ .
+ Bitte erstellen Sie die Systemgruppe wireshark und versuchen Sie dann erneut, wireshark-common zu konfigurieren.
+Description-nl.UTF-8: Het aanmaken van de systeemgroep wireshark mislukte
+ De groep wireshark bestaat niet en het aanmaken ervan mislukte. Daarom kan Wireshark niet ingesteld worden om als niet-bevoorrechte gebruiker trafiek te onderscheppen,
+ .
+ Maak de systeemgroep wireshark aan en probeer wireshark-common nogmaals te configureren.
+Description-pt.UTF-8: A criação do grupo de sistema "wireshark" falhou
+ O grupo de sistema "wireshark" não existe e a sua criação falhou, portanto o Wireshark não pode ser configurado para capturar tráfego como utilizador não privilegiado.
+ .
+ Por favor, crie o grupo de sistema "wireshark" e tente configurar novamente o wireshark-common.
+Description-ru.UTF-8: При создании системной группы wireshark возникла ошибка
+ Поскольку группа wireshark не существует и при её создании возникли ошибки, то Wireshark не может быть настроен на работу по перехвату пакетов непривилегированным пользователем.
+ .
+ Создайте системную группу wireshark и попытайтесь снова настроить wireshark-common.
+
+Template: wireshark-common/group-is-user-group
+Type: error
+Description: The wireshark group is a system group
+ The wireshark group exists as a user group, but the preferred
+ configuration is for it to be created as a system group.
+ .
+ As a result, purging wireshark-common will not remove the wireshark
+ group, but everything else should work properly.
+Description-de.UTF-8: Die Gruppe wireshark ist eine Systemgruppe
+ Die Gruppe wireshark existiert als Benutzergruppe, aber die bevorzugte Konfiguration besteht darin, dass sie als Systemgruppe erstellt wird.
+ .
+ Daher wird das endgültige Löschen von wireshark-common die Gruppe wireshark nicht entfernen, aber alles andere sollte korrekt funktionieren.
+Description-nl.UTF-8: De groep wireshark is een systeemgroep
+ De groep wireshark bestaat als gebruikersgroep, maar bij voorkeur wordt de configuratie zo uitgevoerd dat hij als systeemgroep aangemaakt wordt.
+ .
+ Het gevolg is dat bij het wissen van wireshark-common de groep wireshark niet verwijderd zal worden, maar voor het overige zou alles normaal moeten werken.
+Description-pt.UTF-8: O grupo "wireshark" é um grupo de sistema
+ O grupo "wireshark" existe como grupo de utilizadores, mas a configuração preferida é tê-lo como grupo de sistema.
+ .
+ O resultado é que a purga do wireshark-common não irá remover o grupo "wireshark", mas tudo o resto deverá funcionar correctamente.
+Description-ru.UTF-8: Группа wireshark относится к системный группе
+ Существующая группа wireshark относится к пользовательским группам, но было бы лучше создать её как системную группу.
+ .
+ В результате этого, вычистка файлов настройки пакета wireshark-common не приведёт к удалению группы wireshark, но всё остальное должно работать правильно.
+
+Template: wireshark-common/setcap-failed
+Type: error
+Description: Setting capabilities for dumpcap failed
+ The attempt to use Linux capabilities to grant packet-capturing
+ privileges to the dumpcap binary failed. Instead, it has had the
+ set-user-id bit set.
+Description-de.UTF-8: Setzen der Capabilities für Dumpcap fehlgeschlagen
+ Der Versuch, Linux-Capabilities zu verwenden, um dem Programm Dumpcap Paketaufzeichnungsprivilegien zu erteilen, ist fehlgeschlagen. Stattdessen wurde das Bit set-user-id gesetzt.
+Description-nl.UTF-8: Het instellen van "capabilities" voor dumpcap mislukte
+ De poging om via "Linux capabilities" aan het programma dumpcap rechten toe te kennen om pakketten te onderscheppen mislukte. In plaats daarvan werd het "set-user-id bit" ervan ingesteld.
+Description-pt.UTF-8: A definição de capacidades para o dumpcap falhou
+ A tentativa de usar as capacidades Linux para atribuir privilégios de captura de pacotes ao dumpcap falhou. Em vez disso, definiu-se o bit "set-user-id".
+Description-ru.UTF-8: Ошибка при назначении мандатов файлу dumpcap
+ При попытке использования мандатов Linux для предоставления прав захвата пакетов исполняемому файлу dumpcap возникли ошибки. Вместо мандатов задействован бит set-user-id.
+
+Template: wireshark-common/group-removal-failed
+Type: error
+Description: Removal of the wireshark group failed
+ When the wireshark-common package is configured to allow
+ non-superusers to capture packets the postinst script of
+ wireshark-common creates the wireshark group as a system group.
+ .
+ However, on this system the wireshark group is a user group instead of
+ being a system group, so purging wireshark-common did not remove it.
+ .
+ If the group is no longer needed, please remove it manually.
+Description-de.UTF-8: Entfernen der Gruppe wireshark fehlgeschlagen
+ Wird das Paket wireshark-common konfiguriert, um nicht-Root-Benutzern zu erlauben, Pakete mitzuschreiben, dann erstellt das Skript postinst von wireshark-common die Gruppe wireshark als Systemgruppe.
+ .
+ Auf diesem System ist die Gruppe wireshark allerdings eine Benutzer- statt eine Systemgruppe, daher hat das endgültige Löschen von wireshark-common diese nicht entfernt.
+ .
+ Falls die Gruppe nicht mehr benötigt wird, entfernen Sie sie bitte manuell.
+Description-nl.UTF-8: Het verwijderen van de groep wireshark is mislukt
+ Als het pakket wireshark-common geconfigureerd wordt om niet-systeembeheerders pakketten te laten onderscheppen, maakt het postinst-script van wireshark-common de groep wireshark aan als een systeemgroep.
+ .
+ Echter, op dit systeem is de groep wireshark een gebruikersgroep in plaats van een systeemgroep. Daarom heeft het wissen van wireshark-common die niet verwijderd.
+ .
+ Als de groep niet langer nodig is, verwijder hem dan handmatig.
+Description-pt.UTF-8: A remoção do grupo "wireshark" falhou
+ Quando o pacote wireshark-common está configurado para permitir a captura de pacotes por utilizadores não privilegiados o script postinst do wireshark-common cria o grupo "wireshark" como grupo do sistema.
+ .
+ No entanto, neste sistema, o grupo "wireshark" é um grupo de utilizador e não do sistema, portanto a purga do wireshark-common não o removeu.
+ .
+ Se o grupo já não é necessário, remova-o manualmente, por favor.
+Description-ru.UTF-8: Произошла ошибка при попытке удаления группы wireshark
+ Если пакет wireshark-common был настроен таким образом, чтобы разрешить не-суперпользователям захватывать пакеты, послеустановочный сценарий создаёт группу wireshark как системную группу.
+ .
+ Однако, на этой системе группа wireshark является пользовательской группой взамен должной быть системной группы, поэтому при вычистке файлов настройки wireshark-common она удалена не будет.
+ .
+ Если группа больше не нужна, удалите её вручную.

@@ -1,0 +1,102 @@
+Package: chromium-widevine
+Description-md5: 60e079b5e9ae5f10d4e1427b75fdb172
+Description-en: web browser - widevine content decryption support
+ Web browser that aims to build a safer, faster, and more stable internet
+ browsing experience.
+ .
+ This package provides support for the widevine content decryption module.
+
+Package: python-django-anymail
+Description-md5: 4a3d34c6b1fbe84cfad7a22770f68fcf
+Description-en: Django email backend for multiple ESPs (Python 2)
+ Anymail integrates several transactional email service providers (ESPs) into
+ Django, with a consistent API that lets you use ESP-added features without
+ locking your code to a particular ESP.
+ .
+ It currently fully supports Mailgun, Postmark, SendGrid, and SparkPost, and
+ has limited support for Mandrill.
+ .
+ Anymail normalizes ESP functionality so it "just works" with Django's
+ built-in `django.core.mail` package. It includes:
+ .
+   * Support for HTML, attachments, extra headers, and other features of
+     Django's built-in email
+   * Extensions that make it easy to use extra ESP functionality, like tags,
+     metadata, and tracking, with code that's portable between ESPs
+   * Simplified inline images for HTML email
+   * Normalized sent-message status and tracking notification, by connecting
+     your ESP's webhooks to Django signals
+   * "Batch transactional" sends using your ESP's merge and template features
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-django-anymail
+Description-md5: 94386227056ae46f702707d94be8a717
+Description-en: Django email backend for multiple ESPs (Python 3)
+ Anymail integrates several transactional email service providers (ESPs) into
+ Django, with a consistent API that lets you use ESP-added features without
+ locking your code to a particular ESP.
+ .
+ It currently fully supports Mailgun, Postmark, SendGrid, and SparkPost, and
+ has limited support for Mandrill.
+ .
+ Anymail normalizes ESP functionality so it "just works" with Django's
+ built-in `django.core.mail` package. It includes:
+ .
+   * Support for HTML, attachments, extra headers, and other features of
+     Django's built-in email
+   * Extensions that make it easy to use extra ESP functionality, like tags,
+     metadata, and tracking, with code that's portable between ESPs
+   * Simplified inline images for HTML email
+   * Normalized sent-message status and tracking notification, by connecting
+     your ESP's webhooks to Django signals
+   * "Batch transactional" sends using your ESP's merge and template features
+ .
+ This is the Python 3 version of the package.
+
+Package: rtcw
+Description-md5: b0b1c16df93826196035daa4288b4987
+Description-en: game engine for Return to Castle Wolfenstein
+ Return to Castle Wolfenstein is a military- and occult-themed first-person
+ shooter game in a Second World War setting, originally released in 2001.
+ It is a sequel to Wolfenstein 3D, which is also available for Debian
+ (in the wolf4sdl package).
+ .
+ This package contains the iortcw game engines for the single-player campaign
+ and multiplayer, based on ioquake3 and the GPL source releases of RTCW.
+ .
+ For security reasons, this version has been modified to prevent native
+ executable code from being unpacked from game packages (PK3 files).
+ Some game modifications will not work as a result of this change.
+ .
+ Return to Castle Wolfenstein requires non-distributable game data files
+ in the rtcw-data package, prepared using the game-data-packager tool.
+
+Package: rtcw-common
+Description-md5: 08a6eb6fc05c5aba9bb913d30587c612
+Description-en: common files for Return to Castle Wolfenstein
+ Return to Castle Wolfenstein is a military- and occult-themed first-person
+ shooter game in a Second World War setting, originally released in 2001.
+ It is a sequel to Wolfenstein 3D, which is also available for Debian
+ (in the wolf4sdl package).
+ .
+ This package contains files shared by the game and the dedicated server.
+ It requires non-distributable game data files from the rtcw-data package,
+ which can be prepared using the game-data-packager tool.
+
+Package: rtcw-server
+Description-md5: d3756cb8ff76af7f83fdf3421c74ca3b
+Description-en: standalone server for Return to Castle Wolfenstein
+ Return to Castle Wolfenstein is a military- and occult-themed first-person
+ shooter game in a Second World War setting, originally released in 2001.
+ It is a sequel to Wolfenstein 3D, which is also available for Debian
+ (in the wolf4sdl package).
+ .
+ This package contains the iortcw dedicated server for multiplayer,
+ based on ioquake3 and the GPL source releases of RTCW. It also contains
+ the init script and systemd unit to start the RTCW server, with support
+ for multiple server instances under systemd.
+ .
+ Return to Castle Wolfenstein requires non-distributable game data files
+ from the rtcw-data package, prepared using the game-data-packager tool.
+

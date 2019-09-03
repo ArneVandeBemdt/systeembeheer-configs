@@ -1,0 +1,448 @@
+Package: git-man
+Architecture: amd64
+Auto-Installed: 1
+
+Package: rsync
+Architecture: amd64
+Auto-Installed: 1
+
+Package: patch
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liberror-perl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libpam-cap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: monitoring-plugins-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libcap2-bin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: distro-info-data
+Architecture: amd64
+Auto-Installed: 1
+
+Package: lsb-release
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libopts25
+Architecture: amd64
+Auto-Installed: 1
+
+Package: gawk
+Architecture: amd64
+Auto-Installed: 1
+
+Package: psmisc
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libsigsegv2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-client
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libmecab2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnuma1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaio1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-community-server
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-community-client
+Architecture: amd64
+Auto-Installed: 1
+
+Package: mysql-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libatomic1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: dbconfig-mysql
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libbotan-1.10-1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libboost-program-options1.62.0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: dbconfig-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblua5.3-0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libmariadbclient18
+Architecture: amd64
+Auto-Installed: 1
+
+Package: pdns-backend-bind
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1-dbd-sqlite3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-data
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapr1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaprutil1-ldap
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblua5.2-0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-bin
+Architecture: amd64
+Auto-Installed: 1
+
+Package: apache2-utils
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-cli
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-opcache
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libmcrypt4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libltdl7
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-json
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-readline
+Architecture: amd64
+Auto-Installed: 1
+
+Package: php7.0-mcrypt
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libapache2-mod-php7.0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: zsh-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libaugeas0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.interface
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-configargparse
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-josepy
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-asn1crypto
+Architecture: amd64
+Auto-Installed: 1
+
+Package: certbot
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.hookable
+Architecture: amd64
+Auto-Installed: 1
+
+Package: augeas-lenses
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-pbr
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-idna
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-augeas
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.event
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-zope.component
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-mock
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-future
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-cryptography
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-cffi-backend
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-acme
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-configobj
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-pyicu
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-openssl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-rfc3339
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-requests-toolbelt
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-certbot-apache
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-certbot
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-tz
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-parsedatetime
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python3-setuptools
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libc-ares2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libsnappy1v5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwireshark11
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwiretap8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnl-genl-3-200
+Architecture: amd64
+Auto-Installed: 1
+
+Package: xdg-user-dirs
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwsutil9
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libtiff5
+Architecture: amd64
+Auto-Installed: 1
+
+Package: wireshark-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwscodecs2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libnl-3-200
+Architecture: amd64
+Auto-Installed: 1
+
+Package: shared-mime-info
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libssh-gcrypt-4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libglib2.0-data
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libspandsp2
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjbig0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libpcap0.8
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libwireshark-data
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libglib2.0-0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libjpeg62-turbo
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libsbc1
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libsmi2ldbl
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-webencodings
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-six
+Architecture: amd64
+Auto-Installed: 1
+
+Package: liblinear3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-chardet
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libquadmath0
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-lxml
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libblas-common
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libgfortran3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-pkg-resources
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-html5lib
+Architecture: amd64
+Auto-Installed: 1
+
+Package: python-bs4
+Architecture: amd64
+Auto-Installed: 1
+
+Package: ndiff
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libblas3
+Architecture: amd64
+Auto-Installed: 1
+
+Package: libxslt1.1
+Architecture: amd64
+Auto-Installed: 1
+

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+set -e
+
+templdir=/usr/share/monitoring-plugins/templates-basic
+. /usr/share/monitoring-plugins/dpkg/functions
+plugindir=/usr/lib/nagios/plugins/
+
+if [ "$1" = "configure" ]; then
+	register_cfgs $2
+
+	# If we have setcap is installed, try setting cap_net_raw+ep,
+	# which allows us to make our binaries working without the
+        # setuid bit
+	if command -v setcap > /dev/null; then
+		if setcap "cap_net_raw+ep" ${plugindir}/check_icmp "cap_net_bind_service=+ep cap_net_raw=+ep" ${plugindir}/check_dhcp; then
+			echo "Setcap for check_icmp and check_dhcp worked!"
+		else
+			echo "Setcap for check_icmp and check_dhcp failed." >&2
+			echo "Please refer README.Debian.gz for using plugins needing" >&2
+			echo "higher privileges!" >&2
+		fi
+	else
+		echo "Setcap is not installed, please refer README.Debian.gz for using" >&2
+		echo "plugins needing higher privileges!" >&2
+	fi
+fi
+
+

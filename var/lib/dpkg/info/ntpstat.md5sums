@@ -1,0 +1,5 @@
+1c1aba898956825c28a06737f915c6f2  usr/bin/ntpstat
+b61c6e6d8298929f8517c3fac80b86bc  usr/share/doc/ntpstat/changelog.Debian.amd64.gz
+ead216fab3f36e2504e2e9fdaecf9fa8  usr/share/doc/ntpstat/changelog.Debian.gz
+ac6940afba7e120ef26603224af7299c  usr/share/doc/ntpstat/copyright
+3bb04adf52fc328c27cf61bb1f232e8e  usr/share/man/man1/ntpstat.1.gz

@@ -1,0 +1,5 @@
+58136fea2eb762aa999df67f9ef33e44  usr/lib/php/20151012/opcache.so
+7074ef4e0110909dc8c05ebd7ddf9921  usr/share/bug/php7.0-opcache/control
+935e35ae36392a7f7fb73d53805da828  usr/share/bug/php7.0-opcache/script
+c22d311de5ffcd5bec084c519037fb81  usr/share/lintian/overrides/php7.0-opcache
+11686c89e38e05a6c1ef41c186588b21  usr/share/php7.0-opcache/opcache/opcache.ini

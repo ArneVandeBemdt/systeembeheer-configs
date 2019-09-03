@@ -1,0 +1,13 @@
+-- Deployed ACME Certificate --
+(autosave)(autosave)(autosave)Changed vhost at /etc/apache2/sites-enabled/000-default-le-ssl.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem
+(autosave)(autosave)(autosave)Changed vhost at /etc/apache2/sites-enabled/secure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem
+(autosave)(autosave)(autosave)Changed vhost at /etc/apache2/sites-enabled/supersecure.arne-vandebemdt.sb.uclllabs.be.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem

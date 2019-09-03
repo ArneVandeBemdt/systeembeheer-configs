@@ -1,0 +1,5 @@
+
+Start-Date: 2019-09-03  06:39:31
+Commandline: /usr/bin/unattended-upgrade
+Upgrade: libnghttp2-14:amd64 (1.18.1-1, 1.18.1-1+deb9u1)
+End-Date: 2019-09-03  06:39:31

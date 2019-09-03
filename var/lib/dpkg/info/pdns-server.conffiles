@@ -1,0 +1,3 @@
+/etc/default/pdns
+/etc/init.d/pdns
+/etc/powerdns/pdns.conf

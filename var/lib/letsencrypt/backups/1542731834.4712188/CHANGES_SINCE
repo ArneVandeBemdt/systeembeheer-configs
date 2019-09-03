@@ -1,0 +1,21 @@
+-- Deployed ACME Certificate --
+Created ssl vhost at /etc/apache2/sites-available/000-default-le-ssl.conf
+Enabled socache_shmcb module in Apache
+Enabled ssl module in Apache
+(autosave)Enabled site /etc/apache2/sites-available/000-default-le-ssl.conf
+Changed vhost at /etc/apache2/sites-available/000-default-le-ssl.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem
+Created ssl vhost at /etc/apache2/sites-available/secure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf
+(autosave)Enabled site /etc/apache2/sites-available/secure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf
+Changed vhost at /etc/apache2/sites-available/secure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem
+Created ssl vhost at /etc/apache2/sites-available/supersecure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf
+(autosave)Enabled site /etc/apache2/sites-available/supersecure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf
+Changed vhost at /etc/apache2/sites-available/supersecure.arne-vandebemdt.sb.uclllabs.be-le-ssl.conf with addresses of *:443
+	SSLCertificateFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+	SSLCertificateKeyFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+	SSLCertificateChainFile /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem

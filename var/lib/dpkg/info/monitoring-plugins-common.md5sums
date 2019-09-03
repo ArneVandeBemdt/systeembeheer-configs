@@ -1,0 +1,15 @@
+74cde19269aa92f44d44edea0e674e70  usr/lib/nagios/plugins/negate
+bf3e8eea6596873385d64148ffb45a62  usr/lib/nagios/plugins/urlize
+0dbd7aa90ca93d156a0f128bdc6a26bb  usr/lib/nagios/plugins/utils.pm
+e5f20e624821e1cd1d59a077762019ad  usr/lib/nagios/plugins/utils.sh
+cd7734c6d891091d1753de89ea3d2119  usr/share/doc/monitoring-plugins-common/FAQ
+db4b2579be0a8f8dc067383995d13c48  usr/share/doc/monitoring-plugins-common/NEWS.Debian.gz
+693b254c07ab43d97f558f6b0b31a841  usr/share/doc/monitoring-plugins-common/NEWS.gz
+4737cff17c0e53f707184a09eb52c524  usr/share/doc/monitoring-plugins-common/README
+b70074fa88aeae5dd59146d80b457b4c  usr/share/doc/monitoring-plugins-common/README.Debian.gz
+47b9ccffd0cbcca039ab97b08a98111f  usr/share/doc/monitoring-plugins-common/REQUIREMENTS
+08eb7256f5a35fa85828f45833695039  usr/share/doc/monitoring-plugins-common/SUPPORT
+107be6a034053163073beec04d5ff065  usr/share/doc/monitoring-plugins-common/changelog.Debian.gz
+709c389b3ea91987932eb6a2a5048ba1  usr/share/doc/monitoring-plugins-common/changelog.gz
+42dd7f7e3bf8469a66b920982db0c4c7  usr/share/doc/monitoring-plugins-common/copyright
+e2860c9a8b66fa2d565bfd14ec4ed2e5  usr/share/monitoring-plugins/dpkg/functions

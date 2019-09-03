@@ -1,0 +1,14 @@
+# renew_before_expiry = 30 days
+version = 0.28.0
+archive_dir = /etc/letsencrypt/archive/arne-vandebemdt.sb.uclllabs.be
+cert = /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/cert.pem
+privkey = /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/privkey.pem
+chain = /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/chain.pem
+fullchain = /etc/letsencrypt/live/arne-vandebemdt.sb.uclllabs.be/fullchain.pem
+
+# Options used in the renewal process
+[renewalparams]
+installer = apache
+account = 70cf206806a56fea568d7a74e2c1188c
+server = https://acme-v02.api.letsencrypt.org/directory
+authenticator = apache

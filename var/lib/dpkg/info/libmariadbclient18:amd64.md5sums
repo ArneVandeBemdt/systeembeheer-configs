@@ -1,0 +1,7 @@
+94705e42bd0536ffabb47f7a7eeea452  usr/lib/x86_64-linux-gnu/libmariadbclient.so.18.0.0
+aa8befae8876457591f07a0ec115f371  usr/lib/x86_64-linux-gnu/mariadb18/plugin/client_ed25519.so
+b1b50d964fda0c550468a8b0611cc8be  usr/lib/x86_64-linux-gnu/mariadb18/plugin/dialog.so
+2f9ce79619de819d5a2e7098aef3c790  usr/lib/x86_64-linux-gnu/mariadb18/plugin/disks.so
+7b1ddc8d1e5d34f4cd84386799d7f136  usr/lib/x86_64-linux-gnu/mariadb18/plugin/mysql_clear_password.so
+9bacfaf09dbf5866beaa55bca8d6a97a  usr/share/doc/libmariadbclient18/changelog.Debian.gz
+9d019944f85863f04c494778ecd24689  usr/share/doc/libmariadbclient18/copyright

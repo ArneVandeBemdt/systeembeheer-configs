@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    ServerAdmin admin@mail.arne-vandebemdt.sb.uclllabs.be
+    ServerName www1.arne-vandebemdt.sb.uclllabs.be
+    DocumentRoot /var/www/www1.arne-vandebemdt.sb.uclllabs.be/html
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>

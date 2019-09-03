@@ -1,0 +1,1437 @@
+Sep  3 06:03:02 arne-vandebemdt liblogging-stdlog:  [origin software="rsyslogd" swVersion="8.24.0" x-pid="83" x-info="http://www.rsyslog.com"] rsyslogd was HUPed
+Sep  3 06:03:50 arne-vandebemdt pdns_server[710]: Sep 03 06:03:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:03:53 arne-vandebemdt pdns_server[710]: Sep 03 06:03:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:04:53 arne-vandebemdt pdns_server[710]: Sep 03 06:04:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:04:56 arne-vandebemdt pdns_server[710]: Sep 03 06:04:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:05:56 arne-vandebemdt pdns_server[710]: Sep 03 06:05:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:05:59 arne-vandebemdt pdns_server[710]: Sep 03 06:05:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:06:59 arne-vandebemdt pdns_server[710]: Sep 03 06:06:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:07:02 arne-vandebemdt pdns_server[710]: Sep 03 06:07:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:08:02 arne-vandebemdt pdns_server[710]: Sep 03 06:08:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:08:05 arne-vandebemdt pdns_server[710]: Sep 03 06:08:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:09:01 arne-vandebemdt CRON[33036]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 06:09:05 arne-vandebemdt pdns_server[710]: Sep 03 06:09:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:09:08 arne-vandebemdt pdns_server[710]: Sep 03 06:09:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 06:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 06:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 06:10:08 arne-vandebemdt pdns_server[710]: Sep 03 06:10:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:10:11 arne-vandebemdt pdns_server[710]: Sep 03 06:10:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:11:11 arne-vandebemdt pdns_server[710]: Sep 03 06:11:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:11:14 arne-vandebemdt pdns_server[710]: Sep 03 06:11:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:12:14 arne-vandebemdt pdns_server[710]: Sep 03 06:12:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:12:17 arne-vandebemdt pdns_server[710]: Sep 03 06:12:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:13:17 arne-vandebemdt pdns_server[710]: Sep 03 06:13:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:13:20 arne-vandebemdt pdns_server[710]: Sep 03 06:13:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:14:20 arne-vandebemdt pdns_server[710]: Sep 03 06:14:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:14:23 arne-vandebemdt pdns_server[710]: Sep 03 06:14:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:15:01 arne-vandebemdt CRON[33087]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 06:15:01 arne-vandebemdt CRON[33088]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 06:15:01 arne-vandebemdt postfix/pickup[29092]: 6FB2280AFF: uid=0 from=<root>
+Sep  3 06:15:01 arne-vandebemdt postfix/cleanup[33102]: 6FB2280AFF: message-id=<20190903041501.6FB2280AFF@arne-vandebemdt.localdomain>
+Sep  3 06:15:01 arne-vandebemdt postfix/qmgr[555]: 6FB2280AFF: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 06:15:01 arne-vandebemdt postfix/local[33123]: 6FB2280AFF: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 06:15:01 arne-vandebemdt postfix/qmgr[555]: 6FB2280AFF: removed
+Sep  3 06:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 06:15:23 arne-vandebemdt pdns_server[710]: Sep 03 06:15:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:15:26 arne-vandebemdt pdns_server[710]: Sep 03 06:15:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:16:26 arne-vandebemdt pdns_server[710]: Sep 03 06:16:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:16:29 arne-vandebemdt pdns_server[710]: Sep 03 06:16:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:17:29 arne-vandebemdt pdns_server[710]: Sep 03 06:17:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:17:32 arne-vandebemdt pdns_server[710]: Sep 03 06:17:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:18:32 arne-vandebemdt pdns_server[710]: Sep 03 06:18:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:18:35 arne-vandebemdt pdns_server[710]: Sep 03 06:18:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:19:35 arne-vandebemdt pdns_server[710]: Sep 03 06:19:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:19:38 arne-vandebemdt pdns_server[710]: Sep 03 06:19:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:20:38 arne-vandebemdt pdns_server[710]: Sep 03 06:20:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:20:41 arne-vandebemdt pdns_server[710]: Sep 03 06:20:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:21:41 arne-vandebemdt pdns_server[710]: Sep 03 06:21:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:21:44 arne-vandebemdt pdns_server[710]: Sep 03 06:21:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:22:44 arne-vandebemdt pdns_server[710]: Sep 03 06:22:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:22:47 arne-vandebemdt pdns_server[710]: Sep 03 06:22:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:23:01 arne-vandebemdt CRON[34004]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 06:23:47 arne-vandebemdt pdns_server[710]: Sep 03 06:23:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:23:50 arne-vandebemdt pdns_server[710]: Sep 03 06:23:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:24:50 arne-vandebemdt pdns_server[710]: Sep 03 06:24:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:24:53 arne-vandebemdt pdns_server[710]: Sep 03 06:24:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:25:53 arne-vandebemdt pdns_server[710]: Sep 03 06:25:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:25:56 arne-vandebemdt pdns_server[710]: Sep 03 06:25:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:26:56 arne-vandebemdt pdns_server[710]: Sep 03 06:26:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:26:59 arne-vandebemdt pdns_server[710]: Sep 03 06:26:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:27:59 arne-vandebemdt pdns_server[710]: Sep 03 06:27:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:28:02 arne-vandebemdt pdns_server[710]: Sep 03 06:28:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:29:02 arne-vandebemdt pdns_server[710]: Sep 03 06:29:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:29:05 arne-vandebemdt pdns_server[710]: Sep 03 06:29:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:30:01 arne-vandebemdt CRON[34008]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 06:30:01 arne-vandebemdt CRON[34009]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 06:30:01 arne-vandebemdt postfix/pickup[29092]: 71C0180AFF: uid=0 from=<root>
+Sep  3 06:30:01 arne-vandebemdt postfix/cleanup[34022]: 71C0180AFF: message-id=<20190903043001.71C0180AFF@arne-vandebemdt.localdomain>
+Sep  3 06:30:01 arne-vandebemdt postfix/qmgr[555]: 71C0180AFF: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 06:30:01 arne-vandebemdt postfix/local[34041]: 71C0180AFF: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 06:30:01 arne-vandebemdt postfix/qmgr[555]: 71C0180AFF: removed
+Sep  3 06:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 06:30:05 arne-vandebemdt pdns_server[710]: Sep 03 06:30:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:30:08 arne-vandebemdt pdns_server[710]: Sep 03 06:30:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:31:08 arne-vandebemdt pdns_server[710]: Sep 03 06:31:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:31:11 arne-vandebemdt pdns_server[710]: Sep 03 06:31:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:32:11 arne-vandebemdt pdns_server[710]: Sep 03 06:32:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:32:14 arne-vandebemdt pdns_server[710]: Sep 03 06:32:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:33:14 arne-vandebemdt pdns_server[710]: Sep 03 06:33:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:33:17 arne-vandebemdt pdns_server[710]: Sep 03 06:33:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:34:17 arne-vandebemdt pdns_server[710]: Sep 03 06:34:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:34:20 arne-vandebemdt pdns_server[710]: Sep 03 06:34:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:35:20 arne-vandebemdt pdns_server[710]: Sep 03 06:35:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:35:23 arne-vandebemdt pdns_server[710]: Sep 03 06:35:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:36:23 arne-vandebemdt pdns_server[710]: Sep 03 06:36:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:36:26 arne-vandebemdt pdns_server[710]: Sep 03 06:36:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:37:26 arne-vandebemdt pdns_server[710]: Sep 03 06:37:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:37:29 arne-vandebemdt pdns_server[710]: Sep 03 06:37:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:38:29 arne-vandebemdt pdns_server[710]: Sep 03 06:38:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:38:32 arne-vandebemdt pdns_server[710]: Sep 03 06:38:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:39:01 arne-vandebemdt CRON[34925]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 06:39:21 arne-vandebemdt systemd[1]: apt-daily-upgrade.service: Failed to reset devices.list: Operation not permitted
+Sep  3 06:39:21 arne-vandebemdt systemd[1]: Starting Daily apt upgrade and clean activities...
+Sep  3 06:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 06:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 06:39:22 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 06:39:31 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/ld.so.cache~)
+Sep  3 06:39:32 arne-vandebemdt pdns_server[710]: Sep 03 06:39:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:39:33 arne-vandebemdt systemd[1]: Started Daily apt upgrade and clean activities.
+Sep  3 06:39:33 arne-vandebemdt systemd[1]: apt-daily-upgrade.timer: Adding 1min 52.683653s random time.
+Sep  3 06:39:33 arne-vandebemdt systemd[1]: apt-daily-upgrade.timer: Adding 35min 48.763983s random time.
+Sep  3 06:39:35 arne-vandebemdt pdns_server[710]: Sep 03 06:39:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:40:35 arne-vandebemdt pdns_server[710]: Sep 03 06:40:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:40:38 arne-vandebemdt pdns_server[710]: Sep 03 06:40:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:41:38 arne-vandebemdt pdns_server[710]: Sep 03 06:41:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:41:41 arne-vandebemdt pdns_server[710]: Sep 03 06:41:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:42:41 arne-vandebemdt pdns_server[710]: Sep 03 06:42:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:42:44 arne-vandebemdt pdns_server[710]: Sep 03 06:42:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:43:44 arne-vandebemdt pdns_server[710]: Sep 03 06:43:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:43:47 arne-vandebemdt pdns_server[710]: Sep 03 06:43:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:44:47 arne-vandebemdt pdns_server[710]: Sep 03 06:44:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:44:50 arne-vandebemdt pdns_server[710]: Sep 03 06:44:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:45:01 arne-vandebemdt CRON[35079]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 06:45:01 arne-vandebemdt CRON[35080]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 06:45:01 arne-vandebemdt postfix/pickup[29092]: 7415D800D9: uid=0 from=<root>
+Sep  3 06:45:01 arne-vandebemdt postfix/cleanup[35093]: 7415D800D9: message-id=<20190903044501.7415D800D9@arne-vandebemdt.localdomain>
+Sep  3 06:45:01 arne-vandebemdt postfix/qmgr[555]: 7415D800D9: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 06:45:01 arne-vandebemdt postfix/local[35113]: 7415D800D9: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 06:45:01 arne-vandebemdt postfix/qmgr[555]: 7415D800D9: removed
+Sep  3 06:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 06:45:50 arne-vandebemdt pdns_server[710]: Sep 03 06:45:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:45:53 arne-vandebemdt pdns_server[710]: Sep 03 06:45:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:46:53 arne-vandebemdt pdns_server[710]: Sep 03 06:46:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:46:56 arne-vandebemdt pdns_server[710]: Sep 03 06:46:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:47:56 arne-vandebemdt pdns_server[710]: Sep 03 06:47:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:47:59 arne-vandebemdt pdns_server[710]: Sep 03 06:47:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:48:59 arne-vandebemdt pdns_server[710]: Sep 03 06:48:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:49:02 arne-vandebemdt pdns_server[710]: Sep 03 06:49:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:50:02 arne-vandebemdt pdns_server[710]: Sep 03 06:50:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:50:05 arne-vandebemdt pdns_server[710]: Sep 03 06:50:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:51:05 arne-vandebemdt pdns_server[710]: Sep 03 06:51:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:51:08 arne-vandebemdt pdns_server[710]: Sep 03 06:51:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:52:08 arne-vandebemdt pdns_server[710]: Sep 03 06:52:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:52:11 arne-vandebemdt pdns_server[710]: Sep 03 06:52:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:53:11 arne-vandebemdt pdns_server[710]: Sep 03 06:53:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:53:14 arne-vandebemdt pdns_server[710]: Sep 03 06:53:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:54:14 arne-vandebemdt pdns_server[710]: Sep 03 06:54:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:54:17 arne-vandebemdt pdns_server[710]: Sep 03 06:54:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:55:17 arne-vandebemdt pdns_server[710]: Sep 03 06:55:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:55:20 arne-vandebemdt pdns_server[710]: Sep 03 06:55:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:56:20 arne-vandebemdt pdns_server[710]: Sep 03 06:56:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:56:23 arne-vandebemdt pdns_server[710]: Sep 03 06:56:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:57:23 arne-vandebemdt pdns_server[710]: Sep 03 06:57:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:57:26 arne-vandebemdt pdns_server[710]: Sep 03 06:57:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:58:26 arne-vandebemdt pdns_server[710]: Sep 03 06:58:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:58:29 arne-vandebemdt pdns_server[710]: Sep 03 06:58:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 06:59:29 arne-vandebemdt pdns_server[710]: Sep 03 06:59:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 06:59:32 arne-vandebemdt pdns_server[710]: Sep 03 06:59:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:00:01 arne-vandebemdt CRON[35998]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 07:00:01 arne-vandebemdt CRON[35999]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 07:00:01 arne-vandebemdt postfix/pickup[35995]: 719A8800D9: uid=0 from=<root>
+Sep  3 07:00:01 arne-vandebemdt postfix/cleanup[36013]: 719A8800D9: message-id=<20190903050001.719A8800D9@arne-vandebemdt.localdomain>
+Sep  3 07:00:01 arne-vandebemdt postfix/qmgr[555]: 719A8800D9: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 07:00:01 arne-vandebemdt postfix/local[36033]: 719A8800D9: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 07:00:01 arne-vandebemdt postfix/qmgr[555]: 719A8800D9: removed
+Sep  3 07:00:01 arne-vandebemdt systemd[1]: Started Session 513286 of user check.
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513292 of user check.
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513293 of user check.
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513294 of user check.
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513295 of user check.
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513296 of user check.
+Sep  3 07:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 07:00:02 arne-vandebemdt systemd[1]: Started Session 513297 of user check.
+Sep  3 07:00:03 arne-vandebemdt systemd[1]: Started Session 513298 of user check.
+Sep  3 07:00:03 arne-vandebemdt systemd[1]: Started Session 513299 of user check.
+Sep  3 07:00:03 arne-vandebemdt systemd[1]: Started Session 513300 of user check.
+Sep  3 07:00:03 arne-vandebemdt systemd[1]: Started Session 513301 of user check.
+Sep  3 07:00:32 arne-vandebemdt pdns_server[710]: Sep 03 07:00:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:00:35 arne-vandebemdt pdns_server[710]: Sep 03 07:00:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:01:35 arne-vandebemdt pdns_server[710]: Sep 03 07:01:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:01:38 arne-vandebemdt pdns_server[710]: Sep 03 07:01:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:02:38 arne-vandebemdt pdns_server[710]: Sep 03 07:02:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:02:41 arne-vandebemdt pdns_server[710]: Sep 03 07:02:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:03:41 arne-vandebemdt pdns_server[710]: Sep 03 07:03:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:03:44 arne-vandebemdt pdns_server[710]: Sep 03 07:03:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:04:44 arne-vandebemdt pdns_server[710]: Sep 03 07:04:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:04:47 arne-vandebemdt pdns_server[710]: Sep 03 07:04:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:05:47 arne-vandebemdt pdns_server[710]: Sep 03 07:05:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:05:50 arne-vandebemdt pdns_server[710]: Sep 03 07:05:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:06:50 arne-vandebemdt pdns_server[710]: Sep 03 07:06:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:06:53 arne-vandebemdt pdns_server[710]: Sep 03 07:06:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:07:53 arne-vandebemdt pdns_server[710]: Sep 03 07:07:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:07:56 arne-vandebemdt pdns_server[710]: Sep 03 07:07:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:08:56 arne-vandebemdt pdns_server[710]: Sep 03 07:08:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:08:59 arne-vandebemdt pdns_server[710]: Sep 03 07:08:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:09:01 arne-vandebemdt CRON[37008]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 07:09:01 arne-vandebemdt kernel: [8254060.547324] audit: type=1400 audit(1567487341.866:4227593): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2300_</var/lib/lxc>" name="/" pid=50096 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:03 arne-vandebemdt kernel: [8254062.265507] audit: type=1400 audit(1567487343.582:4227594): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2290_</var/lib/lxc>" name="/" pid=50642 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:06 arne-vandebemdt kernel: [8254065.558212] audit: type=1400 audit(1567487346.878:4227595): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2314_</var/lib/lxc>" name="/" pid=50819 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 07:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 07:09:21 arne-vandebemdt kernel: [8254080.426613] audit: type=1400 audit(1567487361.747:4227599): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2312_</var/lib/lxc>" name="/" pid=51284 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:21 arne-vandebemdt kernel: [8254080.433846] audit: type=1400 audit(1567487361.751:4227603): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2308_</var/lib/lxc>" name="/" pid=51289 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:21 arne-vandebemdt kernel: [8254080.436344] audit: type=1400 audit(1567487361.755:4227605): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2324_</var/lib/lxc>" name="/" pid=51287 comm="(ionclean)" flags="rw, rslave"
+Sep  3 07:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 07:09:59 arne-vandebemdt pdns_server[710]: Sep 03 07:09:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:10:02 arne-vandebemdt pdns_server[710]: Sep 03 07:10:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:11:02 arne-vandebemdt pdns_server[710]: Sep 03 07:11:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:11:05 arne-vandebemdt pdns_server[710]: Sep 03 07:11:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:12:05 arne-vandebemdt pdns_server[710]: Sep 03 07:12:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:12:08 arne-vandebemdt pdns_server[710]: Sep 03 07:12:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:13:08 arne-vandebemdt pdns_server[710]: Sep 03 07:13:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:13:11 arne-vandebemdt pdns_server[710]: Sep 03 07:13:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:14:11 arne-vandebemdt pdns_server[710]: Sep 03 07:14:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:14:14 arne-vandebemdt pdns_server[710]: Sep 03 07:14:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:15:01 arne-vandebemdt CRON[37059]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 07:15:01 arne-vandebemdt CRON[37060]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 07:15:01 arne-vandebemdt postfix/pickup[35995]: DAF59800D9: uid=0 from=<root>
+Sep  3 07:15:01 arne-vandebemdt postfix/cleanup[37072]: DAF59800D9: message-id=<20190903051501.DAF59800D9@arne-vandebemdt.localdomain>
+Sep  3 07:15:01 arne-vandebemdt postfix/qmgr[555]: DAF59800D9: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 07:15:01 arne-vandebemdt postfix/local[37096]: DAF59800D9: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.11, delays=0.07/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 07:15:01 arne-vandebemdt postfix/qmgr[555]: DAF59800D9: removed
+Sep  3 07:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 07:15:14 arne-vandebemdt pdns_server[710]: Sep 03 07:15:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:15:17 arne-vandebemdt pdns_server[710]: Sep 03 07:15:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:16:17 arne-vandebemdt pdns_server[710]: Sep 03 07:16:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:16:20 arne-vandebemdt pdns_server[710]: Sep 03 07:16:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:17:20 arne-vandebemdt pdns_server[710]: Sep 03 07:17:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:17:23 arne-vandebemdt pdns_server[710]: Sep 03 07:17:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:18:23 arne-vandebemdt pdns_server[710]: Sep 03 07:18:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:18:26 arne-vandebemdt pdns_server[710]: Sep 03 07:18:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:18:41 arne-vandebemdt kernel: [8254639.690665] EXT4-fs (loop13): error count since last fsck: 1
+Sep  3 07:19:26 arne-vandebemdt pdns_server[710]: Sep 03 07:19:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:19:29 arne-vandebemdt pdns_server[710]: Sep 03 07:19:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:20:29 arne-vandebemdt pdns_server[710]: Sep 03 07:20:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:20:32 arne-vandebemdt pdns_server[710]: Sep 03 07:20:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:21:32 arne-vandebemdt pdns_server[710]: Sep 03 07:21:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:21:35 arne-vandebemdt pdns_server[710]: Sep 03 07:21:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:22:35 arne-vandebemdt pdns_server[710]: Sep 03 07:22:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:22:38 arne-vandebemdt pdns_server[710]: Sep 03 07:22:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:23:01 arne-vandebemdt CRON[37977]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 07:23:38 arne-vandebemdt pdns_server[710]: Sep 03 07:23:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:23:41 arne-vandebemdt pdns_server[710]: Sep 03 07:23:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:24:41 arne-vandebemdt pdns_server[710]: Sep 03 07:24:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:24:44 arne-vandebemdt pdns_server[710]: Sep 03 07:24:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:25:44 arne-vandebemdt pdns_server[710]: Sep 03 07:25:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:25:47 arne-vandebemdt pdns_server[710]: Sep 03 07:25:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:26:47 arne-vandebemdt pdns_server[710]: Sep 03 07:26:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:26:50 arne-vandebemdt pdns_server[710]: Sep 03 07:26:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:27:50 arne-vandebemdt pdns_server[710]: Sep 03 07:27:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:27:53 arne-vandebemdt pdns_server[710]: Sep 03 07:27:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:28:53 arne-vandebemdt pdns_server[710]: Sep 03 07:28:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:28:56 arne-vandebemdt pdns_server[710]: Sep 03 07:28:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:29:56 arne-vandebemdt pdns_server[710]: Sep 03 07:29:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:29:59 arne-vandebemdt pdns_server[710]: Sep 03 07:29:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:30:01 arne-vandebemdt CRON[37981]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 07:30:01 arne-vandebemdt CRON[37982]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 07:30:01 arne-vandebemdt postfix/pickup[35995]: CD007800D9: uid=0 from=<root>
+Sep  3 07:30:01 arne-vandebemdt postfix/cleanup[37995]: CD007800D9: message-id=<20190903053001.CD007800D9@arne-vandebemdt.localdomain>
+Sep  3 07:30:01 arne-vandebemdt postfix/qmgr[555]: CD007800D9: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 07:30:01 arne-vandebemdt postfix/local[38015]: CD007800D9: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 07:30:01 arne-vandebemdt postfix/qmgr[555]: CD007800D9: removed
+Sep  3 07:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 07:31:00 arne-vandebemdt pdns_server[710]: Sep 03 07:30:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:31:03 arne-vandebemdt pdns_server[710]: Sep 03 07:31:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:32:03 arne-vandebemdt pdns_server[710]: Sep 03 07:32:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:32:06 arne-vandebemdt pdns_server[710]: Sep 03 07:32:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:33:06 arne-vandebemdt pdns_server[710]: Sep 03 07:33:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:33:09 arne-vandebemdt pdns_server[710]: Sep 03 07:33:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:34:09 arne-vandebemdt pdns_server[710]: Sep 03 07:34:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:34:12 arne-vandebemdt pdns_server[710]: Sep 03 07:34:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:35:12 arne-vandebemdt pdns_server[710]: Sep 03 07:35:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:35:15 arne-vandebemdt pdns_server[710]: Sep 03 07:35:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:36:15 arne-vandebemdt pdns_server[710]: Sep 03 07:36:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:36:18 arne-vandebemdt pdns_server[710]: Sep 03 07:36:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:37:18 arne-vandebemdt pdns_server[710]: Sep 03 07:37:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:37:21 arne-vandebemdt pdns_server[710]: Sep 03 07:37:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:38:21 arne-vandebemdt pdns_server[710]: Sep 03 07:38:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:38:24 arne-vandebemdt pdns_server[710]: Sep 03 07:38:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:39:01 arne-vandebemdt kernel: [8255860.002456] kauditd_printk_skb: 2 callbacks suppressed
+Sep  3 07:39:01 arne-vandebemdt CRON[38898]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 07:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 07:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 07:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 07:39:24 arne-vandebemdt pdns_server[710]: Sep 03 07:39:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:39:27 arne-vandebemdt pdns_server[710]: Sep 03 07:39:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:40:27 arne-vandebemdt pdns_server[710]: Sep 03 07:40:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:40:30 arne-vandebemdt pdns_server[710]: Sep 03 07:40:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:41:30 arne-vandebemdt pdns_server[710]: Sep 03 07:41:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:41:33 arne-vandebemdt pdns_server[710]: Sep 03 07:41:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:42:33 arne-vandebemdt pdns_server[710]: Sep 03 07:42:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:42:36 arne-vandebemdt pdns_server[710]: Sep 03 07:42:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:43:36 arne-vandebemdt pdns_server[710]: Sep 03 07:43:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:43:39 arne-vandebemdt pdns_server[710]: Sep 03 07:43:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:44:39 arne-vandebemdt pdns_server[710]: Sep 03 07:44:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:44:42 arne-vandebemdt pdns_server[710]: Sep 03 07:44:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:45:01 arne-vandebemdt CRON[38950]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 07:45:01 arne-vandebemdt CRON[38951]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 07:45:01 arne-vandebemdt postfix/pickup[35995]: B10718025C: uid=0 from=<root>
+Sep  3 07:45:01 arne-vandebemdt postfix/cleanup[38964]: B10718025C: message-id=<20190903054501.B10718025C@arne-vandebemdt.localdomain>
+Sep  3 07:45:01 arne-vandebemdt postfix/qmgr[555]: B10718025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 07:45:01 arne-vandebemdt postfix/local[38983]: B10718025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 07:45:01 arne-vandebemdt postfix/qmgr[555]: B10718025C: removed
+Sep  3 07:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 07:45:42 arne-vandebemdt pdns_server[710]: Sep 03 07:45:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:45:45 arne-vandebemdt pdns_server[710]: Sep 03 07:45:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:46:45 arne-vandebemdt pdns_server[710]: Sep 03 07:46:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:46:48 arne-vandebemdt pdns_server[710]: Sep 03 07:46:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:47:48 arne-vandebemdt pdns_server[710]: Sep 03 07:47:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:47:51 arne-vandebemdt pdns_server[710]: Sep 03 07:47:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:48:51 arne-vandebemdt pdns_server[710]: Sep 03 07:48:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:48:54 arne-vandebemdt pdns_server[710]: Sep 03 07:48:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:49:54 arne-vandebemdt pdns_server[710]: Sep 03 07:49:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:49:57 arne-vandebemdt pdns_server[710]: Sep 03 07:49:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:50:57 arne-vandebemdt pdns_server[710]: Sep 03 07:50:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:51:00 arne-vandebemdt pdns_server[710]: Sep 03 07:51:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:52:00 arne-vandebemdt pdns_server[710]: Sep 03 07:52:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:52:03 arne-vandebemdt pdns_server[710]: Sep 03 07:52:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:53:03 arne-vandebemdt pdns_server[710]: Sep 03 07:53:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:53:06 arne-vandebemdt pdns_server[710]: Sep 03 07:53:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:54:06 arne-vandebemdt pdns_server[710]: Sep 03 07:54:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:54:09 arne-vandebemdt pdns_server[710]: Sep 03 07:54:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:55:09 arne-vandebemdt pdns_server[710]: Sep 03 07:55:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:55:12 arne-vandebemdt pdns_server[710]: Sep 03 07:55:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:56:12 arne-vandebemdt pdns_server[710]: Sep 03 07:56:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:56:15 arne-vandebemdt pdns_server[710]: Sep 03 07:56:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:57:15 arne-vandebemdt pdns_server[710]: Sep 03 07:57:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:57:18 arne-vandebemdt pdns_server[710]: Sep 03 07:57:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:58:18 arne-vandebemdt pdns_server[710]: Sep 03 07:58:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:58:21 arne-vandebemdt pdns_server[710]: Sep 03 07:58:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 07:59:21 arne-vandebemdt pdns_server[710]: Sep 03 07:59:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 07:59:24 arne-vandebemdt pdns_server[710]: Sep 03 07:59:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:00:01 arne-vandebemdt systemd[1]: Started Session 513779 of user check.
+Sep  3 08:00:01 arne-vandebemdt CRON[39880]: (root) CMD (/usr/bin/rsync -a /etc/ r0664177@leia.uclllabs.be:~/backup/etc/ -e "ssh -p 22345")
+Sep  3 08:00:01 arne-vandebemdt CRON[39879]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 08:00:01 arne-vandebemdt CRON[39881]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 08:00:01 arne-vandebemdt systemd[1]: Started Session 513785 of user check.
+Sep  3 08:00:01 arne-vandebemdt postfix/pickup[35995]: 9EC848025C: uid=0 from=<root>
+Sep  3 08:00:01 arne-vandebemdt postfix/cleanup[39901]: 9EC848025C: message-id=<20190903060001.9EC848025C@arne-vandebemdt.localdomain>
+Sep  3 08:00:01 arne-vandebemdt postfix/qmgr[555]: 9EC848025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 08:00:01 arne-vandebemdt postfix/local[39909]: 9EC848025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.11, delays=0.08/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 08:00:01 arne-vandebemdt postfix/qmgr[555]: 9EC848025C: removed
+Sep  3 08:00:01 arne-vandebemdt systemd[1]: Started Session 513796 of user check.
+Sep  3 08:00:01 arne-vandebemdt systemd[1]: Started Session 513798 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513799 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513800 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513801 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513802 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513803 of user check.
+Sep  3 08:00:02 arne-vandebemdt systemd[1]: Started Session 513804 of user check.
+Sep  3 08:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 08:00:03 arne-vandebemdt systemd[1]: Started Session 513805 of user check.
+Sep  3 08:00:24 arne-vandebemdt pdns_server[710]: Sep 03 08:00:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:00:27 arne-vandebemdt pdns_server[710]: Sep 03 08:00:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:01:27 arne-vandebemdt pdns_server[710]: Sep 03 08:01:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:01:30 arne-vandebemdt pdns_server[710]: Sep 03 08:01:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:02:30 arne-vandebemdt pdns_server[710]: Sep 03 08:02:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:02:33 arne-vandebemdt pdns_server[710]: Sep 03 08:02:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:03:33 arne-vandebemdt pdns_server[710]: Sep 03 08:03:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:03:36 arne-vandebemdt pdns_server[710]: Sep 03 08:03:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:04:36 arne-vandebemdt pdns_server[710]: Sep 03 08:04:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:04:39 arne-vandebemdt pdns_server[710]: Sep 03 08:04:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:05:39 arne-vandebemdt pdns_server[710]: Sep 03 08:05:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:05:42 arne-vandebemdt pdns_server[710]: Sep 03 08:05:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:06:42 arne-vandebemdt pdns_server[710]: Sep 03 08:06:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:06:45 arne-vandebemdt pdns_server[710]: Sep 03 08:06:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:07:45 arne-vandebemdt pdns_server[710]: Sep 03 08:07:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:07:48 arne-vandebemdt pdns_server[710]: Sep 03 08:07:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:08:48 arne-vandebemdt pdns_server[710]: Sep 03 08:08:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:08:51 arne-vandebemdt pdns_server[710]: Sep 03 08:08:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:09:01 arne-vandebemdt CRON[40883]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 08:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 08:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 08:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 08:09:51 arne-vandebemdt pdns_server[710]: Sep 03 08:09:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:09:54 arne-vandebemdt pdns_server[710]: Sep 03 08:09:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:10:54 arne-vandebemdt pdns_server[710]: Sep 03 08:10:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:10:57 arne-vandebemdt pdns_server[710]: Sep 03 08:10:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:11:57 arne-vandebemdt pdns_server[710]: Sep 03 08:11:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:12:00 arne-vandebemdt pdns_server[710]: Sep 03 08:12:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:13:00 arne-vandebemdt pdns_server[710]: Sep 03 08:13:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:13:03 arne-vandebemdt pdns_server[710]: Sep 03 08:13:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:14:03 arne-vandebemdt pdns_server[710]: Sep 03 08:14:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:14:06 arne-vandebemdt pdns_server[710]: Sep 03 08:14:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:15:01 arne-vandebemdt CRON[40935]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 08:15:01 arne-vandebemdt CRON[40936]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 08:15:01 arne-vandebemdt postfix/pickup[35995]: 620958025C: uid=0 from=<root>
+Sep  3 08:15:01 arne-vandebemdt postfix/cleanup[40949]: 620958025C: message-id=<20190903061501.620958025C@arne-vandebemdt.localdomain>
+Sep  3 08:15:01 arne-vandebemdt postfix/qmgr[555]: 620958025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 08:15:01 arne-vandebemdt postfix/local[40965]: 620958025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 08:15:01 arne-vandebemdt postfix/qmgr[555]: 620958025C: removed
+Sep  3 08:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 08:15:06 arne-vandebemdt pdns_server[710]: Sep 03 08:15:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:15:09 arne-vandebemdt pdns_server[710]: Sep 03 08:15:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:16:09 arne-vandebemdt pdns_server[710]: Sep 03 08:16:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:16:12 arne-vandebemdt pdns_server[710]: Sep 03 08:16:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:17:12 arne-vandebemdt pdns_server[710]: Sep 03 08:17:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:17:15 arne-vandebemdt pdns_server[710]: Sep 03 08:17:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:18:15 arne-vandebemdt pdns_server[710]: Sep 03 08:18:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:18:18 arne-vandebemdt pdns_server[710]: Sep 03 08:18:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:19:18 arne-vandebemdt pdns_server[710]: Sep 03 08:19:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:19:21 arne-vandebemdt pdns_server[710]: Sep 03 08:19:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:20:21 arne-vandebemdt pdns_server[710]: Sep 03 08:20:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:20:24 arne-vandebemdt pdns_server[710]: Sep 03 08:20:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:21:24 arne-vandebemdt pdns_server[710]: Sep 03 08:21:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:21:27 arne-vandebemdt pdns_server[710]: Sep 03 08:21:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:22:27 arne-vandebemdt pdns_server[710]: Sep 03 08:22:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:22:30 arne-vandebemdt pdns_server[710]: Sep 03 08:22:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:23:01 arne-vandebemdt CRON[41853]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 08:23:30 arne-vandebemdt pdns_server[710]: Sep 03 08:23:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:23:33 arne-vandebemdt pdns_server[710]: Sep 03 08:23:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:24:33 arne-vandebemdt pdns_server[710]: Sep 03 08:24:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:24:36 arne-vandebemdt pdns_server[710]: Sep 03 08:24:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:25:36 arne-vandebemdt pdns_server[710]: Sep 03 08:25:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:25:39 arne-vandebemdt pdns_server[710]: Sep 03 08:25:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:26:39 arne-vandebemdt pdns_server[710]: Sep 03 08:26:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:26:42 arne-vandebemdt pdns_server[710]: Sep 03 08:26:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:27:42 arne-vandebemdt pdns_server[710]: Sep 03 08:27:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:27:45 arne-vandebemdt pdns_server[710]: Sep 03 08:27:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:28:45 arne-vandebemdt pdns_server[710]: Sep 03 08:28:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:28:48 arne-vandebemdt pdns_server[710]: Sep 03 08:28:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:29:48 arne-vandebemdt pdns_server[710]: Sep 03 08:29:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:29:51 arne-vandebemdt pdns_server[710]: Sep 03 08:29:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:30:01 arne-vandebemdt CRON[41857]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 08:30:01 arne-vandebemdt CRON[41858]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 08:30:01 arne-vandebemdt postfix/pickup[41851]: 6B67C8025C: uid=0 from=<root>
+Sep  3 08:30:01 arne-vandebemdt postfix/cleanup[41871]: 6B67C8025C: message-id=<20190903063001.6B67C8025C@arne-vandebemdt.localdomain>
+Sep  3 08:30:01 arne-vandebemdt postfix/qmgr[555]: 6B67C8025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 08:30:01 arne-vandebemdt postfix/local[41907]: 6B67C8025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.06/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 08:30:01 arne-vandebemdt postfix/qmgr[555]: 6B67C8025C: removed
+Sep  3 08:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 08:30:51 arne-vandebemdt pdns_server[710]: Sep 03 08:30:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:30:54 arne-vandebemdt pdns_server[710]: Sep 03 08:30:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:31:54 arne-vandebemdt pdns_server[710]: Sep 03 08:31:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:31:57 arne-vandebemdt pdns_server[710]: Sep 03 08:31:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:32:57 arne-vandebemdt pdns_server[710]: Sep 03 08:32:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:33:00 arne-vandebemdt pdns_server[710]: Sep 03 08:33:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:34:00 arne-vandebemdt pdns_server[710]: Sep 03 08:34:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:34:03 arne-vandebemdt pdns_server[710]: Sep 03 08:34:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:35:03 arne-vandebemdt pdns_server[710]: Sep 03 08:35:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:35:06 arne-vandebemdt pdns_server[710]: Sep 03 08:35:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:36:06 arne-vandebemdt pdns_server[710]: Sep 03 08:36:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:36:09 arne-vandebemdt pdns_server[710]: Sep 03 08:36:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:37:09 arne-vandebemdt pdns_server[710]: Sep 03 08:37:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:37:12 arne-vandebemdt pdns_server[710]: Sep 03 08:37:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:38:12 arne-vandebemdt pdns_server[710]: Sep 03 08:38:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:38:15 arne-vandebemdt pdns_server[710]: Sep 03 08:38:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:39:01 arne-vandebemdt CRON[42774]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 08:39:15 arne-vandebemdt pdns_server[710]: Sep 03 08:39:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:39:18 arne-vandebemdt pdns_server[710]: Sep 03 08:39:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 08:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 08:39:21 arne-vandebemdt kernel: [8259480.395539] audit: type=1400 audit(1567492761.748:4227653): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2313_</var/lib/lxc>" name="/" pid=36477 comm="(ionclean)" flags="rw, rslave"
+Sep  3 08:39:21 arne-vandebemdt kernel: [8259480.398311] audit: type=1400 audit(1567492761.752:4227654): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2232_</var/lib/lxc>" name="/" pid=36487 comm="(ionclean)" flags="rw, rslave"
+Sep  3 08:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 08:40:18 arne-vandebemdt pdns_server[710]: Sep 03 08:40:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:40:21 arne-vandebemdt pdns_server[710]: Sep 03 08:40:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:41:21 arne-vandebemdt pdns_server[710]: Sep 03 08:41:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:41:24 arne-vandebemdt pdns_server[710]: Sep 03 08:41:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:42:24 arne-vandebemdt pdns_server[710]: Sep 03 08:42:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:42:27 arne-vandebemdt pdns_server[710]: Sep 03 08:42:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:43:27 arne-vandebemdt pdns_server[710]: Sep 03 08:43:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:43:30 arne-vandebemdt pdns_server[710]: Sep 03 08:43:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:44:30 arne-vandebemdt pdns_server[710]: Sep 03 08:44:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:44:33 arne-vandebemdt pdns_server[710]: Sep 03 08:44:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:45:01 arne-vandebemdt CRON[42826]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 08:45:01 arne-vandebemdt CRON[42827]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 08:45:01 arne-vandebemdt postfix/pickup[41851]: 61FD48025C: uid=0 from=<root>
+Sep  3 08:45:01 arne-vandebemdt postfix/cleanup[42840]: 61FD48025C: message-id=<20190903064501.61FD48025C@arne-vandebemdt.localdomain>
+Sep  3 08:45:01 arne-vandebemdt postfix/qmgr[555]: 61FD48025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 08:45:01 arne-vandebemdt postfix/local[42861]: 61FD48025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 08:45:01 arne-vandebemdt postfix/qmgr[555]: 61FD48025C: removed
+Sep  3 08:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 08:45:33 arne-vandebemdt pdns_server[710]: Sep 03 08:45:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:45:36 arne-vandebemdt pdns_server[710]: Sep 03 08:45:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:46:36 arne-vandebemdt pdns_server[710]: Sep 03 08:46:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:46:39 arne-vandebemdt pdns_server[710]: Sep 03 08:46:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:47:39 arne-vandebemdt pdns_server[710]: Sep 03 08:47:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:47:42 arne-vandebemdt pdns_server[710]: Sep 03 08:47:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:48:42 arne-vandebemdt pdns_server[710]: Sep 03 08:48:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:48:45 arne-vandebemdt pdns_server[710]: Sep 03 08:48:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:49:45 arne-vandebemdt pdns_server[710]: Sep 03 08:49:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:49:48 arne-vandebemdt pdns_server[710]: Sep 03 08:49:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:50:48 arne-vandebemdt pdns_server[710]: Sep 03 08:50:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:50:51 arne-vandebemdt pdns_server[710]: Sep 03 08:50:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:51:51 arne-vandebemdt pdns_server[710]: Sep 03 08:51:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:51:54 arne-vandebemdt pdns_server[710]: Sep 03 08:51:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:52:54 arne-vandebemdt pdns_server[710]: Sep 03 08:52:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:52:57 arne-vandebemdt pdns_server[710]: Sep 03 08:52:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:53:57 arne-vandebemdt pdns_server[710]: Sep 03 08:53:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:54:00 arne-vandebemdt pdns_server[710]: Sep 03 08:54:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:55:00 arne-vandebemdt pdns_server[710]: Sep 03 08:55:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:55:03 arne-vandebemdt pdns_server[710]: Sep 03 08:55:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:56:04 arne-vandebemdt pdns_server[710]: Sep 03 08:56:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:56:07 arne-vandebemdt pdns_server[710]: Sep 03 08:56:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:57:07 arne-vandebemdt pdns_server[710]: Sep 03 08:57:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:57:10 arne-vandebemdt pdns_server[710]: Sep 03 08:57:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:58:10 arne-vandebemdt pdns_server[710]: Sep 03 08:58:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:58:13 arne-vandebemdt pdns_server[710]: Sep 03 08:58:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 08:59:13 arne-vandebemdt pdns_server[710]: Sep 03 08:59:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 08:59:16 arne-vandebemdt pdns_server[710]: Sep 03 08:59:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:00:01 arne-vandebemdt CRON[43744]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 09:00:01 arne-vandebemdt CRON[43745]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 09:00:01 arne-vandebemdt postfix/pickup[41851]: 57CA28025C: uid=0 from=<root>
+Sep  3 09:00:01 arne-vandebemdt postfix/cleanup[43758]: 57CA28025C: message-id=<20190903070001.57CA28025C@arne-vandebemdt.localdomain>
+Sep  3 09:00:01 arne-vandebemdt postfix/qmgr[555]: 57CA28025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 09:00:01 arne-vandebemdt postfix/local[43765]: 57CA28025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 09:00:01 arne-vandebemdt postfix/qmgr[555]: 57CA28025C: removed
+Sep  3 09:00:01 arne-vandebemdt systemd[1]: Started Session 514185 of user check.
+Sep  3 09:00:01 arne-vandebemdt systemd[1]: Started Session 514189 of user check.
+Sep  3 09:00:01 arne-vandebemdt systemd[1]: Started Session 514194 of user check.
+Sep  3 09:00:01 arne-vandebemdt systemd[1]: Started Session 514199 of user check.
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514200 of user check.
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514201 of user check.
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514202 of user check.
+Sep  3 09:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514203 of user check.
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514204 of user check.
+Sep  3 09:00:02 arne-vandebemdt systemd[1]: Started Session 514205 of user check.
+Sep  3 09:00:03 arne-vandebemdt systemd[1]: Started Session 514206 of user check.
+Sep  3 09:00:16 arne-vandebemdt pdns_server[710]: Sep 03 09:00:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:00:19 arne-vandebemdt pdns_server[710]: Sep 03 09:00:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:01:19 arne-vandebemdt pdns_server[710]: Sep 03 09:01:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:01:22 arne-vandebemdt pdns_server[710]: Sep 03 09:01:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:02:22 arne-vandebemdt pdns_server[710]: Sep 03 09:02:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:02:25 arne-vandebemdt pdns_server[710]: Sep 03 09:02:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:03:25 arne-vandebemdt pdns_server[710]: Sep 03 09:03:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:03:28 arne-vandebemdt pdns_server[710]: Sep 03 09:03:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:04:28 arne-vandebemdt pdns_server[710]: Sep 03 09:04:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:04:31 arne-vandebemdt pdns_server[710]: Sep 03 09:04:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:05:31 arne-vandebemdt pdns_server[710]: Sep 03 09:05:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:05:34 arne-vandebemdt pdns_server[710]: Sep 03 09:05:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:06:34 arne-vandebemdt pdns_server[710]: Sep 03 09:06:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:06:37 arne-vandebemdt pdns_server[710]: Sep 03 09:06:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:07:37 arne-vandebemdt pdns_server[710]: Sep 03 09:07:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:07:40 arne-vandebemdt pdns_server[710]: Sep 03 09:07:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:08:40 arne-vandebemdt pdns_server[710]: Sep 03 09:08:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:08:43 arne-vandebemdt pdns_server[710]: Sep 03 09:08:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:09:01 arne-vandebemdt CRON[44754]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 09:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 09:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 09:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 09:09:43 arne-vandebemdt pdns_server[710]: Sep 03 09:09:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:09:46 arne-vandebemdt pdns_server[710]: Sep 03 09:09:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:10:46 arne-vandebemdt pdns_server[710]: Sep 03 09:10:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:10:49 arne-vandebemdt pdns_server[710]: Sep 03 09:10:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:11:49 arne-vandebemdt pdns_server[710]: Sep 03 09:11:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:11:52 arne-vandebemdt pdns_server[710]: Sep 03 09:11:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:12:52 arne-vandebemdt pdns_server[710]: Sep 03 09:12:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:12:55 arne-vandebemdt pdns_server[710]: Sep 03 09:12:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:13:55 arne-vandebemdt pdns_server[710]: Sep 03 09:13:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:13:58 arne-vandebemdt pdns_server[710]: Sep 03 09:13:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:14:58 arne-vandebemdt pdns_server[710]: Sep 03 09:14:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:15:01 arne-vandebemdt pdns_server[710]: Sep 03 09:15:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:15:01 arne-vandebemdt CRON[44806]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 09:15:01 arne-vandebemdt CRON[44807]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 09:15:01 arne-vandebemdt postfix/pickup[41851]: AEAE98025C: uid=0 from=<root>
+Sep  3 09:15:01 arne-vandebemdt postfix/cleanup[44821]: AEAE98025C: message-id=<20190903071501.AEAE98025C@arne-vandebemdt.localdomain>
+Sep  3 09:15:01 arne-vandebemdt postfix/qmgr[555]: AEAE98025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 09:15:01 arne-vandebemdt postfix/local[44863]: AEAE98025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.07, delays=0.04/0.02/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 09:15:01 arne-vandebemdt postfix/qmgr[555]: AEAE98025C: removed
+Sep  3 09:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 09:16:01 arne-vandebemdt pdns_server[710]: Sep 03 09:16:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:16:04 arne-vandebemdt pdns_server[710]: Sep 03 09:16:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:17:04 arne-vandebemdt pdns_server[710]: Sep 03 09:17:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:17:07 arne-vandebemdt pdns_server[710]: Sep 03 09:17:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:18:07 arne-vandebemdt pdns_server[710]: Sep 03 09:18:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:18:10 arne-vandebemdt pdns_server[710]: Sep 03 09:18:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:19:10 arne-vandebemdt pdns_server[710]: Sep 03 09:19:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:19:13 arne-vandebemdt pdns_server[710]: Sep 03 09:19:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:20:13 arne-vandebemdt pdns_server[710]: Sep 03 09:20:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:20:16 arne-vandebemdt pdns_server[710]: Sep 03 09:20:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:21:16 arne-vandebemdt pdns_server[710]: Sep 03 09:21:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:21:19 arne-vandebemdt pdns_server[710]: Sep 03 09:21:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:22:19 arne-vandebemdt pdns_server[710]: Sep 03 09:22:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:22:22 arne-vandebemdt pdns_server[710]: Sep 03 09:22:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:23:01 arne-vandebemdt CRON[45723]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 09:23:22 arne-vandebemdt pdns_server[710]: Sep 03 09:23:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:23:25 arne-vandebemdt pdns_server[710]: Sep 03 09:23:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:24:25 arne-vandebemdt pdns_server[710]: Sep 03 09:24:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:24:28 arne-vandebemdt pdns_server[710]: Sep 03 09:24:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:25:28 arne-vandebemdt pdns_server[710]: Sep 03 09:25:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:25:31 arne-vandebemdt pdns_server[710]: Sep 03 09:25:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:26:31 arne-vandebemdt pdns_server[710]: Sep 03 09:26:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:26:34 arne-vandebemdt pdns_server[710]: Sep 03 09:26:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:27:34 arne-vandebemdt pdns_server[710]: Sep 03 09:27:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:27:37 arne-vandebemdt pdns_server[710]: Sep 03 09:27:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:28:37 arne-vandebemdt pdns_server[710]: Sep 03 09:28:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:28:40 arne-vandebemdt pdns_server[710]: Sep 03 09:28:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:29:40 arne-vandebemdt pdns_server[710]: Sep 03 09:29:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:29:43 arne-vandebemdt pdns_server[710]: Sep 03 09:29:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:30:01 arne-vandebemdt CRON[45727]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 09:30:01 arne-vandebemdt CRON[45729]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 09:30:01 arne-vandebemdt postfix/pickup[41851]: 9A4A48025C: uid=0 from=<root>
+Sep  3 09:30:01 arne-vandebemdt postfix/cleanup[45742]: 9A4A48025C: message-id=<20190903073001.9A4A48025C@arne-vandebemdt.localdomain>
+Sep  3 09:30:01 arne-vandebemdt postfix/qmgr[555]: 9A4A48025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 09:30:01 arne-vandebemdt postfix/local[45764]: 9A4A48025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.02/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 09:30:01 arne-vandebemdt postfix/qmgr[555]: 9A4A48025C: removed
+Sep  3 09:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 09:30:43 arne-vandebemdt pdns_server[710]: Sep 03 09:30:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:30:46 arne-vandebemdt pdns_server[710]: Sep 03 09:30:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:31:46 arne-vandebemdt pdns_server[710]: Sep 03 09:31:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:31:49 arne-vandebemdt pdns_server[710]: Sep 03 09:31:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:32:49 arne-vandebemdt pdns_server[710]: Sep 03 09:32:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:32:52 arne-vandebemdt pdns_server[710]: Sep 03 09:32:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:33:52 arne-vandebemdt pdns_server[710]: Sep 03 09:33:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:33:55 arne-vandebemdt pdns_server[710]: Sep 03 09:33:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:34:55 arne-vandebemdt pdns_server[710]: Sep 03 09:34:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:34:58 arne-vandebemdt pdns_server[710]: Sep 03 09:34:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:35:58 arne-vandebemdt pdns_server[710]: Sep 03 09:35:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:36:01 arne-vandebemdt pdns_server[710]: Sep 03 09:36:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:37:01 arne-vandebemdt pdns_server[710]: Sep 03 09:37:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:37:04 arne-vandebemdt pdns_server[710]: Sep 03 09:37:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:38:04 arne-vandebemdt pdns_server[710]: Sep 03 09:38:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:38:07 arne-vandebemdt pdns_server[710]: Sep 03 09:38:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:39:01 arne-vandebemdt CRON[46646]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 09:39:07 arne-vandebemdt pdns_server[710]: Sep 03 09:39:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:39:10 arne-vandebemdt pdns_server[710]: Sep 03 09:39:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 09:39:21 arne-vandebemdt kernel: [8263080.369197] audit: type=1400 audit(1567496361.742:4227685): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-1602_</var/lib/lxc>" name="/" pid=18046 comm="(ionclean)" flags="rw, rslave"
+Sep  3 09:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 09:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 09:40:10 arne-vandebemdt pdns_server[710]: Sep 03 09:40:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:40:13 arne-vandebemdt pdns_server[710]: Sep 03 09:40:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:41:13 arne-vandebemdt pdns_server[710]: Sep 03 09:41:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:41:16 arne-vandebemdt pdns_server[710]: Sep 03 09:41:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:42:16 arne-vandebemdt pdns_server[710]: Sep 03 09:42:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:42:19 arne-vandebemdt pdns_server[710]: Sep 03 09:42:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:43:19 arne-vandebemdt pdns_server[710]: Sep 03 09:43:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:43:22 arne-vandebemdt pdns_server[710]: Sep 03 09:43:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:44:22 arne-vandebemdt pdns_server[710]: Sep 03 09:44:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:44:25 arne-vandebemdt pdns_server[710]: Sep 03 09:44:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:45:01 arne-vandebemdt CRON[46698]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 09:45:01 arne-vandebemdt CRON[46699]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 09:45:01 arne-vandebemdt postfix/pickup[41851]: 8F9C88025C: uid=0 from=<root>
+Sep  3 09:45:01 arne-vandebemdt postfix/cleanup[46712]: 8F9C88025C: message-id=<20190903074501.8F9C88025C@arne-vandebemdt.localdomain>
+Sep  3 09:45:01 arne-vandebemdt postfix/qmgr[555]: 8F9C88025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 09:45:01 arne-vandebemdt postfix/local[46734]: 8F9C88025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 09:45:01 arne-vandebemdt postfix/qmgr[555]: 8F9C88025C: removed
+Sep  3 09:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 09:45:25 arne-vandebemdt pdns_server[710]: Sep 03 09:45:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:45:28 arne-vandebemdt pdns_server[710]: Sep 03 09:45:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:46:28 arne-vandebemdt pdns_server[710]: Sep 03 09:46:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:46:31 arne-vandebemdt pdns_server[710]: Sep 03 09:46:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:47:31 arne-vandebemdt pdns_server[710]: Sep 03 09:47:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:47:34 arne-vandebemdt pdns_server[710]: Sep 03 09:47:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:48:34 arne-vandebemdt pdns_server[710]: Sep 03 09:48:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:48:37 arne-vandebemdt pdns_server[710]: Sep 03 09:48:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:49:37 arne-vandebemdt pdns_server[710]: Sep 03 09:49:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:49:40 arne-vandebemdt pdns_server[710]: Sep 03 09:49:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:50:40 arne-vandebemdt pdns_server[710]: Sep 03 09:50:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:50:43 arne-vandebemdt pdns_server[710]: Sep 03 09:50:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:51:43 arne-vandebemdt pdns_server[710]: Sep 03 09:51:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:51:46 arne-vandebemdt pdns_server[710]: Sep 03 09:51:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:52:46 arne-vandebemdt pdns_server[710]: Sep 03 09:52:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:52:49 arne-vandebemdt pdns_server[710]: Sep 03 09:52:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:53:49 arne-vandebemdt pdns_server[710]: Sep 03 09:53:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:53:52 arne-vandebemdt pdns_server[710]: Sep 03 09:53:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:54:52 arne-vandebemdt pdns_server[710]: Sep 03 09:54:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:54:55 arne-vandebemdt pdns_server[710]: Sep 03 09:54:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:55:55 arne-vandebemdt pdns_server[710]: Sep 03 09:55:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:55:58 arne-vandebemdt pdns_server[710]: Sep 03 09:55:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:56:58 arne-vandebemdt pdns_server[710]: Sep 03 09:56:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:57:01 arne-vandebemdt pdns_server[710]: Sep 03 09:57:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:58:01 arne-vandebemdt pdns_server[710]: Sep 03 09:58:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:58:04 arne-vandebemdt pdns_server[710]: Sep 03 09:58:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 09:59:04 arne-vandebemdt pdns_server[710]: Sep 03 09:59:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 09:59:07 arne-vandebemdt pdns_server[710]: Sep 03 09:59:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:00:01 arne-vandebemdt systemd[1]: Started Session 514565 of user check.
+Sep  3 10:00:01 arne-vandebemdt CRON[47627]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 10:00:01 arne-vandebemdt CRON[47628]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 10:00:01 arne-vandebemdt systemd[1]: Started Session 514573 of user check.
+Sep  3 10:00:01 arne-vandebemdt postfix/pickup[47614]: 901288025C: uid=0 from=<root>
+Sep  3 10:00:01 arne-vandebemdt postfix/cleanup[47646]: 901288025C: message-id=<20190903080001.901288025C@arne-vandebemdt.localdomain>
+Sep  3 10:00:01 arne-vandebemdt postfix/qmgr[555]: 901288025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 10:00:01 arne-vandebemdt postfix/local[47653]: 901288025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.07/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 10:00:01 arne-vandebemdt postfix/qmgr[555]: 901288025C: removed
+Sep  3 10:00:01 arne-vandebemdt systemd[1]: Started Session 514576 of user check.
+Sep  3 10:00:01 arne-vandebemdt systemd[1]: Started Session 514584 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514586 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514587 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514588 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514589 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514590 of user check.
+Sep  3 10:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514591 of user check.
+Sep  3 10:00:02 arne-vandebemdt systemd[1]: Started Session 514592 of user check.
+Sep  3 10:00:07 arne-vandebemdt pdns_server[710]: Sep 03 10:00:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:00:10 arne-vandebemdt pdns_server[710]: Sep 03 10:00:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:01:10 arne-vandebemdt pdns_server[710]: Sep 03 10:01:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:01:13 arne-vandebemdt pdns_server[710]: Sep 03 10:01:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:02:13 arne-vandebemdt pdns_server[710]: Sep 03 10:02:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:02:16 arne-vandebemdt pdns_server[710]: Sep 03 10:02:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:03:16 arne-vandebemdt pdns_server[710]: Sep 03 10:03:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:03:19 arne-vandebemdt pdns_server[710]: Sep 03 10:03:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:04:19 arne-vandebemdt pdns_server[710]: Sep 03 10:04:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:04:22 arne-vandebemdt pdns_server[710]: Sep 03 10:04:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:05:22 arne-vandebemdt pdns_server[710]: Sep 03 10:05:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:05:25 arne-vandebemdt pdns_server[710]: Sep 03 10:05:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:06:25 arne-vandebemdt pdns_server[710]: Sep 03 10:06:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:06:28 arne-vandebemdt pdns_server[710]: Sep 03 10:06:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:07:28 arne-vandebemdt pdns_server[710]: Sep 03 10:07:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:07:31 arne-vandebemdt pdns_server[710]: Sep 03 10:07:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:08:31 arne-vandebemdt pdns_server[710]: Sep 03 10:08:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:08:34 arne-vandebemdt pdns_server[710]: Sep 03 10:08:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:09:01 arne-vandebemdt CRON[48627]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 10:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 10:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 10:09:21 arne-vandebemdt kernel: [8264880.363030] audit: type=1400 audit(1567498161.749:4227704): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2312_</var/lib/lxc>" name="/" pid=6714 comm="(ionclean)" flags="rw, rslave"
+Sep  3 10:09:21 arne-vandebemdt kernel: [8264880.368161] audit: type=1400 audit(1567498161.753:4227708): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2285_</var/lib/lxc>" name="/" pid=6711 comm="(ionclean)" flags="rw, rslave"
+Sep  3 10:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 10:09:34 arne-vandebemdt pdns_server[710]: Sep 03 10:09:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:09:37 arne-vandebemdt pdns_server[710]: Sep 03 10:09:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:10:37 arne-vandebemdt pdns_server[710]: Sep 03 10:10:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:10:40 arne-vandebemdt pdns_server[710]: Sep 03 10:10:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:11:40 arne-vandebemdt pdns_server[710]: Sep 03 10:11:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:11:43 arne-vandebemdt pdns_server[710]: Sep 03 10:11:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:12:43 arne-vandebemdt pdns_server[710]: Sep 03 10:12:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:12:46 arne-vandebemdt pdns_server[710]: Sep 03 10:12:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:13:46 arne-vandebemdt pdns_server[710]: Sep 03 10:13:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:13:49 arne-vandebemdt pdns_server[710]: Sep 03 10:13:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:14:49 arne-vandebemdt pdns_server[710]: Sep 03 10:14:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:14:52 arne-vandebemdt pdns_server[710]: Sep 03 10:14:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:15:01 arne-vandebemdt CRON[48679]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 10:15:01 arne-vandebemdt CRON[48680]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 10:15:01 arne-vandebemdt postfix/pickup[47614]: CE29C8025C: uid=0 from=<root>
+Sep  3 10:15:01 arne-vandebemdt postfix/cleanup[48695]: CE29C8025C: message-id=<20190903081501.CE29C8025C@arne-vandebemdt.localdomain>
+Sep  3 10:15:01 arne-vandebemdt postfix/qmgr[555]: CE29C8025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 10:15:01 arne-vandebemdt postfix/local[48731]: CE29C8025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 10:15:01 arne-vandebemdt postfix/qmgr[555]: CE29C8025C: removed
+Sep  3 10:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 10:15:52 arne-vandebemdt pdns_server[710]: Sep 03 10:15:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:15:55 arne-vandebemdt pdns_server[710]: Sep 03 10:15:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:16:55 arne-vandebemdt pdns_server[710]: Sep 03 10:16:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:16:58 arne-vandebemdt pdns_server[710]: Sep 03 10:16:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:17:58 arne-vandebemdt pdns_server[710]: Sep 03 10:17:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:18:01 arne-vandebemdt pdns_server[710]: Sep 03 10:18:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:19:01 arne-vandebemdt pdns_server[710]: Sep 03 10:19:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:19:04 arne-vandebemdt pdns_server[710]: Sep 03 10:19:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:20:04 arne-vandebemdt pdns_server[710]: Sep 03 10:20:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:20:07 arne-vandebemdt pdns_server[710]: Sep 03 10:20:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:21:07 arne-vandebemdt pdns_server[710]: Sep 03 10:21:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:21:10 arne-vandebemdt pdns_server[710]: Sep 03 10:21:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:22:11 arne-vandebemdt pdns_server[710]: Sep 03 10:22:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:22:14 arne-vandebemdt pdns_server[710]: Sep 03 10:22:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:23:01 arne-vandebemdt CRON[49596]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 10:23:14 arne-vandebemdt pdns_server[710]: Sep 03 10:23:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:23:17 arne-vandebemdt pdns_server[710]: Sep 03 10:23:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:24:17 arne-vandebemdt pdns_server[710]: Sep 03 10:24:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:24:20 arne-vandebemdt pdns_server[710]: Sep 03 10:24:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:25:20 arne-vandebemdt pdns_server[710]: Sep 03 10:25:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:25:23 arne-vandebemdt pdns_server[710]: Sep 03 10:25:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:26:23 arne-vandebemdt pdns_server[710]: Sep 03 10:26:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:26:26 arne-vandebemdt pdns_server[710]: Sep 03 10:26:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:27:26 arne-vandebemdt pdns_server[710]: Sep 03 10:27:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:27:29 arne-vandebemdt pdns_server[710]: Sep 03 10:27:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:28:29 arne-vandebemdt pdns_server[710]: Sep 03 10:28:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:28:32 arne-vandebemdt pdns_server[710]: Sep 03 10:28:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:29:32 arne-vandebemdt pdns_server[710]: Sep 03 10:29:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:29:35 arne-vandebemdt pdns_server[710]: Sep 03 10:29:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:30:01 arne-vandebemdt CRON[49600]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 10:30:01 arne-vandebemdt CRON[49601]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 10:30:01 arne-vandebemdt postfix/pickup[47614]: B0F3C8025C: uid=0 from=<root>
+Sep  3 10:30:01 arne-vandebemdt postfix/cleanup[49615]: B0F3C8025C: message-id=<20190903083001.B0F3C8025C@arne-vandebemdt.localdomain>
+Sep  3 10:30:01 arne-vandebemdt postfix/qmgr[555]: B0F3C8025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 10:30:01 arne-vandebemdt postfix/local[49640]: B0F3C8025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.07/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 10:30:01 arne-vandebemdt postfix/qmgr[555]: B0F3C8025C: removed
+Sep  3 10:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 10:30:35 arne-vandebemdt pdns_server[710]: Sep 03 10:30:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:30:38 arne-vandebemdt pdns_server[710]: Sep 03 10:30:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:31:38 arne-vandebemdt pdns_server[710]: Sep 03 10:31:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:31:41 arne-vandebemdt pdns_server[710]: Sep 03 10:31:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:32:41 arne-vandebemdt pdns_server[710]: Sep 03 10:32:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:32:44 arne-vandebemdt pdns_server[710]: Sep 03 10:32:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:33:44 arne-vandebemdt pdns_server[710]: Sep 03 10:33:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:33:47 arne-vandebemdt pdns_server[710]: Sep 03 10:33:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:34:47 arne-vandebemdt pdns_server[710]: Sep 03 10:34:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:34:50 arne-vandebemdt pdns_server[710]: Sep 03 10:34:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:35:50 arne-vandebemdt pdns_server[710]: Sep 03 10:35:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:35:53 arne-vandebemdt pdns_server[710]: Sep 03 10:35:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:36:53 arne-vandebemdt pdns_server[710]: Sep 03 10:36:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:36:56 arne-vandebemdt pdns_server[710]: Sep 03 10:36:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:37:56 arne-vandebemdt pdns_server[710]: Sep 03 10:37:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:37:59 arne-vandebemdt pdns_server[710]: Sep 03 10:37:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:38:59 arne-vandebemdt pdns_server[710]: Sep 03 10:38:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:39:01 arne-vandebemdt CRON[50517]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 10:39:02 arne-vandebemdt pdns_server[710]: Sep 03 10:39:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 10:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 10:39:21 arne-vandebemdt kernel: [8266680.352489] audit: type=1400 audit(1567499961.748:4227721): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2238_</var/lib/lxc>" name="/" pid=55422 comm="(ionclean)" flags="rw, rslave"
+Sep  3 10:39:21 arne-vandebemdt kernel: [8266680.356914] audit: type=1400 audit(1567499961.752:4227723): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2247_</var/lib/lxc>" name="/" pid=55430 comm="(ionclean)" flags="rw, rslave"
+Sep  3 10:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 10:40:02 arne-vandebemdt pdns_server[710]: Sep 03 10:40:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:40:05 arne-vandebemdt pdns_server[710]: Sep 03 10:40:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:41:05 arne-vandebemdt pdns_server[710]: Sep 03 10:41:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:41:08 arne-vandebemdt pdns_server[710]: Sep 03 10:41:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:42:08 arne-vandebemdt pdns_server[710]: Sep 03 10:42:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:42:11 arne-vandebemdt pdns_server[710]: Sep 03 10:42:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:43:11 arne-vandebemdt pdns_server[710]: Sep 03 10:43:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:43:14 arne-vandebemdt pdns_server[710]: Sep 03 10:43:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:44:14 arne-vandebemdt pdns_server[710]: Sep 03 10:44:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:44:17 arne-vandebemdt pdns_server[710]: Sep 03 10:44:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:45:01 arne-vandebemdt CRON[50569]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 10:45:01 arne-vandebemdt CRON[50570]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 10:45:01 arne-vandebemdt postfix/pickup[47614]: 9B0438025C: uid=0 from=<root>
+Sep  3 10:45:01 arne-vandebemdt postfix/cleanup[50584]: 9B0438025C: message-id=<20190903084501.9B0438025C@arne-vandebemdt.localdomain>
+Sep  3 10:45:01 arne-vandebemdt postfix/qmgr[555]: 9B0438025C: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 10:45:01 arne-vandebemdt postfix/local[50609]: 9B0438025C: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 10:45:01 arne-vandebemdt postfix/qmgr[555]: 9B0438025C: removed
+Sep  3 10:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 10:45:17 arne-vandebemdt pdns_server[710]: Sep 03 10:45:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:45:20 arne-vandebemdt pdns_server[710]: Sep 03 10:45:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:46:20 arne-vandebemdt pdns_server[710]: Sep 03 10:46:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:46:23 arne-vandebemdt pdns_server[710]: Sep 03 10:46:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:47:23 arne-vandebemdt pdns_server[710]: Sep 03 10:47:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:47:26 arne-vandebemdt pdns_server[710]: Sep 03 10:47:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:48:26 arne-vandebemdt pdns_server[710]: Sep 03 10:48:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:48:29 arne-vandebemdt pdns_server[710]: Sep 03 10:48:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:49:29 arne-vandebemdt pdns_server[710]: Sep 03 10:49:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:49:32 arne-vandebemdt pdns_server[710]: Sep 03 10:49:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:50:32 arne-vandebemdt pdns_server[710]: Sep 03 10:50:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:50:35 arne-vandebemdt pdns_server[710]: Sep 03 10:50:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:51:35 arne-vandebemdt pdns_server[710]: Sep 03 10:51:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:51:38 arne-vandebemdt pdns_server[710]: Sep 03 10:51:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:52:38 arne-vandebemdt pdns_server[710]: Sep 03 10:52:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:52:41 arne-vandebemdt pdns_server[710]: Sep 03 10:52:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:53:15 arne-vandebemdt pdns_server[710]: Sep 03 10:53:15 Backend reported permanent error which prevented lookup (GSQLBackend lookup query:Could not prepare statement: SELECT content,ttl,prio,type,domain_id,disabled,name,auth FROM records WHERE disabled=0 and type=? and name=?: MySQL server has gone away), aborting
+Sep  3 10:53:15 arne-vandebemdt pdns_server[710]: Sep 03 10:53:15 TCP nameserver had error, cycling backend: GSQLBackend lookup query:Could not prepare statement: SELECT content,ttl,prio,type,domain_id,disabled,name,auth FROM records WHERE disabled=0 and type=? and name=?: MySQL server has gone away
+Sep  3 10:53:41 arne-vandebemdt pdns_server[710]: Sep 03 10:53:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:53:44 arne-vandebemdt pdns_server[710]: Sep 03 10:53:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:54:44 arne-vandebemdt pdns_server[710]: Sep 03 10:54:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:54:47 arne-vandebemdt pdns_server[710]: Sep 03 10:54:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:55:47 arne-vandebemdt pdns_server[710]: Sep 03 10:55:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:55:50 arne-vandebemdt pdns_server[710]: Sep 03 10:55:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:56:50 arne-vandebemdt pdns_server[710]: Sep 03 10:56:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:56:53 arne-vandebemdt pdns_server[710]: Sep 03 10:56:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:57:53 arne-vandebemdt pdns_server[710]: Sep 03 10:57:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:57:56 arne-vandebemdt pdns_server[710]: Sep 03 10:57:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:58:21 arne-vandebemdt systemd[1]: apt-daily.service: Failed to reset devices.list: Operation not permitted
+Sep  3 10:58:21 arne-vandebemdt systemd[1]: Starting Daily apt download activities...
+Sep  3 10:58:24 arne-vandebemdt systemd[1]: Started Daily apt download activities.
+Sep  3 10:58:24 arne-vandebemdt systemd[1]: apt-daily.timer: Adding 10h 26min 6.863435s random time.
+Sep  3 10:58:24 arne-vandebemdt systemd[1]: apt-daily.timer: Adding 4h 6min 40.609540s random time.
+Sep  3 10:58:56 arne-vandebemdt pdns_server[710]: Sep 03 10:58:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 10:58:59 arne-vandebemdt pdns_server[710]: Sep 03 10:58:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 10:59:59 arne-vandebemdt pdns_server[710]: Sep 03 10:59:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:00:01 arne-vandebemdt systemd[1]: Started Session 514953 of user check.
+Sep  3 11:00:01 arne-vandebemdt CRON[51846]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 11:00:01 arne-vandebemdt CRON[51847]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 11:00:01 arne-vandebemdt systemd[1]: Started Session 514959 of user check.
+Sep  3 11:00:01 arne-vandebemdt postfix/pickup[47614]: A25AE80466: uid=0 from=<root>
+Sep  3 11:00:01 arne-vandebemdt postfix/cleanup[51865]: A25AE80466: message-id=<20190903090001.A25AE80466@arne-vandebemdt.localdomain>
+Sep  3 11:00:01 arne-vandebemdt postfix/qmgr[555]: A25AE80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 11:00:01 arne-vandebemdt postfix/local[51881]: A25AE80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.14, delays=0.08/0.04/0/0.02, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 11:00:01 arne-vandebemdt postfix/qmgr[555]: A25AE80466: removed
+Sep  3 11:00:01 arne-vandebemdt systemd[1]: Started Session 514965 of user check.
+Sep  3 11:00:01 arne-vandebemdt systemd[1]: Started Session 514969 of user check.
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514970 of user check.
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514971 of user check.
+Sep  3 11:00:02 arne-vandebemdt pdns_server[710]: Sep 03 11:00:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514972 of user check.
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514973 of user check.
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514974 of user check.
+Sep  3 11:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 11:00:02 arne-vandebemdt systemd[1]: Started Session 514975 of user check.
+Sep  3 11:00:03 arne-vandebemdt systemd[1]: Started Session 514976 of user check.
+Sep  3 11:01:02 arne-vandebemdt pdns_server[710]: Sep 03 11:01:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:01:05 arne-vandebemdt pdns_server[710]: Sep 03 11:01:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:02:05 arne-vandebemdt pdns_server[710]: Sep 03 11:02:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:02:08 arne-vandebemdt pdns_server[710]: Sep 03 11:02:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:03:08 arne-vandebemdt pdns_server[710]: Sep 03 11:03:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:03:11 arne-vandebemdt pdns_server[710]: Sep 03 11:03:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:04:11 arne-vandebemdt pdns_server[710]: Sep 03 11:04:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:04:14 arne-vandebemdt pdns_server[710]: Sep 03 11:04:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:05:14 arne-vandebemdt pdns_server[710]: Sep 03 11:05:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:05:17 arne-vandebemdt pdns_server[710]: Sep 03 11:05:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:06:17 arne-vandebemdt pdns_server[710]: Sep 03 11:06:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:06:20 arne-vandebemdt pdns_server[710]: Sep 03 11:06:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:07:20 arne-vandebemdt pdns_server[710]: Sep 03 11:07:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:07:23 arne-vandebemdt pdns_server[710]: Sep 03 11:07:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:08:23 arne-vandebemdt pdns_server[710]: Sep 03 11:08:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:08:26 arne-vandebemdt pdns_server[710]: Sep 03 11:08:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:09:01 arne-vandebemdt CRON[52846]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 11:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 11:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 11:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 11:09:26 arne-vandebemdt pdns_server[710]: Sep 03 11:09:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:09:29 arne-vandebemdt pdns_server[710]: Sep 03 11:09:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:10:29 arne-vandebemdt pdns_server[710]: Sep 03 11:10:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:10:32 arne-vandebemdt pdns_server[710]: Sep 03 11:10:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:11:32 arne-vandebemdt pdns_server[710]: Sep 03 11:11:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:11:35 arne-vandebemdt pdns_server[710]: Sep 03 11:11:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:12:35 arne-vandebemdt pdns_server[710]: Sep 03 11:12:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:12:38 arne-vandebemdt pdns_server[710]: Sep 03 11:12:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:13:38 arne-vandebemdt pdns_server[710]: Sep 03 11:13:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:13:41 arne-vandebemdt pdns_server[710]: Sep 03 11:13:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:14:41 arne-vandebemdt pdns_server[710]: Sep 03 11:14:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:14:44 arne-vandebemdt pdns_server[710]: Sep 03 11:14:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:15:01 arne-vandebemdt CRON[52898]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 11:15:01 arne-vandebemdt CRON[52899]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 11:15:02 arne-vandebemdt postfix/pickup[47614]: 08E0580466: uid=0 from=<root>
+Sep  3 11:15:02 arne-vandebemdt postfix/cleanup[52912]: 08E0580466: message-id=<20190903091502.08E0580466@arne-vandebemdt.localdomain>
+Sep  3 11:15:02 arne-vandebemdt postfix/qmgr[555]: 08E0580466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 11:15:02 arne-vandebemdt postfix/local[52934]: 08E0580466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.05/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 11:15:02 arne-vandebemdt postfix/qmgr[555]: 08E0580466: removed
+Sep  3 11:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 11:15:44 arne-vandebemdt pdns_server[710]: Sep 03 11:15:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:15:47 arne-vandebemdt pdns_server[710]: Sep 03 11:15:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:16:47 arne-vandebemdt pdns_server[710]: Sep 03 11:16:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:16:50 arne-vandebemdt pdns_server[710]: Sep 03 11:16:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:17:50 arne-vandebemdt pdns_server[710]: Sep 03 11:17:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:17:53 arne-vandebemdt pdns_server[710]: Sep 03 11:17:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:18:53 arne-vandebemdt pdns_server[710]: Sep 03 11:18:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:18:56 arne-vandebemdt pdns_server[710]: Sep 03 11:18:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:19:56 arne-vandebemdt pdns_server[710]: Sep 03 11:19:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:19:59 arne-vandebemdt pdns_server[710]: Sep 03 11:19:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:20:59 arne-vandebemdt pdns_server[710]: Sep 03 11:20:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:21:02 arne-vandebemdt pdns_server[710]: Sep 03 11:21:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:22:02 arne-vandebemdt pdns_server[710]: Sep 03 11:22:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:22:05 arne-vandebemdt pdns_server[710]: Sep 03 11:22:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:23:01 arne-vandebemdt CRON[53815]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 11:23:05 arne-vandebemdt pdns_server[710]: Sep 03 11:23:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:23:08 arne-vandebemdt pdns_server[710]: Sep 03 11:23:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:24:08 arne-vandebemdt pdns_server[710]: Sep 03 11:24:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:24:11 arne-vandebemdt pdns_server[710]: Sep 03 11:24:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:25:11 arne-vandebemdt pdns_server[710]: Sep 03 11:25:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:25:14 arne-vandebemdt pdns_server[710]: Sep 03 11:25:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:26:14 arne-vandebemdt pdns_server[710]: Sep 03 11:26:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:26:17 arne-vandebemdt pdns_server[710]: Sep 03 11:26:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:27:17 arne-vandebemdt pdns_server[710]: Sep 03 11:27:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:27:20 arne-vandebemdt pdns_server[710]: Sep 03 11:27:20 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:28:20 arne-vandebemdt pdns_server[710]: Sep 03 11:28:20 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:28:23 arne-vandebemdt pdns_server[710]: Sep 03 11:28:23 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:29:23 arne-vandebemdt pdns_server[710]: Sep 03 11:29:23 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:29:26 arne-vandebemdt pdns_server[710]: Sep 03 11:29:26 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:30:01 arne-vandebemdt CRON[53820]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 11:30:01 arne-vandebemdt CRON[53821]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 11:30:01 arne-vandebemdt postfix/pickup[53817]: EE93A80466: uid=0 from=<root>
+Sep  3 11:30:02 arne-vandebemdt postfix/cleanup[53835]: EE93A80466: message-id=<20190903093001.EE93A80466@arne-vandebemdt.localdomain>
+Sep  3 11:30:02 arne-vandebemdt postfix/qmgr[555]: EE93A80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 11:30:02 arne-vandebemdt postfix/local[53855]: EE93A80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 11:30:02 arne-vandebemdt postfix/qmgr[555]: EE93A80466: removed
+Sep  3 11:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 11:30:26 arne-vandebemdt pdns_server[710]: Sep 03 11:30:26 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:30:29 arne-vandebemdt pdns_server[710]: Sep 03 11:30:29 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:31:29 arne-vandebemdt pdns_server[710]: Sep 03 11:31:29 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:31:32 arne-vandebemdt pdns_server[710]: Sep 03 11:31:32 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:32:32 arne-vandebemdt pdns_server[710]: Sep 03 11:32:32 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:32:35 arne-vandebemdt pdns_server[710]: Sep 03 11:32:35 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:33:35 arne-vandebemdt pdns_server[710]: Sep 03 11:33:35 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:33:38 arne-vandebemdt pdns_server[710]: Sep 03 11:33:38 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:34:38 arne-vandebemdt pdns_server[710]: Sep 03 11:34:38 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:34:41 arne-vandebemdt pdns_server[710]: Sep 03 11:34:41 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:35:41 arne-vandebemdt pdns_server[710]: Sep 03 11:35:41 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:35:44 arne-vandebemdt pdns_server[710]: Sep 03 11:35:44 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:36:44 arne-vandebemdt pdns_server[710]: Sep 03 11:36:44 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:36:47 arne-vandebemdt pdns_server[710]: Sep 03 11:36:47 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:37:47 arne-vandebemdt pdns_server[710]: Sep 03 11:37:47 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:37:50 arne-vandebemdt pdns_server[710]: Sep 03 11:37:50 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:38:50 arne-vandebemdt pdns_server[710]: Sep 03 11:38:50 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:38:53 arne-vandebemdt pdns_server[710]: Sep 03 11:38:53 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:39:01 arne-vandebemdt CRON[54737]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 11:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 11:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 11:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 11:39:53 arne-vandebemdt pdns_server[710]: Sep 03 11:39:53 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:39:56 arne-vandebemdt pdns_server[710]: Sep 03 11:39:56 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:40:56 arne-vandebemdt pdns_server[710]: Sep 03 11:40:56 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:40:59 arne-vandebemdt pdns_server[710]: Sep 03 11:40:59 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:41:59 arne-vandebemdt pdns_server[710]: Sep 03 11:41:59 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:42:02 arne-vandebemdt pdns_server[710]: Sep 03 11:42:02 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:43:02 arne-vandebemdt pdns_server[710]: Sep 03 11:43:02 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:43:05 arne-vandebemdt pdns_server[710]: Sep 03 11:43:05 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:44:05 arne-vandebemdt pdns_server[710]: Sep 03 11:44:05 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:44:08 arne-vandebemdt pdns_server[710]: Sep 03 11:44:08 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:45:01 arne-vandebemdt CRON[54789]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 11:45:01 arne-vandebemdt CRON[54790]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 11:45:01 arne-vandebemdt postfix/pickup[53817]: DFFAE80466: uid=0 from=<root>
+Sep  3 11:45:01 arne-vandebemdt postfix/cleanup[54802]: DFFAE80466: message-id=<20190903094501.DFFAE80466@arne-vandebemdt.localdomain>
+Sep  3 11:45:01 arne-vandebemdt postfix/qmgr[555]: DFFAE80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 11:45:01 arne-vandebemdt postfix/local[54829]: DFFAE80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.07/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 11:45:01 arne-vandebemdt postfix/qmgr[555]: DFFAE80466: removed
+Sep  3 11:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 11:45:08 arne-vandebemdt pdns_server[710]: Sep 03 11:45:08 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:45:11 arne-vandebemdt pdns_server[710]: Sep 03 11:45:11 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:46:11 arne-vandebemdt pdns_server[710]: Sep 03 11:46:11 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:46:14 arne-vandebemdt pdns_server[710]: Sep 03 11:46:14 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:47:14 arne-vandebemdt pdns_server[710]: Sep 03 11:47:14 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:47:17 arne-vandebemdt pdns_server[710]: Sep 03 11:47:17 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:48:18 arne-vandebemdt pdns_server[710]: Sep 03 11:48:17 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:48:21 arne-vandebemdt pdns_server[710]: Sep 03 11:48:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:49:21 arne-vandebemdt pdns_server[710]: Sep 03 11:49:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:49:24 arne-vandebemdt pdns_server[710]: Sep 03 11:49:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:50:24 arne-vandebemdt pdns_server[710]: Sep 03 11:50:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:50:27 arne-vandebemdt pdns_server[710]: Sep 03 11:50:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:51:27 arne-vandebemdt pdns_server[710]: Sep 03 11:51:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:51:30 arne-vandebemdt pdns_server[710]: Sep 03 11:51:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:52:30 arne-vandebemdt pdns_server[710]: Sep 03 11:52:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:52:33 arne-vandebemdt pdns_server[710]: Sep 03 11:52:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:53:33 arne-vandebemdt pdns_server[710]: Sep 03 11:53:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:53:36 arne-vandebemdt pdns_server[710]: Sep 03 11:53:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:54:36 arne-vandebemdt pdns_server[710]: Sep 03 11:54:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:54:39 arne-vandebemdt pdns_server[710]: Sep 03 11:54:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:55:39 arne-vandebemdt pdns_server[710]: Sep 03 11:55:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:55:42 arne-vandebemdt pdns_server[710]: Sep 03 11:55:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:56:42 arne-vandebemdt pdns_server[710]: Sep 03 11:56:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:56:45 arne-vandebemdt pdns_server[710]: Sep 03 11:56:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:57:45 arne-vandebemdt pdns_server[710]: Sep 03 11:57:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:57:48 arne-vandebemdt pdns_server[710]: Sep 03 11:57:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:58:48 arne-vandebemdt pdns_server[710]: Sep 03 11:58:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:58:51 arne-vandebemdt pdns_server[710]: Sep 03 11:58:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 11:59:51 arne-vandebemdt pdns_server[710]: Sep 03 11:59:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 11:59:54 arne-vandebemdt pdns_server[710]: Sep 03 11:59:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:00:01 arne-vandebemdt CRON[55708]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 12:00:01 arne-vandebemdt CRON[55709]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 12:00:01 arne-vandebemdt CRON[55710]: (root) CMD (test -x /usr/bin/certbot -a \! -d /run/systemd/system && perl -e 'sleep int(rand(43200))' && certbot -q renew)
+Sep  3 12:00:01 arne-vandebemdt postfix/pickup[53817]: C888B80466: uid=0 from=<root>
+Sep  3 12:00:01 arne-vandebemdt postfix/cleanup[55725]: C888B80466: message-id=<20190903100001.C888B80466@arne-vandebemdt.localdomain>
+Sep  3 12:00:01 arne-vandebemdt postfix/qmgr[555]: C888B80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 12:00:01 arne-vandebemdt postfix/local[55762]: C888B80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.07, delays=0.04/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 12:00:01 arne-vandebemdt postfix/qmgr[555]: C888B80466: removed
+Sep  3 12:00:02 arne-vandebemdt systemd[1]: Started Session 515360 of user check.
+Sep  3 12:00:02 arne-vandebemdt systemd[1]: Started Session 515361 of user check.
+Sep  3 12:00:02 arne-vandebemdt systemd[1]: Started Session 515362 of user check.
+Sep  3 12:00:02 arne-vandebemdt systemd[1]: Started Session 515363 of user check.
+Sep  3 12:00:02 arne-vandebemdt systemd[1]: Started Session 515365 of user check.
+Sep  3 12:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515366 of user check.
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515367 of user check.
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515368 of user check.
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515369 of user check.
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515370 of user check.
+Sep  3 12:00:03 arne-vandebemdt systemd[1]: Started Session 515371 of user check.
+Sep  3 12:00:54 arne-vandebemdt pdns_server[710]: Sep 03 12:00:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:00:57 arne-vandebemdt pdns_server[710]: Sep 03 12:00:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:01:57 arne-vandebemdt pdns_server[710]: Sep 03 12:01:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:02:00 arne-vandebemdt pdns_server[710]: Sep 03 12:02:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:03:00 arne-vandebemdt pdns_server[710]: Sep 03 12:03:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:03:03 arne-vandebemdt pdns_server[710]: Sep 03 12:03:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:04:03 arne-vandebemdt pdns_server[710]: Sep 03 12:04:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:04:06 arne-vandebemdt pdns_server[710]: Sep 03 12:04:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:05:06 arne-vandebemdt pdns_server[710]: Sep 03 12:05:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:05:09 arne-vandebemdt pdns_server[710]: Sep 03 12:05:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:06:09 arne-vandebemdt pdns_server[710]: Sep 03 12:06:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:06:12 arne-vandebemdt pdns_server[710]: Sep 03 12:06:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:07:12 arne-vandebemdt pdns_server[710]: Sep 03 12:07:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:07:15 arne-vandebemdt pdns_server[710]: Sep 03 12:07:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:08:15 arne-vandebemdt pdns_server[710]: Sep 03 12:08:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:08:18 arne-vandebemdt pdns_server[710]: Sep 03 12:08:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:09:01 arne-vandebemdt kernel: [8272059.856695] audit: type=1400 audit(1567505341.284:4227762): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2300_</var/lib/lxc>" name="/" pid=28475 comm="(ionclean)" flags="rw, rslave"
+Sep  3 12:09:01 arne-vandebemdt CRON[56719]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 12:09:18 arne-vandebemdt pdns_server[710]: Sep 03 12:09:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:09:21 arne-vandebemdt pdns_server[710]: Sep 03 12:09:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 12:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 12:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 12:10:21 arne-vandebemdt pdns_server[710]: Sep 03 12:10:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:10:24 arne-vandebemdt pdns_server[710]: Sep 03 12:10:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:11:24 arne-vandebemdt pdns_server[710]: Sep 03 12:11:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:11:27 arne-vandebemdt pdns_server[710]: Sep 03 12:11:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:12:27 arne-vandebemdt pdns_server[710]: Sep 03 12:12:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:12:30 arne-vandebemdt pdns_server[710]: Sep 03 12:12:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:13:30 arne-vandebemdt pdns_server[710]: Sep 03 12:13:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:13:33 arne-vandebemdt pdns_server[710]: Sep 03 12:13:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:14:33 arne-vandebemdt pdns_server[710]: Sep 03 12:14:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:14:36 arne-vandebemdt pdns_server[710]: Sep 03 12:14:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:15:01 arne-vandebemdt CRON[56771]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 12:15:01 arne-vandebemdt CRON[56772]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 12:15:02 arne-vandebemdt postfix/pickup[53817]: 0AB6680466: uid=0 from=<root>
+Sep  3 12:15:02 arne-vandebemdt postfix/cleanup[56784]: 0AB6680466: message-id=<20190903101502.0AB6680466@arne-vandebemdt.localdomain>
+Sep  3 12:15:02 arne-vandebemdt postfix/qmgr[555]: 0AB6680466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 12:15:02 arne-vandebemdt postfix/local[56810]: 0AB6680466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.06/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 12:15:02 arne-vandebemdt postfix/qmgr[555]: 0AB6680466: removed
+Sep  3 12:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 12:15:36 arne-vandebemdt pdns_server[710]: Sep 03 12:15:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:15:39 arne-vandebemdt pdns_server[710]: Sep 03 12:15:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:16:39 arne-vandebemdt pdns_server[710]: Sep 03 12:16:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:16:42 arne-vandebemdt pdns_server[710]: Sep 03 12:16:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:17:42 arne-vandebemdt pdns_server[710]: Sep 03 12:17:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:17:45 arne-vandebemdt pdns_server[710]: Sep 03 12:17:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:18:45 arne-vandebemdt pdns_server[710]: Sep 03 12:18:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:18:48 arne-vandebemdt pdns_server[710]: Sep 03 12:18:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:19:48 arne-vandebemdt pdns_server[710]: Sep 03 12:19:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:19:51 arne-vandebemdt pdns_server[710]: Sep 03 12:19:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:20:51 arne-vandebemdt pdns_server[710]: Sep 03 12:20:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:20:54 arne-vandebemdt pdns_server[710]: Sep 03 12:20:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:21:54 arne-vandebemdt pdns_server[710]: Sep 03 12:21:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:21:57 arne-vandebemdt pdns_server[710]: Sep 03 12:21:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:22:57 arne-vandebemdt pdns_server[710]: Sep 03 12:22:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:23:00 arne-vandebemdt pdns_server[710]: Sep 03 12:23:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:23:01 arne-vandebemdt CRON[669]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 12:24:00 arne-vandebemdt pdns_server[710]: Sep 03 12:24:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:24:03 arne-vandebemdt pdns_server[710]: Sep 03 12:24:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:25:03 arne-vandebemdt pdns_server[710]: Sep 03 12:25:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:25:06 arne-vandebemdt pdns_server[710]: Sep 03 12:25:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:26:06 arne-vandebemdt pdns_server[710]: Sep 03 12:26:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:26:09 arne-vandebemdt pdns_server[710]: Sep 03 12:26:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:27:09 arne-vandebemdt pdns_server[710]: Sep 03 12:27:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:27:12 arne-vandebemdt pdns_server[710]: Sep 03 12:27:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:28:12 arne-vandebemdt pdns_server[710]: Sep 03 12:28:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:28:15 arne-vandebemdt pdns_server[710]: Sep 03 12:28:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:29:15 arne-vandebemdt pdns_server[710]: Sep 03 12:29:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:29:18 arne-vandebemdt pdns_server[710]: Sep 03 12:29:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:30:01 arne-vandebemdt CRON[673]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 12:30:01 arne-vandebemdt CRON[674]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 12:30:01 arne-vandebemdt postfix/pickup[53817]: D69D280466: uid=0 from=<root>
+Sep  3 12:30:01 arne-vandebemdt postfix/cleanup[687]: D69D280466: message-id=<20190903103001.D69D280466@arne-vandebemdt.localdomain>
+Sep  3 12:30:01 arne-vandebemdt postfix/qmgr[555]: D69D280466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 12:30:01 arne-vandebemdt postfix/local[730]: D69D280466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.08, delays=0.06/0.02/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 12:30:01 arne-vandebemdt postfix/qmgr[555]: D69D280466: removed
+Sep  3 12:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 12:30:18 arne-vandebemdt pdns_server[710]: Sep 03 12:30:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:30:21 arne-vandebemdt pdns_server[710]: Sep 03 12:30:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:31:21 arne-vandebemdt pdns_server[710]: Sep 03 12:31:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:31:24 arne-vandebemdt pdns_server[710]: Sep 03 12:31:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:32:24 arne-vandebemdt pdns_server[710]: Sep 03 12:32:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:32:27 arne-vandebemdt pdns_server[710]: Sep 03 12:32:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:33:27 arne-vandebemdt pdns_server[710]: Sep 03 12:33:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:33:30 arne-vandebemdt pdns_server[710]: Sep 03 12:33:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:34:30 arne-vandebemdt pdns_server[710]: Sep 03 12:34:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:34:33 arne-vandebemdt pdns_server[710]: Sep 03 12:34:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:35:33 arne-vandebemdt pdns_server[710]: Sep 03 12:35:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:35:36 arne-vandebemdt pdns_server[710]: Sep 03 12:35:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:36:36 arne-vandebemdt pdns_server[710]: Sep 03 12:36:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:36:39 arne-vandebemdt pdns_server[710]: Sep 03 12:36:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:37:39 arne-vandebemdt pdns_server[710]: Sep 03 12:37:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:37:42 arne-vandebemdt pdns_server[710]: Sep 03 12:37:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:38:42 arne-vandebemdt pdns_server[710]: Sep 03 12:38:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:38:45 arne-vandebemdt pdns_server[710]: Sep 03 12:38:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:39:01 arne-vandebemdt CRON[1622]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 12:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 12:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 12:39:21 arne-vandebemdt kernel: [8273880.307121] audit: type=1400 audit(1567507161.743:4227784): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2313_</var/lib/lxc>" name="/" pid=18950 comm="(ionclean)" flags="rw, rslave"
+Sep  3 12:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 12:39:45 arne-vandebemdt pdns_server[710]: Sep 03 12:39:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:39:48 arne-vandebemdt pdns_server[710]: Sep 03 12:39:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:40:48 arne-vandebemdt pdns_server[710]: Sep 03 12:40:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:40:51 arne-vandebemdt pdns_server[710]: Sep 03 12:40:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:41:51 arne-vandebemdt pdns_server[710]: Sep 03 12:41:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:41:54 arne-vandebemdt pdns_server[710]: Sep 03 12:41:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:42:54 arne-vandebemdt pdns_server[710]: Sep 03 12:42:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:42:57 arne-vandebemdt pdns_server[710]: Sep 03 12:42:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:43:57 arne-vandebemdt pdns_server[710]: Sep 03 12:43:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:44:00 arne-vandebemdt pdns_server[710]: Sep 03 12:44:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:45:00 arne-vandebemdt pdns_server[710]: Sep 03 12:45:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:45:01 arne-vandebemdt CRON[1674]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 12:45:01 arne-vandebemdt CRON[1675]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 12:45:01 arne-vandebemdt postfix/pickup[53817]: A84FD80466: uid=0 from=<root>
+Sep  3 12:45:01 arne-vandebemdt postfix/cleanup[1688]: A84FD80466: message-id=<20190903104501.A84FD80466@arne-vandebemdt.localdomain>
+Sep  3 12:45:01 arne-vandebemdt postfix/qmgr[555]: A84FD80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 12:45:01 arne-vandebemdt postfix/local[1709]: A84FD80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.02/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 12:45:01 arne-vandebemdt postfix/qmgr[555]: A84FD80466: removed
+Sep  3 12:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 12:45:03 arne-vandebemdt pdns_server[710]: Sep 03 12:45:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:46:03 arne-vandebemdt pdns_server[710]: Sep 03 12:46:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:46:06 arne-vandebemdt pdns_server[710]: Sep 03 12:46:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:47:06 arne-vandebemdt pdns_server[710]: Sep 03 12:47:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:47:09 arne-vandebemdt pdns_server[710]: Sep 03 12:47:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:48:09 arne-vandebemdt pdns_server[710]: Sep 03 12:48:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:48:12 arne-vandebemdt pdns_server[710]: Sep 03 12:48:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:49:12 arne-vandebemdt pdns_server[710]: Sep 03 12:49:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:49:15 arne-vandebemdt pdns_server[710]: Sep 03 12:49:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:50:15 arne-vandebemdt pdns_server[710]: Sep 03 12:50:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:50:18 arne-vandebemdt pdns_server[710]: Sep 03 12:50:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:51:18 arne-vandebemdt pdns_server[710]: Sep 03 12:51:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:51:21 arne-vandebemdt pdns_server[710]: Sep 03 12:51:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:52:21 arne-vandebemdt pdns_server[710]: Sep 03 12:52:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:52:24 arne-vandebemdt pdns_server[710]: Sep 03 12:52:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:53:24 arne-vandebemdt pdns_server[710]: Sep 03 12:53:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:53:27 arne-vandebemdt pdns_server[710]: Sep 03 12:53:27 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:54:27 arne-vandebemdt pdns_server[710]: Sep 03 12:54:27 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:54:30 arne-vandebemdt pdns_server[710]: Sep 03 12:54:30 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:55:30 arne-vandebemdt pdns_server[710]: Sep 03 12:55:30 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:55:33 arne-vandebemdt pdns_server[710]: Sep 03 12:55:33 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:56:33 arne-vandebemdt pdns_server[710]: Sep 03 12:56:33 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:56:36 arne-vandebemdt pdns_server[710]: Sep 03 12:56:36 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:57:36 arne-vandebemdt pdns_server[710]: Sep 03 12:57:36 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:57:39 arne-vandebemdt pdns_server[710]: Sep 03 12:57:39 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:58:39 arne-vandebemdt pdns_server[710]: Sep 03 12:58:39 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:58:42 arne-vandebemdt pdns_server[710]: Sep 03 12:58:42 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 12:59:42 arne-vandebemdt pdns_server[710]: Sep 03 12:59:42 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 12:59:45 arne-vandebemdt pdns_server[710]: Sep 03 12:59:45 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:00:01 arne-vandebemdt CRON[2592]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 13:00:01 arne-vandebemdt CRON[2593]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 13:00:01 arne-vandebemdt postfix/pickup[53817]: 8B2A280466: uid=0 from=<root>
+Sep  3 13:00:01 arne-vandebemdt postfix/cleanup[2606]: 8B2A280466: message-id=<20190903110001.8B2A280466@arne-vandebemdt.localdomain>
+Sep  3 13:00:01 arne-vandebemdt postfix/qmgr[555]: 8B2A280466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 13:00:01 arne-vandebemdt postfix/local[2629]: 8B2A280466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.13, delays=0.08/0.03/0/0.03, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 13:00:01 arne-vandebemdt postfix/qmgr[555]: 8B2A280466: removed
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515749 of user check.
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515750 of user check.
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515751 of user check.
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515752 of user check.
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515753 of user check.
+Sep  3 13:00:02 arne-vandebemdt systemd[1]: Started Session 515754 of user check.
+Sep  3 13:00:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 13:00:03 arne-vandebemdt systemd[1]: Started Session 515755 of user check.
+Sep  3 13:00:03 arne-vandebemdt systemd[1]: Started Session 515756 of user check.
+Sep  3 13:00:03 arne-vandebemdt systemd[1]: Started Session 515757 of user check.
+Sep  3 13:00:03 arne-vandebemdt systemd[1]: Started Session 515758 of user check.
+Sep  3 13:00:03 arne-vandebemdt systemd[1]: Started Session 515759 of user check.
+Sep  3 13:00:45 arne-vandebemdt pdns_server[710]: Sep 03 13:00:45 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:00:48 arne-vandebemdt pdns_server[710]: Sep 03 13:00:48 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:01:48 arne-vandebemdt pdns_server[710]: Sep 03 13:01:48 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:01:51 arne-vandebemdt pdns_server[710]: Sep 03 13:01:51 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:02:51 arne-vandebemdt pdns_server[710]: Sep 03 13:02:51 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:02:54 arne-vandebemdt pdns_server[710]: Sep 03 13:02:54 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:03:54 arne-vandebemdt pdns_server[710]: Sep 03 13:03:54 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:03:57 arne-vandebemdt pdns_server[710]: Sep 03 13:03:57 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:04:57 arne-vandebemdt pdns_server[710]: Sep 03 13:04:57 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:05:00 arne-vandebemdt pdns_server[710]: Sep 03 13:05:00 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:06:00 arne-vandebemdt pdns_server[710]: Sep 03 13:06:00 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:06:03 arne-vandebemdt pdns_server[710]: Sep 03 13:06:03 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:07:03 arne-vandebemdt pdns_server[710]: Sep 03 13:07:03 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:07:06 arne-vandebemdt pdns_server[710]: Sep 03 13:07:06 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:08:06 arne-vandebemdt pdns_server[710]: Sep 03 13:08:06 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:08:09 arne-vandebemdt pdns_server[710]: Sep 03 13:08:09 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:09:01 arne-vandebemdt CRON[3603]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 13:09:09 arne-vandebemdt pdns_server[710]: Sep 03 13:09:09 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:09:12 arne-vandebemdt pdns_server[710]: Sep 03 13:09:12 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 13:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 13:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 13:10:12 arne-vandebemdt pdns_server[710]: Sep 03 13:10:12 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:10:15 arne-vandebemdt pdns_server[710]: Sep 03 13:10:15 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:11:15 arne-vandebemdt pdns_server[710]: Sep 03 13:11:15 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:11:18 arne-vandebemdt pdns_server[710]: Sep 03 13:11:18 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:12:18 arne-vandebemdt pdns_server[710]: Sep 03 13:12:18 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:12:21 arne-vandebemdt pdns_server[710]: Sep 03 13:12:21 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:13:21 arne-vandebemdt pdns_server[710]: Sep 03 13:13:21 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:13:24 arne-vandebemdt pdns_server[710]: Sep 03 13:13:24 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:14:25 arne-vandebemdt pdns_server[710]: Sep 03 13:14:24 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:14:28 arne-vandebemdt pdns_server[710]: Sep 03 13:14:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:15:01 arne-vandebemdt CRON[3655]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 13:15:01 arne-vandebemdt CRON[3656]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 13:15:02 arne-vandebemdt postfix/pickup[3601]: 0CAAC80466: uid=0 from=<root>
+Sep  3 13:15:02 arne-vandebemdt postfix/cleanup[3669]: 0CAAC80466: message-id=<20190903111502.0CAAC80466@arne-vandebemdt.localdomain>
+Sep  3 13:15:02 arne-vandebemdt postfix/qmgr[555]: 0CAAC80466: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 13:15:02 arne-vandebemdt postfix/local[3696]: 0CAAC80466: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.06/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 13:15:02 arne-vandebemdt postfix/qmgr[555]: 0CAAC80466: removed
+Sep  3 13:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 13:15:28 arne-vandebemdt pdns_server[710]: Sep 03 13:15:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:15:31 arne-vandebemdt pdns_server[710]: Sep 03 13:15:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:16:31 arne-vandebemdt pdns_server[710]: Sep 03 13:16:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:16:34 arne-vandebemdt pdns_server[710]: Sep 03 13:16:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:17:34 arne-vandebemdt pdns_server[710]: Sep 03 13:17:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:17:37 arne-vandebemdt pdns_server[710]: Sep 03 13:17:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: Created slice User Slice of root.
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: user-0.slice: Failed to reset devices.list: Operation not permitted
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: user@0.service: Failed to reset devices.list: Operation not permitted
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: Starting User Manager for UID 0...
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: init.scope: Failed to reset devices.list: Operation not permitted
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: user-1000.slice: Failed to reset devices.list: Operation not permitted
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Reached target Timers.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Listening on GnuPG cryptographic agent and passphrase cache.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Listening on GnuPG cryptographic agent (access for web browsers).
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Reached target Sockets.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Reached target Paths.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Reached target Basic System.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Reached target Default.
+Sep  3 13:18:14 arne-vandebemdt systemd[4573]: Startup finished in 4ms.
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: Started User Manager for UID 0.
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: session-516026.scope: Failed to reset devices.list: Operation not permitted
+Sep  3 13:18:14 arne-vandebemdt systemd[1]: Started Session 516026 of user root.
+Sep  3 13:18:37 arne-vandebemdt pdns_server[710]: Sep 03 13:18:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:18:40 arne-vandebemdt pdns_server[710]: Sep 03 13:18:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:19:40 arne-vandebemdt pdns_server[710]: Sep 03 13:19:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:19:43 arne-vandebemdt pdns_server[710]: Sep 03 13:19:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:20:35 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/..gitignore.swp)
+Sep  3 13:20:35 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/.gitignore)
+Sep  3 13:20:43 arne-vandebemdt pdns_server[710]: Sep 03 13:20:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:20:46 arne-vandebemdt pdns_server[710]: Sep 03 13:20:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:20:53 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/..gitignore.swp)
+Sep  3 13:21:01 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/.gitignore)
+Sep  3 13:21:46 arne-vandebemdt pdns_server[710]: Sep 03 13:21:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:21:49 arne-vandebemdt pdns_server[710]: Sep 03 13:21:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:22:49 arne-vandebemdt pdns_server[710]: Sep 03 13:22:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:22:52 arne-vandebemdt pdns_server[710]: Sep 03 13:22:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:23:01 arne-vandebemdt CRON[5045]: (root) CMD (   cd / && run-parts --report /etc/cron.hourly)
+Sep  3 13:23:52 arne-vandebemdt pdns_server[710]: Sep 03 13:23:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:23:55 arne-vandebemdt pdns_server[710]: Sep 03 13:23:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:24:55 arne-vandebemdt pdns_server[710]: Sep 03 13:24:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:24:58 arne-vandebemdt pdns_server[710]: Sep 03 13:24:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:25:58 arne-vandebemdt pdns_server[710]: Sep 03 13:25:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:26:01 arne-vandebemdt pdns_server[710]: Sep 03 13:26:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:26:15 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/.passwd.swp)
+Sep  3 13:26:16 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/passwd)
+Sep  3 13:27:01 arne-vandebemdt pdns_server[710]: Sep 03 13:27:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:27:04 arne-vandebemdt pdns_server[710]: Sep 03 13:27:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:27:08 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/nshadow)
+Sep  3 13:27:08 arne-vandebemdt incrond[94]: (system::etc.conf) CMD (/etc/scripts/backup.sh /etc/.pwd.lock)
+Sep  3 13:28:04 arne-vandebemdt pdns_server[710]: Sep 03 13:28:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:28:07 arne-vandebemdt pdns_server[710]: Sep 03 13:28:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:29:07 arne-vandebemdt pdns_server[710]: Sep 03 13:29:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:29:10 arne-vandebemdt pdns_server[710]: Sep 03 13:29:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:30:01 arne-vandebemdt CRON[5111]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 13:30:01 arne-vandebemdt CRON[5112]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 13:30:02 arne-vandebemdt postfix/pickup[3601]: 03B2880B20: uid=0 from=<root>
+Sep  3 13:30:02 arne-vandebemdt postfix/cleanup[5125]: 03B2880B20: message-id=<20190903113002.03B2880B20@arne-vandebemdt.localdomain>
+Sep  3 13:30:02 arne-vandebemdt postfix/qmgr[555]: 03B2880B20: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 13:30:02 arne-vandebemdt postfix/local[5138]: 03B2880B20: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.07/0.03/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 13:30:02 arne-vandebemdt postfix/qmgr[555]: 03B2880B20: removed
+Sep  3 13:30:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 13:30:10 arne-vandebemdt pdns_server[710]: Sep 03 13:30:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:30:13 arne-vandebemdt pdns_server[710]: Sep 03 13:30:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:31:13 arne-vandebemdt pdns_server[710]: Sep 03 13:31:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:31:16 arne-vandebemdt pdns_server[710]: Sep 03 13:31:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:32:16 arne-vandebemdt pdns_server[710]: Sep 03 13:32:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:32:19 arne-vandebemdt pdns_server[710]: Sep 03 13:32:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:32:52 arne-vandebemdt systemd[1]: systemd-tmpfiles-clean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 13:32:52 arne-vandebemdt systemd[1]: Starting Cleanup of Temporary Directories...
+Sep  3 13:32:52 arne-vandebemdt systemd[1]: run-user-0.mount: Failed to reset devices.list: Operation not permitted
+Sep  3 13:32:52 arne-vandebemdt systemd[1]: Started Cleanup of Temporary Directories.
+Sep  3 13:33:19 arne-vandebemdt pdns_server[710]: Sep 03 13:33:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:33:22 arne-vandebemdt pdns_server[710]: Sep 03 13:33:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:34:22 arne-vandebemdt pdns_server[710]: Sep 03 13:34:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:34:25 arne-vandebemdt pdns_server[710]: Sep 03 13:34:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:35:25 arne-vandebemdt pdns_server[710]: Sep 03 13:35:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:35:28 arne-vandebemdt pdns_server[710]: Sep 03 13:35:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:36:28 arne-vandebemdt pdns_server[710]: Sep 03 13:36:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:36:31 arne-vandebemdt pdns_server[710]: Sep 03 13:36:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:37:31 arne-vandebemdt pdns_server[710]: Sep 03 13:37:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:37:34 arne-vandebemdt pdns_server[710]: Sep 03 13:37:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:38:34 arne-vandebemdt pdns_server[710]: Sep 03 13:38:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:38:37 arne-vandebemdt pdns_server[710]: Sep 03 13:38:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:39:01 arne-vandebemdt CRON[6045]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 13:39:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 13:39:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 13:39:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 13:39:37 arne-vandebemdt pdns_server[710]: Sep 03 13:39:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:39:40 arne-vandebemdt pdns_server[710]: Sep 03 13:39:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:40:40 arne-vandebemdt pdns_server[710]: Sep 03 13:40:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:40:43 arne-vandebemdt pdns_server[710]: Sep 03 13:40:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:41:43 arne-vandebemdt pdns_server[710]: Sep 03 13:41:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:41:46 arne-vandebemdt pdns_server[710]: Sep 03 13:41:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:42:46 arne-vandebemdt pdns_server[710]: Sep 03 13:42:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:42:49 arne-vandebemdt pdns_server[710]: Sep 03 13:42:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:43:49 arne-vandebemdt pdns_server[710]: Sep 03 13:43:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:43:52 arne-vandebemdt pdns_server[710]: Sep 03 13:43:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:44:52 arne-vandebemdt pdns_server[710]: Sep 03 13:44:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:44:55 arne-vandebemdt pdns_server[710]: Sep 03 13:44:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:45:01 arne-vandebemdt CRON[6097]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 13:45:01 arne-vandebemdt CRON[6098]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 13:45:01 arne-vandebemdt postfix/pickup[3601]: E686580B20: uid=0 from=<root>
+Sep  3 13:45:01 arne-vandebemdt postfix/cleanup[6111]: E686580B20: message-id=<20190903114501.E686580B20@arne-vandebemdt.localdomain>
+Sep  3 13:45:01 arne-vandebemdt postfix/qmgr[555]: E686580B20: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 13:45:01 arne-vandebemdt postfix/local[6118]: E686580B20: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.09, delays=0.06/0.03/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 13:45:01 arne-vandebemdt postfix/qmgr[555]: E686580B20: removed
+Sep  3 13:45:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 13:45:55 arne-vandebemdt pdns_server[710]: Sep 03 13:45:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:45:58 arne-vandebemdt pdns_server[710]: Sep 03 13:45:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:46:58 arne-vandebemdt pdns_server[710]: Sep 03 13:46:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:47:01 arne-vandebemdt pdns_server[710]: Sep 03 13:47:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:48:01 arne-vandebemdt pdns_server[710]: Sep 03 13:48:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:48:04 arne-vandebemdt pdns_server[710]: Sep 03 13:48:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:49:04 arne-vandebemdt pdns_server[710]: Sep 03 13:49:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:49:07 arne-vandebemdt pdns_server[710]: Sep 03 13:49:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:50:07 arne-vandebemdt pdns_server[710]: Sep 03 13:50:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:50:10 arne-vandebemdt pdns_server[710]: Sep 03 13:50:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:51:10 arne-vandebemdt pdns_server[710]: Sep 03 13:51:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:51:13 arne-vandebemdt pdns_server[710]: Sep 03 13:51:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:52:13 arne-vandebemdt pdns_server[710]: Sep 03 13:52:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:52:16 arne-vandebemdt pdns_server[710]: Sep 03 13:52:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:53:16 arne-vandebemdt pdns_server[710]: Sep 03 13:53:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:53:19 arne-vandebemdt pdns_server[710]: Sep 03 13:53:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:54:19 arne-vandebemdt pdns_server[710]: Sep 03 13:54:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:54:22 arne-vandebemdt pdns_server[710]: Sep 03 13:54:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:55:22 arne-vandebemdt pdns_server[710]: Sep 03 13:55:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:55:25 arne-vandebemdt pdns_server[710]: Sep 03 13:55:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:56:25 arne-vandebemdt pdns_server[710]: Sep 03 13:56:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:56:28 arne-vandebemdt pdns_server[710]: Sep 03 13:56:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:57:28 arne-vandebemdt pdns_server[710]: Sep 03 13:57:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:57:31 arne-vandebemdt pdns_server[710]: Sep 03 13:57:31 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:58:31 arne-vandebemdt pdns_server[710]: Sep 03 13:58:31 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:58:34 arne-vandebemdt pdns_server[710]: Sep 03 13:58:34 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 13:59:34 arne-vandebemdt pdns_server[710]: Sep 03 13:59:34 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 13:59:37 arne-vandebemdt pdns_server[710]: Sep 03 13:59:37 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:00:01 arne-vandebemdt systemd[1]: Started Session 516121 of user check.
+Sep  3 14:00:01 arne-vandebemdt systemd[1]: Started Session 516129 of user check.
+Sep  3 14:00:01 arne-vandebemdt systemd[1]: Started Session 516130 of user check.
+Sep  3 14:00:01 arne-vandebemdt CRON[7038]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 14:00:01 arne-vandebemdt CRON[7039]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 14:00:01 arne-vandebemdt postfix/pickup[3601]: D6A5F80B20: uid=0 from=<root>
+Sep  3 14:00:01 arne-vandebemdt postfix/cleanup[7055]: D6A5F80B20: message-id=<20190903120001.D6A5F80B20@arne-vandebemdt.localdomain>
+Sep  3 14:00:01 arne-vandebemdt postfix/qmgr[555]: D6A5F80B20: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 14:00:01 arne-vandebemdt systemd[1]: Started Session 516143 of user check.
+Sep  3 14:00:01 arne-vandebemdt postfix/local[7065]: D6A5F80B20: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.06/0.04/0/0, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 14:00:01 arne-vandebemdt postfix/qmgr[555]: D6A5F80B20: removed
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516145 of user check.
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516146 of user check.
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516147 of user check.
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516148 of user check.
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516149 of user check.
+Sep  3 14:00:02 arne-vandebemdt systemd[1]: Started Session 516150 of user check.
+Sep  3 14:00:03 arne-vandebemdt systemd[1]: Started Session 516151 of user check.
+Sep  3 14:00:03 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 14:00:37 arne-vandebemdt pdns_server[710]: Sep 03 14:00:37 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:00:40 arne-vandebemdt pdns_server[710]: Sep 03 14:00:40 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:01:40 arne-vandebemdt pdns_server[710]: Sep 03 14:01:40 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:01:43 arne-vandebemdt pdns_server[710]: Sep 03 14:01:43 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:02:43 arne-vandebemdt pdns_server[710]: Sep 03 14:02:43 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:02:46 arne-vandebemdt pdns_server[710]: Sep 03 14:02:46 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:03:46 arne-vandebemdt pdns_server[710]: Sep 03 14:03:46 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:03:49 arne-vandebemdt pdns_server[710]: Sep 03 14:03:49 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:04:49 arne-vandebemdt pdns_server[710]: Sep 03 14:04:49 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:04:52 arne-vandebemdt pdns_server[710]: Sep 03 14:04:52 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:05:52 arne-vandebemdt pdns_server[710]: Sep 03 14:05:52 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:05:55 arne-vandebemdt pdns_server[710]: Sep 03 14:05:55 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:06:55 arne-vandebemdt pdns_server[710]: Sep 03 14:06:55 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:06:58 arne-vandebemdt pdns_server[710]: Sep 03 14:06:58 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:07:58 arne-vandebemdt pdns_server[710]: Sep 03 14:07:58 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:08:01 arne-vandebemdt pdns_server[710]: Sep 03 14:08:01 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:09:01 arne-vandebemdt CRON[8025]: (root) CMD (  [ -x /usr/lib/php/sessionclean ] && if [ ! -d /run/systemd/system ]; then /usr/lib/php/sessionclean; fi)
+Sep  3 14:09:01 arne-vandebemdt pdns_server[710]: Sep 03 14:09:01 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:09:04 arne-vandebemdt pdns_server[710]: Sep 03 14:09:04 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:09:21 arne-vandebemdt kernel: [8279280.272947] audit: type=1400 audit(1567512561.739:4227834): apparmor="DENIED" operation="mount" info="failed flags match" error=-13 profile="lxc-2313_</var/lib/lxc>" name="/" pid=51670 comm="(ionclean)" flags="rw, rslave"
+Sep  3 14:09:21 arne-vandebemdt systemd[1]: phpsessionclean.service: Failed to reset devices.list: Operation not permitted
+Sep  3 14:09:21 arne-vandebemdt systemd[1]: Starting Clean php session files...
+Sep  3 14:09:21 arne-vandebemdt systemd[1]: Started Clean php session files.
+Sep  3 14:10:04 arne-vandebemdt pdns_server[710]: Sep 03 14:10:04 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:10:07 arne-vandebemdt pdns_server[710]: Sep 03 14:10:07 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:11:07 arne-vandebemdt pdns_server[710]: Sep 03 14:11:07 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:11:10 arne-vandebemdt pdns_server[710]: Sep 03 14:11:10 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:12:10 arne-vandebemdt pdns_server[710]: Sep 03 14:12:10 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:12:13 arne-vandebemdt pdns_server[710]: Sep 03 14:12:13 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:13:13 arne-vandebemdt pdns_server[710]: Sep 03 14:13:13 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:13:16 arne-vandebemdt pdns_server[710]: Sep 03 14:13:16 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:14:16 arne-vandebemdt pdns_server[710]: Sep 03 14:14:16 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:14:19 arne-vandebemdt pdns_server[710]: Sep 03 14:14:19 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:15:01 arne-vandebemdt CRON[8077]: (root) CMD (sh /etc/scripts/incron_config.sh)
+Sep  3 14:15:01 arne-vandebemdt CRON[8078]: (root) CMD (sh /etc/scripts/db_max_check.sh)
+Sep  3 14:15:01 arne-vandebemdt postfix/pickup[3601]: 2D6E780B20: uid=0 from=<root>
+Sep  3 14:15:01 arne-vandebemdt postfix/cleanup[8092]: 2D6E780B20: message-id=<20190903121501.2D6E780B20@arne-vandebemdt.localdomain>
+Sep  3 14:15:01 arne-vandebemdt postfix/qmgr[555]: 2D6E780B20: from=<root@arne-vandebemdt.localdomain>, size=694, nrcpt=1 (queue active)
+Sep  3 14:15:01 arne-vandebemdt postfix/local[8106]: 2D6E780B20: to=<root@arne-vandebemdt.localdomain>, orig_to=<root>, relay=local, delay=0.1, delays=0.06/0.02/0/0.01, dsn=2.0.0, status=sent (delivered to mailbox)
+Sep  3 14:15:01 arne-vandebemdt postfix/qmgr[555]: 2D6E780B20: removed
+Sep  3 14:15:02 arne-vandebemdt incrond[94]: system table etc.conf changed, reloading
+Sep  3 14:15:19 arne-vandebemdt pdns_server[710]: Sep 03 14:15:19 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:15:22 arne-vandebemdt pdns_server[710]: Sep 03 14:15:22 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:16:22 arne-vandebemdt pdns_server[710]: Sep 03 14:16:22 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:16:25 arne-vandebemdt pdns_server[710]: Sep 03 14:16:25 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:17:25 arne-vandebemdt pdns_server[710]: Sep 03 14:17:25 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:17:28 arne-vandebemdt pdns_server[710]: Sep 03 14:17:28 Received serial number updates for 0 zones, had 1 timeout
+Sep  3 14:18:28 arne-vandebemdt pdns_server[710]: Sep 03 14:18:28 1 slave domain needs checking, 0 queued for AXFR
+Sep  3 14:18:31 arne-vandebemdt pdns_server[710]: Sep 03 14:18:31 Received serial number updates for 0 zones, had 1 timeout

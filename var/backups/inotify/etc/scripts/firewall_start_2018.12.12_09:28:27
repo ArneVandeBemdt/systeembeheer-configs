@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#script for enabeling firewall rules in iptables. this is for IPv4 en IPv6
+#Arne Van de Bemdt
+
+iptables-restore < firewall_rules.v4
+ip6tables-restore < firewall_rules.v6
+
+#tcp syn cookies
+awk -i inplace '/#net.ipv4.tcp_syncookies/ { gsub("#", "") }1' /etc/sysctl.conf
+sysctl -p
+
+

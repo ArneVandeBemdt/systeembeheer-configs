@@ -1,0 +1,6 @@
+d888172acce96a7903f67a40cb9fc427  usr/lib/postfix/postfix-sqlite.so
+7e4d544363f6a51d99b396dc3a8dbd6a  usr/share/doc/postfix-sqlite/README.Debian
+393b2627accd5dc099d8fd12d140a0e3  usr/share/doc/postfix-sqlite/changelog.Debian.gz
+33b015d6bb551a6c0bdde2045d01b1c7  usr/share/doc/postfix-sqlite/changelog.gz
+032a9b3ec7f80e187e661a5e897e387d  usr/share/doc/postfix-sqlite/copyright
+470a13b9367421e52d0fada56fcc88ef  usr/share/man/man5/sqlite_table.5.gz

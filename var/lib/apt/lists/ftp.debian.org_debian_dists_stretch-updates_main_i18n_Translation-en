@@ -1,0 +1,1818 @@
+Package: clamav
+Description-md5: fb7be82d5591a0f3facf827f0a60c5d6
+Description-en: anti-virus utility for Unix - command-line interface
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains the command line interface. Features:
+  - built-in support for various archive formats, including Zip, Tar,
+    Gzip, Bzip2, OLE2, Cabinet, CHM, BinHex, SIS and others;
+  - built-in support for almost all mail file formats;
+  - built-in support for ELF executables and Portable Executable files
+    compressed with UPX, FSG, Petite, NsPack, wwpack32, MEW, Upack and
+    obfuscated with SUE, Y0da Cryptor and others;
+  - built-in support for popular document formats including Microsoft
+    Office and Mac Office files, HTML, RTF and PDF.
+ .
+ For scanning to work, a virus database is needed. There are two options
+ for getting it:
+  - clamav-freshclam: updates the database from Internet. This is
+    recommended with Internet access.
+  - clamav-data: for users without Internet access. The package is
+    not updated once installed. The clamav-getfiles package allows
+    creating custom packages from an Internet-connected computer.
+
+Package: clamav-base
+Description-md5: 701912f0a2cc626b57570094858a5b1d
+Description-en: anti-virus utility for Unix - base package
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package mainly manages the clamav system account. It is not really
+ useful without the clamav or clamav-daemon package.
+
+Package: clamav-daemon
+Description-md5: dc258511e9e1f62ef33172c190a0fad6
+Description-en: anti-virus utility for Unix - scanner daemon
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains the daemon featuring:
+  - fast, multi-threaded daemon;
+  - easy integration with MTA's;
+  - support for on-access scanning;
+  - remote scanning;
+  - able to be run supervised by daemon.
+
+Package: clamav-docs
+Description-md5: af78818bbdf8851b6358c15693a31419
+Description-en: anti-virus utility for Unix - documentation
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains the documentation for the ClamAV suite.
+
+Package: clamav-freshclam
+Description-md5: 82c68e4f7c984e3d6bdc720ae842fca8
+Description-en: anti-virus utility for Unix - virus database update utility
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains the freshclam program and scripts to automate virus
+ database updating. It relies on an Internet connection, but can be
+ run in a variety of ways to compensate for intermittent connections.
+
+Package: clamav-milter
+Description-md5: e47a1194215b5fbde13fb9217c44d83f
+Description-en: anti-virus utility for Unix - sendmail integration
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains the ClamAV milter for use with sendmail. It can
+ be configured to be run either standalone, or using clamav-daemon.
+
+Package: clamav-testfiles
+Description-md5: 29437a0b8c82cc8179b64405688f062e
+Description-en: anti-virus utility for Unix - test files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains files 'infected' with a test signature. The test
+ signature (ClamAV-Test-Signature) should be detectable by all
+ anti-virus programs.
+
+Package: clamdscan
+Description-md5: ad077e4c74b9870b6e7bb55aef11c547
+Description-en: anti-virus utility for Unix - scanner client
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ This package contains clamdscan, the command line interface of the clamav
+ daemon.
+
+Package: libclamav-dev
+Description-md5: 3dc197b6ebfb15522a4b7913ea796763
+Description-en: anti-virus utility for Unix - development files
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ The package contains the needed headers and libraries for
+ developing software using the libclamav interface.
+ .
+ This library can be used to develop virus scanner applications.
+
+Package: libclamav7
+Description-md5: bf2e797d0e7e410776d9200761e01bd6
+Description-en: anti-virus utility for Unix - library
+ Clam AntiVirus is an anti-virus toolkit for Unix. The main purpose of
+ this software is the integration with mail servers (attachment
+ scanning). The package provides a flexible and scalable
+ multi-threaded daemon in the clamav-daemon package, a command-line
+ scanner in the clamav package, and a tool for automatic updating via
+ the Internet in the clamav-freshclam package. The programs are based
+ on libclamav, which can be used by other software.
+ .
+ For programs written using the libclamav library. Libclamav may be used to add
+ virus protection into software. The library is thread-safe, and automatically
+ recognizes and scans archives. Scanning is very fast and most of the time
+ not noticeable.
+
+Package: debian-archive-keyring
+Description-md5: 4ee78d6fd2292b9893b8eb4f5d5dd91d
+Description-en: GnuPG archive keys of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive keys used for that.
+
+Package: dnsviz
+Description-md5: 4f2e5db401d3a48757f46cd4365530b7
+Description-en: Tools for analyzing and visualizing DNS and DNSSEC behavior
+ DNSViz is a tool suite for analysis and visualization of Domain Name System
+ (DNS) behavior, including its security extensions (DNSSEC). This tool suite
+ powers the Web-based analysis available at <http://dnsviz.net/>.
+
+Package: firefox-esr
+Description-md5: 88ee196fd829d9218a763b4d498a6f6a
+Description-en: Mozilla Firefox web browser - Extended Support Release (ESR)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+
+Package: firefox-esr-l10n-ach
+Description-md5: d5188b984c4f0df3501f954a193b9bcb
+Description-en: Acoli language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Acoli.
+
+Package: firefox-esr-l10n-af
+Description-md5: 5b77c93a9812c0c9c016530c0d0e3034
+Description-en: Afrikaans language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Afrikaans.
+
+Package: firefox-esr-l10n-all
+Description-md5: 0510a1fd50726dce346379d22d5ac62e
+Description-en: All language packages for Firefox ESR (meta)
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This is a metapackage depending on all available localizations of Firefox ESR.
+
+Package: firefox-esr-l10n-an
+Description-md5: 9924a97ec612d6fcd54f0610a7a3e043
+Description-en: Aragonese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Aragonese.
+
+Package: firefox-esr-l10n-ar
+Description-md5: 187769fc81d734cf856ac016e6f40170
+Description-en: Arabic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Arabic.
+
+Package: firefox-esr-l10n-as
+Description-md5: 7674ef31cf34e2fb635f6c4fee98a4c6
+Description-en: Assamese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Assamese.
+
+Package: firefox-esr-l10n-ast
+Description-md5: 480a52dafb8192cb706b3bf179b9862a
+Description-en: Asturian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Asturian.
+
+Package: firefox-esr-l10n-az
+Description-md5: 8606a59b109c8f1b54cab83ec2ca635a
+Description-en: Azerbaijani language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Azerbaijani.
+
+Package: firefox-esr-l10n-be
+Description-md5: 387fae80c2f0403a899472b965c142b2
+Description-en: Belarusian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Belarusian.
+
+Package: firefox-esr-l10n-bg
+Description-md5: e9dc3372b630d540f7dbb29e05efaa94
+Description-en: Bulgarian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bulgarian.
+
+Package: firefox-esr-l10n-bn-bd
+Description-md5: 1c66f291083fed9190de6cadc2b9eee9
+Description-en: Bengali (Bangladesh) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bengali (Bangladesh).
+
+Package: firefox-esr-l10n-bn-in
+Description-md5: 5744d663bb741cb27f83c24f715f29f9
+Description-en: Bengali (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bengali (India).
+
+Package: firefox-esr-l10n-br
+Description-md5: bb7780db4d6867db8bb1444714267939
+Description-en: Breton language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Breton.
+
+Package: firefox-esr-l10n-bs
+Description-md5: 5fea1a4ed52425b2682a4a722208ce6a
+Description-en: Bosnian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Bosnian.
+
+Package: firefox-esr-l10n-ca
+Description-md5: 39fc7a1d4b9f5fb5d75d2c85f3fe18f8
+Description-en: Catalan language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Catalan.
+
+Package: firefox-esr-l10n-cak
+Description-md5: b7d60abe64a35eb3f946d5cec1befbfe
+Description-en: Kaqchikel language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kaqchikel.
+
+Package: firefox-esr-l10n-cs
+Description-md5: 0c1f1b9260776612632c42839d46ae61
+Description-en: Czech language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Czech.
+
+Package: firefox-esr-l10n-cy
+Description-md5: a0b97541cfb2909dde4a6826e704de5c
+Description-en: Welsh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Welsh.
+
+Package: firefox-esr-l10n-da
+Description-md5: b9a514cd98a26589131b97e42b7c29a6
+Description-en: Danish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Danish.
+
+Package: firefox-esr-l10n-de
+Description-md5: 00c26bf015520152a19c68eb31a240c5
+Description-en: German language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in German.
+
+Package: firefox-esr-l10n-dsb
+Description-md5: 762244752cd248a402ca1a08dc2f5fbc
+Description-en: Lower Sorbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Lower Sorbian.
+
+Package: firefox-esr-l10n-el
+Description-md5: f29c652c5733c8f7b9f1f5fcf5272678
+Description-en: Modern Greek language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Modern Greek.
+
+Package: firefox-esr-l10n-en-gb
+Description-md5: fae69f711dcd022c1331ec34c8a16f4e
+Description-en: English (United Kingdom) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in English (United Kingdom).
+
+Package: firefox-esr-l10n-en-za
+Description-md5: b5c104c8ef5647257658f30a23413328
+Description-en: English (South Africa) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in English (South Africa).
+
+Package: firefox-esr-l10n-eo
+Description-md5: 945baf829a8107d2a724afa283d26117
+Description-en: Esperanto language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Esperanto.
+
+Package: firefox-esr-l10n-es-ar
+Description-md5: 6326584d7e47d99429a947e9ae2c0fdf
+Description-en: Spanish (Argentina) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Argentina).
+
+Package: firefox-esr-l10n-es-cl
+Description-md5: 7ec0e40e29f940158ac73f60d382dd9f
+Description-en: Spanish (Chile) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Chile).
+
+Package: firefox-esr-l10n-es-es
+Description-md5: 223eafc61a519e57a33800519688b493
+Description-en: Spanish (Spain) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Spain).
+
+Package: firefox-esr-l10n-es-mx
+Description-md5: aec36965ba71f3207f7024669d2a71aa
+Description-en: Spanish (Mexico) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Spanish (Mexico).
+
+Package: firefox-esr-l10n-et
+Description-md5: acae80d2ec31f72159f0cab7b8cd1af3
+Description-en: Estonian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Estonian.
+
+Package: firefox-esr-l10n-eu
+Description-md5: 7b91ccfc8995908ef00e895e9220949e
+Description-en: Basque language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Basque.
+
+Package: firefox-esr-l10n-fa
+Description-md5: b6f751f17ccf16519d100f1e8f0117fb
+Description-en: Persian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Persian.
+
+Package: firefox-esr-l10n-ff
+Description-md5: dc691e9c1208dc2c4c090505e89add2d
+Description-en: Fulah language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Fulah.
+
+Package: firefox-esr-l10n-fi
+Description-md5: e2ab3eebf772ebeed27528fef8943bc2
+Description-en: Finnish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Finnish.
+
+Package: firefox-esr-l10n-fr
+Description-md5: 2853e6beeb5377d82897890c50794bb2
+Description-en: French language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in French.
+
+Package: firefox-esr-l10n-fy-nl
+Description-md5: bc561c21dd7715b4cc81394b2b2959d4
+Description-en: Western Frisian (Netherlands) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Western Frisian (Netherlands).
+
+Package: firefox-esr-l10n-ga-ie
+Description-md5: df80077e094c5c407d48346980fdda38
+Description-en: Irish (Ireland) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Irish (Ireland).
+
+Package: firefox-esr-l10n-gd
+Description-md5: b29b5eb94111e47714327298f150d08b
+Description-en: Scottish Gaelic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Scottish Gaelic.
+
+Package: firefox-esr-l10n-gl
+Description-md5: 3953015101a54301613ee48a7baa1126
+Description-en: Galician language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Galician.
+
+Package: firefox-esr-l10n-gn
+Description-md5: 219b0f78c77d54e90b45773da16da43a
+Description-en: Guarani language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Guarani.
+
+Package: firefox-esr-l10n-gu-in
+Description-md5: 85fa76ca56a724a05142d2b8b6f4503a
+Description-en: Gujarati (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Gujarati (India).
+
+Package: firefox-esr-l10n-he
+Description-md5: 0d6de331cc5d85a68cf2df33cda542b1
+Description-en: Hebrew language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hebrew.
+
+Package: firefox-esr-l10n-hi-in
+Description-md5: 07c46cb13c9b2cfea74560ac1fd4cab9
+Description-en: Hindi (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hindi (India).
+
+Package: firefox-esr-l10n-hr
+Description-md5: ee29b6625469a2c68272f051073e1b5d
+Description-en: Croatian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Croatian.
+
+Package: firefox-esr-l10n-hsb
+Description-md5: 49e72d2033713197718ea2d7fc0f43dd
+Description-en: Upper Sorbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Upper Sorbian.
+
+Package: firefox-esr-l10n-hu
+Description-md5: 77917341475a87753af784dc7f1a3483
+Description-en: Hungarian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Hungarian.
+
+Package: firefox-esr-l10n-hy-am
+Description-md5: 8337932972f9eaa518ed74a7cb42d4c3
+Description-en: Armenian (Armenia) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Armenian (Armenia).
+
+Package: firefox-esr-l10n-ia
+Description-md5: 949474e6ab1862194ded64f6c1aedb67
+Description-en: Interlingua language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Interlingua.
+
+Package: firefox-esr-l10n-id
+Description-md5: b83dbfb0b8657df54694267db0c197e1
+Description-en: Indonesian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Indonesian.
+
+Package: firefox-esr-l10n-is
+Description-md5: 6f17be2d462a0b0f3fcf8cc9b2099f13
+Description-en: Icelandic language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Icelandic.
+
+Package: firefox-esr-l10n-it
+Description-md5: 1eb259ab89190e23c9a2d6c6bbcaa673
+Description-en: Italian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Italian.
+
+Package: firefox-esr-l10n-ja
+Description-md5: dfe98a7a06a28d3c03fb211e550013f3
+Description-en: Japanese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Japanese.
+
+Package: firefox-esr-l10n-ka
+Description-md5: 12c4723b6cbdd691b09e976cf2b91e83
+Description-en: Georgian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Georgian.
+
+Package: firefox-esr-l10n-kab
+Description-md5: d419dae93d1914b3fbb042e044917ec0
+Description-en: Kabyle language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kabyle.
+
+Package: firefox-esr-l10n-kk
+Description-md5: f525dce69931dff3a292fa8f08eaf77f
+Description-en: Kazakh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kazakh.
+
+Package: firefox-esr-l10n-km
+Description-md5: 78dff3772840e7626fa8bb3ac8019dd9
+Description-en: Central Khmer language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Central Khmer.
+
+Package: firefox-esr-l10n-kn
+Description-md5: dd6f9f89e71aa55eee3f58ce5e18bf26
+Description-en: Kannada language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Kannada.
+
+Package: firefox-esr-l10n-ko
+Description-md5: 74d15a656cc38e02bbca0f8879cbd4ac
+Description-en: Korean language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Korean.
+
+Package: firefox-esr-l10n-lij
+Description-md5: 1f4d901ea4a38b03bb14c47f27a45c91
+Description-en: Ligurian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Ligurian.
+
+Package: firefox-esr-l10n-lt
+Description-md5: d3b5577aa40f3c5b3b5e7a966f2ce374
+Description-en: Lithuanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Lithuanian.
+
+Package: firefox-esr-l10n-lv
+Description-md5: fe4207dff81207ebdae8b76c36b88dba
+Description-en: Latvian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Latvian.
+
+Package: firefox-esr-l10n-mai
+Description-md5: 62fc4105bbcaaf1fe65a893a6ce90a6a
+Description-en: Maithili language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Maithili.
+
+Package: firefox-esr-l10n-mk
+Description-md5: 7819b44418c3cdeec4326d529a046aeb
+Description-en: Macedonian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Macedonian.
+
+Package: firefox-esr-l10n-ml
+Description-md5: fc49f6c7598cfbff5c7ede61743a56bc
+Description-en: Malayalam language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Malayalam.
+
+Package: firefox-esr-l10n-mr
+Description-md5: bd58ad4aa8c67f243d47af63433cc1e8
+Description-en: Marathi language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Marathi.
+
+Package: firefox-esr-l10n-ms
+Description-md5: b706d54f54c4199e00861f23021ffff1
+Description-en: Malay language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Malay.
+
+Package: firefox-esr-l10n-my
+Description-md5: 136624cfdf4cb08d87c6d22dda254cdb
+Description-en: Burmese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Burmese.
+
+Package: firefox-esr-l10n-nb-no
+Description-md5: 875fa701d40505084defa5afc8600aeb
+Description-en: Norwegian Bokmål (Norway) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Norwegian Bokmål (Norway).
+
+Package: firefox-esr-l10n-ne-np
+Description-md5: 5d41290591fddab9640fbd07d024bedf
+Description-en: Nepali (Nepal) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Nepali (Nepal).
+
+Package: firefox-esr-l10n-nl
+Description-md5: 7919d498f210c57c05c83c5b9361f40b
+Description-en: Dutch language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Dutch.
+
+Package: firefox-esr-l10n-nn-no
+Description-md5: dcb4d63727ae81d5830918342e7d4897
+Description-en: Norwegian Nynorsk (Norway) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Norwegian Nynorsk (Norway).
+
+Package: firefox-esr-l10n-oc
+Description-md5: 326a045a0881b6d979db31cc4970ab55
+Description-en: Occitan language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Occitan.
+
+Package: firefox-esr-l10n-or
+Description-md5: 538db7d58683bdafe51501b1f4165779
+Description-en: Oriya language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Oriya.
+
+Package: firefox-esr-l10n-pa-in
+Description-md5: 12953e3aaefbccc50948f71e44f17449
+Description-en: Panjabi (India) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Panjabi (India).
+
+Package: firefox-esr-l10n-pl
+Description-md5: e9801fca3e7fc04c053ce8beeea8ccaf
+Description-en: Polish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Polish.
+
+Package: firefox-esr-l10n-pt-br
+Description-md5: be095d527e7a4922caaf485c0ce32717
+Description-en: Portuguese (Brazil) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Portuguese (Brazil).
+
+Package: firefox-esr-l10n-pt-pt
+Description-md5: c112a7cad4caddf8b10bd77b0a24ef41
+Description-en: Portuguese (Portugal) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Portuguese (Portugal).
+
+Package: firefox-esr-l10n-rm
+Description-md5: fdc1d706c10747112d1e114dd78800a8
+Description-en: Romansh language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Romansh.
+
+Package: firefox-esr-l10n-ro
+Description-md5: d8d1267b5730777d1784543c5d019b79
+Description-en: Romanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Romanian.
+
+Package: firefox-esr-l10n-ru
+Description-md5: 81a5e2d34bc0b6f77b89b2e0876ef26e
+Description-en: Russian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Russian.
+
+Package: firefox-esr-l10n-si
+Description-md5: 00c75e50d870fbb579e09213362e0d62
+Description-en: Sinhala language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Sinhala.
+
+Package: firefox-esr-l10n-sk
+Description-md5: 9982e72b07fbc88a7640a5deda3d8d08
+Description-en: Slovak language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Slovak.
+
+Package: firefox-esr-l10n-sl
+Description-md5: 906885270ee826dbc6e0cde94503d5c2
+Description-en: Slovenian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Slovenian.
+
+Package: firefox-esr-l10n-son
+Description-md5: 79e87469939a044cda49cd3dcc26d9d9
+Description-en: Songhai languages language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Songhai languages.
+
+Package: firefox-esr-l10n-sq
+Description-md5: 7bcc4af584625cae2f12b4be7e68faaf
+Description-en: Albanian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Albanian.
+
+Package: firefox-esr-l10n-sr
+Description-md5: 36411d0bdd4bee135aaa0cb17a07dad1
+Description-en: Serbian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Serbian.
+
+Package: firefox-esr-l10n-sv-se
+Description-md5: 6de19c2795efba229042da380e69d931
+Description-en: Swedish (Sweden) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Swedish (Sweden).
+
+Package: firefox-esr-l10n-ta
+Description-md5: 1012f6f493f51739a6dada33a2a550f1
+Description-en: Tamil language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Tamil.
+
+Package: firefox-esr-l10n-te
+Description-md5: b7b4860bb367b766b2a1ab848ec2df4c
+Description-en: Telugu language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Telugu.
+
+Package: firefox-esr-l10n-th
+Description-md5: b9a1229e4164d95762f510aa47b06d63
+Description-en: Thai language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Thai.
+
+Package: firefox-esr-l10n-tr
+Description-md5: 78069753c5073c8e880c91bb3322b0c0
+Description-en: Turkish language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Turkish.
+
+Package: firefox-esr-l10n-uk
+Description-md5: f6b5ebceef2b190b19cf3a0742498225
+Description-en: Ukrainian language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Ukrainian.
+
+Package: firefox-esr-l10n-ur
+Description-md5: 9cab06f06f59cdb4e35e4bdabcfae1fe
+Description-en: Urdu language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Urdu.
+
+Package: firefox-esr-l10n-uz
+Description-md5: 3906a472d2035b9ebcb169f6f5088a95
+Description-en: Uzbek language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Uzbek.
+
+Package: firefox-esr-l10n-vi
+Description-md5: 890c381792b5053d91ccb56a986f8b70
+Description-en: Vietnamese language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Vietnamese.
+
+Package: firefox-esr-l10n-xh
+Description-md5: 8efaadb254622ba4ace972ffdbe4e176
+Description-en: Xhosa language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Xhosa.
+
+Package: firefox-esr-l10n-zh-cn
+Description-md5: 60c15e38f40b1bf1da8fd99b96a8796e
+Description-en: Chinese (China) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Chinese (China).
+
+Package: firefox-esr-l10n-zh-tw
+Description-md5: 5c9838adc8bf4fb11f3ffb4bef1c40c5
+Description-en: Chinese (Taiwan) language package for Firefox ESR
+ Firefox ESR is a powerful, extensible web browser with support for modern
+ web application technologies.
+ .
+ This package contains the localization of Firefox ESR in Chinese (Taiwan).
+
+Package: iceweasel
+Description-md5: ddd0bc4f6b2c336cc1c50357095555bf
+Description-en: Web browser based on Firefox - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ach
+Description-md5: 5de4e26d598258f83fc07fa457d7a3a0
+Description-en: Acoli language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-af
+Description-md5: d7db4c9207178f8ff964650376916d35
+Description-en: Afrikaans language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-all
+Description-md5: cff5a590544adcdebda89494291bf9d6
+Description-en: All language packages for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-an
+Description-md5: e9973e8ca3c24f237f89b4a784bad97d
+Description-en: Aragonese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ar
+Description-md5: 7025093ac72fbb22ff1a5b02ce2ed173
+Description-en: Arabic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-as
+Description-md5: c1ad7263809c684e9fab632b93ae399f
+Description-en: Assamese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ast
+Description-md5: 25bd07c58f5edc8a9ce8f73a4cc9dfeb
+Description-en: Asturian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-az
+Description-md5: 03d6aa34451153d514c576d9498c2119
+Description-en: Azerbaijani language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-be
+Description-md5: e5a8e6cfe329566303ae69739595d114
+Description-en: Belarusian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-bg
+Description-md5: 24fca2c2094fcd3657634f263a77082c
+Description-en: Bulgarian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-bn-bd
+Description-md5: 09f313b303db42cf9f5492ae6a60c5f2
+Description-en: Bengali (Bangladesh) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-bn-in
+Description-md5: d6ea2352ba72953bccc439e203879a9d
+Description-en: Bengali (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-br
+Description-md5: 986bedb18e98bc14e9a21866a4c37bce
+Description-en: Breton language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-bs
+Description-md5: 8b00a6a95b338a0d5b2f24880a8c2351
+Description-en: Bosnian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ca
+Description-md5: 65d78422796d89dd665eb96570b86f68
+Description-en: Catalan language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-cak
+Description-md5: 7f559a20a5d0fafbb798b14c5c2ffe32
+Description-en: Kaqchikel language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-cs
+Description-md5: 5e04dcaca1b85a90dc21a9c2a47098d8
+Description-en: Czech language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-cy
+Description-md5: 817be795a3f3848d3b8190001f0571c1
+Description-en: Welsh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-da
+Description-md5: 9ee3c8afa33ed219e73e8aa3f05d7ab1
+Description-en: Danish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-de
+Description-md5: 7c343d2abdfdfa957e796a4133dd80f9
+Description-en: German language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-dsb
+Description-md5: 25f4b0783b5d8f45b427a08b4ceb7d24
+Description-en: Lower Sorbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-el
+Description-md5: 6b9e6f34412aac3e9bc83bf9cf690ce5
+Description-en: Modern Greek language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-en-gb
+Description-md5: 768557bbb1e18ad953a2bf7ff7fea9a2
+Description-en: English (United Kingdom) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-en-za
+Description-md5: 465ec3b7bc85e1d3aab9c36359cf0730
+Description-en: English (South Africa) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-eo
+Description-md5: 4c90fa0de6eaa91e0cf01f07c6594d2f
+Description-en: Esperanto language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-es-ar
+Description-md5: 3e3c5cd89e5e4221f17bd2369827e78d
+Description-en: Spanish (Argentina) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-es-cl
+Description-md5: 79d03bd81ddcb40c6dbf2ea5bd31c09a
+Description-en: Spanish (Chile) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-es-es
+Description-md5: 375afa98d32c593ba63ded4a55cb969c
+Description-en: Spanish (Spain) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-es-mx
+Description-md5: ad6005ac41e2fe196c026fc5e92ec382
+Description-en: Spanish (Mexico) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-et
+Description-md5: 3ab5cfa6c39aaabf6d950aa278479b25
+Description-en: Estonian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-eu
+Description-md5: 122be83a1a2faa32ecc4e69a5916742f
+Description-en: Basque language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-fa
+Description-md5: da3a8f65d749bd93836a1dd3250ad6a4
+Description-en: Persian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ff
+Description-md5: 72b5d64859750d70b6b7eec2f0f0e415
+Description-en: Fulah language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-fi
+Description-md5: f736d616438256e3ae0068df605d8968
+Description-en: Finnish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-fr
+Description-md5: ba6ddaa09b1b4a1007d4b65afda9ea37
+Description-en: French language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-fy-nl
+Description-md5: 29815a309b0c32fc1f1d5c0b89edf3cd
+Description-en: Western Frisian (Netherlands) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ga-ie
+Description-md5: f54cf54bef15364f91d0698027870dc5
+Description-en: Irish (Ireland) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-gd
+Description-md5: 429aca48512a031270759a18a1a6480d
+Description-en: Scottish Gaelic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-gl
+Description-md5: e81cfd3586f8d00c9cc5b407eb3c9edf
+Description-en: Galician language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-gn
+Description-md5: c5f1560baf00a6b9a5f8f08538496744
+Description-en: Guarani language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-gu-in
+Description-md5: 0befb0a8aa2c71c16eaea2302499cee3
+Description-en: Gujarati (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-he
+Description-md5: ee564eafda4e9ce6ddfd9aae0eba8435
+Description-en: Hebrew language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-hi-in
+Description-md5: 2b11581510a85306278f1813c8047922
+Description-en: Hindi (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-hr
+Description-md5: d0f815659c4c839a5830de7faa53da2d
+Description-en: Croatian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-hsb
+Description-md5: 34dd535fc34eb21286c95322ccdc4357
+Description-en: Upper Sorbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-hu
+Description-md5: 898ec7b4b7fc3b5b3e548abcd8f96693
+Description-en: Hungarian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-hy-am
+Description-md5: 518b2e53cc31b23ead9752732fe58a52
+Description-en: Armenian (Armenia) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ia
+Description-md5: f159faf78428d517f8b6b028ee23b9c0
+Description-en: Interlingua language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-id
+Description-md5: 1151b5b4fe8a51eb8af915550c35dbea
+Description-en: Indonesian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-is
+Description-md5: f38943de06d0d373fee3e2c685755eb3
+Description-en: Icelandic language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-it
+Description-md5: 5f5907535db7461a1a4ce65267c2942c
+Description-en: Italian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ja
+Description-md5: be1a730b718faa794aadce4093e3e0e9
+Description-en: Japanese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ka
+Description-md5: 7256997f48030fad2bf429203f9def5f
+Description-en: Georgian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-kab
+Description-md5: 38c8208ca5cd0fd05621cf29e81272ba
+Description-en: Kabyle language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-kk
+Description-md5: 2559d7c3d598d065381d75d9682a527c
+Description-en: Kazakh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-km
+Description-md5: 94ad9a20183091ea8aa8735539a622d8
+Description-en: Central Khmer language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-kn
+Description-md5: 79f132a6b690954e72c6e33d7613b7a3
+Description-en: Kannada language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ko
+Description-md5: 7da73357a4aaba9571963ba566f4a980
+Description-en: Korean language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-lij
+Description-md5: f3444c2a0c3530b0231caf6c60fd977c
+Description-en: Ligurian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-lt
+Description-md5: 454159f1ae703e094f619b3fde0cb18d
+Description-en: Lithuanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-lv
+Description-md5: ef864d67521d4f5832244ee77e3157a9
+Description-en: Latvian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-mai
+Description-md5: 9a342fe72079bbabae7bdeda21ba8447
+Description-en: Maithili language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-mk
+Description-md5: d9bf5aaa9809abd2ccfc06943b958a43
+Description-en: Macedonian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ml
+Description-md5: 518f935a45cdf7e78da34ecacb266749
+Description-en: Malayalam language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-mr
+Description-md5: 14702973776939a968c2557ec205dbf7
+Description-en: Marathi language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ms
+Description-md5: f35a16c421a7468f5f58011c9bf78294
+Description-en: Malay language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-my
+Description-md5: d5dc4e17d1905681fc80c59382d2c3f6
+Description-en: Burmese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-nb-no
+Description-md5: a8b8b408b193c815aad09de034b0d9a8
+Description-en: Norwegian Bokmål (Norway) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ne-np
+Description-md5: 692377c13ab82473580677e992dc82b9
+Description-en: Nepali (Nepal) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-nl
+Description-md5: 7bb69c0d8460b3c528f9d804ee822526
+Description-en: Dutch language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-nn-no
+Description-md5: adaabdaa6831b1e71eb3fbc0cf11d3db
+Description-en: Norwegian Nynorsk (Norway) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-oc
+Description-md5: 659385a8791e323f1637788651db87db
+Description-en: Occitan language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-or
+Description-md5: 13c8623e2256090d2afa495b15f4ee4e
+Description-en: Oriya language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-pa-in
+Description-md5: 8d54703bbba4cdd6314b63966d991704
+Description-en: Panjabi (India) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-pl
+Description-md5: 7ef1fe8a6c45108303ae81854b04c5dc
+Description-en: Polish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-pt-br
+Description-md5: 629e0d9b91e68000af3487dab72501a2
+Description-en: Portuguese (Brazil) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-pt-pt
+Description-md5: 61a6ecaaab1177e71eaf74028b1691cf
+Description-en: Portuguese (Portugal) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-rm
+Description-md5: 145f77469794a94706cae2e5acacb870
+Description-en: Romansh language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ro
+Description-md5: 67b35dcb5d27d663021ca9254f3da4f1
+Description-en: Romanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ru
+Description-md5: 222e7e0f735955c447f2e310e0faf486
+Description-en: Russian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-si
+Description-md5: 9f9dad6b34d89d994c0f2d67371156c2
+Description-en: Sinhala language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-sk
+Description-md5: 4a810fe312cb1267e5e03202cf4a3535
+Description-en: Slovak language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-sl
+Description-md5: 2c8575a4e7d10b684ad6a16109dc1f2c
+Description-en: Slovenian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-son
+Description-md5: db3d7bfafe87a15c7843061605a7aec4
+Description-en: Songhai languages language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-sq
+Description-md5: 878ca23057c81d3724b368248062efeb
+Description-en: Albanian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-sr
+Description-md5: ced4b5d9fd5a15356d8f12944974ef2a
+Description-en: Serbian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-sv-se
+Description-md5: 21f8d8ca045dbcf1f0750d677f9f9471
+Description-en: Swedish (Sweden) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ta
+Description-md5: c9c310de468182de6ff8e9d96846aad2
+Description-en: Tamil language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-te
+Description-md5: 53bd2fe7bdf18abcb708ef484246438f
+Description-en: Telugu language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-th
+Description-md5: 457b1f4601c537df48cce5b7a129b70e
+Description-en: Thai language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-tr
+Description-md5: 41d79acb053482a1da1936fcea55bf63
+Description-en: Turkish language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-uk
+Description-md5: 286a21c46b0e00c0319b2050f6f1ad51
+Description-en: Ukrainian language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-ur
+Description-md5: 0b3c16da77de0f5505f0fc77bf7985b7
+Description-en: Urdu language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-uz
+Description-md5: 34a892d481c3be8498b4e05ca9fa1be8
+Description-en: Uzbek language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-vi
+Description-md5: 71ddf30958f195e73d9c3740a7410f5f
+Description-en: Vietnamese language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-xh
+Description-md5: 9755efbdc7f69f99b2f1595448f3c73f
+Description-en: Xhosa language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-zh-cn
+Description-md5: ac2f7143dab418b3b8c67643d1fbc11f
+Description-en: Chinese (China) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: iceweasel-l10n-zh-tw
+Description-md5: 25f544b90985853ef4d79e798cfe8142
+Description-en: Chinese (Taiwan) language package for Iceweasel - Transitional package
+ This is a transitional package, it can be safely removed.
+
+Package: libdatetime-timezone-perl
+Description-md5: 49fff32146b7c0ac14d7bcca1f92bfe6
+Description-en: framework exposing the Olson time zone database to Perl
+ DateTime::TimeZone is a Perl module framework providing an interface to the
+ Olson time zone database. It exposes the database as a set of modules, one
+ for each time zone defined, allowing for various optimizations in doing time
+ zone calculations.
+ .
+ The Olson time zone database is the best available source for worldwide time
+ zone information and is available from <URL:ftp://ftp.iana.org/tz/releases/>.
+
+Package: python-parsedatetime
+Description-md5: e7dd28a0667034a74044e3bcd3bbbee4
+Description-en: Python module to parse human-readable date/time expressions
+ parsedatetime is able to parse, for example, the following:
+ .
+   * August 25th, 2008
+   * 25 Aug 2008
+   * Aug 25 5pm
+   * 5pm August 25
+   * next saturday
+   * tomorrow
+   * next thursday at 4pm
+   * at 4pm
+   * eod
+   * tomorrow eod
+   * eod tuesday
+   * eoy
+   * eom
+   * in 5 minutes
+   * 5 minutes from now
+   * 5 hours before now
+   * 2 hours before noon
+   * 2 days from tomorrow
+ .
+ This package provides the modules for Python 2.
+
+Package: python3-parsedatetime
+Description-md5: 4d161e1cc640230937c0082f1e34ba67
+Description-en: Python 3 module to parse human-readable date/time expressions
+ parsedatetime is able to parse, for example, the following:
+ .
+   * August 25th, 2008
+   * 25 Aug 2008
+   * Aug 25 5pm
+   * 5pm August 25
+   * next saturday
+   * tomorrow
+   * next thursday at 4pm
+   * at 4pm
+   * eod
+   * tomorrow eod
+   * eod tuesday
+   * eoy
+   * eom
+   * in 5 minutes
+   * 5 minutes from now
+   * 5 hours before now
+   * 2 hours before noon
+   * 2 days from tomorrow
+ .
+ This package provides the modules for Python 3.
+
+Package: python-acme
+Description-md5: e9984343fb79b5b38891196fe71a1b00
+Description-en: ACME protocol library for Python 2
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.  This library is Python 2.
+
+Package: python-acme-doc
+Description-md5: c0e216e279369caa34b4a2cb6e59f51e
+Description-en: ACME protocol library for Python 2 - Documentation
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.
+ .
+ This package provides the documentation.
+
+Package: python3-acme
+Description-md5: 1f6a20683296d3471681d8269f592f79
+Description-en: ACME protocol library for Python 3
+ This is a library used by the Let's Encrypt client for the ACME
+ (Automated Certificate Management Environment).  The ACME protocol is
+ designed as part of the Let's Encrypt project, to make it possible to
+ setup an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention.  This
+ library implements the protocol used for proving the control of a
+ domain.  This library is Python 3.
+
+Package: certbot
+Description-md5: deb7e404ce1b150b59379c3f9a73ac1a
+Description-en: automatically configure HTTPS using Let's Encrypt
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the main application, including the standalone
+ and the manual authenticators.
+
+Package: letsencrypt
+Description-md5: b77c3edb2fdeaba6edecc4488cb24985
+Description-en: transitional dummy package
+ This is a transitional dummy package for the rename of letsencrypt to certbot.
+ It can safely be removed.
+
+Package: python-certbot-doc
+Description-md5: c921886ee1b2b199ff3083306791f0a8
+Description-en: client documentation for certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation.
+
+Package: python3-certbot
+Description-md5: 85358386ec4314ac7c0c6d37555b95ff
+Description-en: main library for certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the main libraries.
+
+Package: python-certbot-apache
+Description-md5: 0cbe148fb4081480f272a28c3f810888
+Description-en: transitional dummy package
+ This is a transitional dummy package for the migration of certbot
+ from python2 to python3.  It can safely be removed.
+
+Package: python-certbot-apache-doc
+Description-md5: 6e462b02b9ab52b9c7012344365f0504
+Description-en: Apache plugin documentation for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation for the Apache plugin.
+
+Package: python3-certbot-apache
+Description-md5: 30ce999e68e8586fa200da41d3a2a49f
+Description-en: Apache plugin for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the Apache plugin to the main application.
+
+Package: python-certbot-nginx
+Description-md5: fa49bab931274861c23fc8ebfeed6bf8
+Description-en: transitional dummy package
+ This is a transitional dummy package for the migration of certbot
+ from python2 to python3.  It can be safely removed.
+
+Package: python-certbot-nginx-doc
+Description-md5: 44298552b70c0afe9ea738f00ec6c778
+Description-en: Nginx plugin documentation for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the documentation for the Nginx plugin.
+
+Package: python3-certbot-nginx
+Description-md5: a4b0f37cf92adc225368ca044499723c
+Description-en: Nginx plugin for Certbot
+ The objective of Certbot, Let's Encrypt, and the ACME (Automated
+ Certificate Management Environment) protocol is to make it possible
+ to set up an HTTPS server and have it automatically obtain a
+ browser-trusted certificate, without any human intervention. This is
+ accomplished by running a certificate management agent on the web
+ server.
+ .
+ This agent is used to:
+ .
+   - Automatically prove to the Let's Encrypt CA that you control the website
+   - Obtain a browser-trusted certificate and set it up on your web server
+   - Keep track of when your certificate is going to expire, and renew it
+   - Help you revoke the certificate if that ever becomes necessary.
+ .
+ This package contains the Nginx plugin to the main application.
+
+Package: python-josepy
+Description-md5: 03fcab569a545beb4b18c8eecfe2ec08
+Description-en: JOSE implementation for Python 2.x
+ This package is a Python implementation of the standards developed by
+ IETF Javascript Object Signing and Encryption (Active WG), in
+ particular the following RFCs:
+ .
+   - JSON Web Algorithms (JWA)
+   - JSON Web Key (JWK)
+   - JSON Web Signature (JWS)
+ .
+ This package was originally developed as part of the ACME protocol
+ implementation.  This is the Python 2 library.
+
+Package: python-josepy-doc
+Description-md5: 4889791d1846e4c87b5b14b65ab2c157
+Description-en: JOSE implementation for Python - Documentation
+ This package is a Python implementation of the standards developed by
+ IETF Javascript Object Signing and Encryption (Active WG), in
+ particular the following RFCs:
+ .
+   - JSON Web Algorithms (JWA)
+   - JSON Web Key (JWK)
+   - JSON Web Signature (JWS)
+ .
+ This package was originally developed as part of the ACME protocol
+ implementation.  This is the documentation for the library.
+
+Package: python3-josepy
+Description-md5: a6d8be6a1e2747e5b5cffc91a865ed9a
+Description-en: JOSE implementation for Python 3.x
+ This package is a Python implementation of the standards developed by
+ IETF Javascript Object Signing and Encryption (Active WG), in
+ particular the following RFCs:
+ .
+   - JSON Web Algorithms (JWA)
+   - JSON Web Key (JWK)
+   - JSON Web Signature (JWS)
+ .
+ This package was originally developed as part of the ACME protocol
+ implementation.  This is the Python 3 library.
+
+Package: tor
+Description-md5: 9106e8e4b3843ebd532ba2b89615a92e
+Description-en: anonymizing overlay network for TCP
+ Tor is a connection-based low-latency anonymous communication system.
+ .
+ Clients choose a source-routed path through a set of relays, and
+ negotiate a "virtual circuit" through the network, in which each relay
+ knows its predecessor and successor, but no others. Traffic flowing
+ down the circuit is decrypted at each relay, which reveals the
+ downstream relay.
+ .
+ Basically, Tor provides a distributed network of relays. Users bounce
+ their TCP streams (web traffic, ftp, ssh, etc) around the relays, and
+ recipients, observers, and even the relays themselves have difficulty
+ learning which users connected to which destinations.
+ .
+ This package enables only a Tor client by default, but it can also be
+ configured as a relay and/or a hidden service easily.
+ .
+ Client applications can use the Tor network by connecting to the local
+ socks proxy interface provided by your Tor instance. If the application
+ itself does not come with socks support, you can use a socks client
+ such as torsocks.
+ .
+ Note that Tor does no protocol cleaning on application traffic. There
+ is a danger that application protocols and associated programs can be
+ induced to reveal information about the user. Tor depends on Torbutton
+ and similar protocol cleaners to solve this problem. For best
+ protection when web surfing, the Tor Project recommends that you use
+ the Tor Browser Bundle, a standalone tarball that includes static
+ builds of Tor, Torbutton, and a modified Firefox that is patched to fix
+ a variety of privacy bugs.
+
+Package: tor-dbg
+Description-md5: e8a546d3317d374b2fe6f8a245b9e653
+Description-en: debugging symbols for Tor
+ This package provides the debugging symbols for Tor, The Onion Router.
+ Those symbols allow your debugger to assign names to your backtraces, which
+ makes it somewhat easier to interpret core dumps.
+
+Package: tor-geoipdb
+Description-md5: d0b50c9cd91157b8c85856fd55e26d14
+Description-en: GeoIP database for Tor
+ This package provides a GeoIP database for Tor, i.e. it maps IPv4 addresses
+ to countries.
+ .
+ Bridge relays (special Tor relays that aren't listed in the main Tor
+ directory) use this information to report which countries they see
+ connections from.  These statistics enable the Tor network operators to
+ learn when certain countries start blocking access to bridges.
+ .
+ Clients can also use this to learn what country each relay is in, so
+ Tor controllers like arm or Vidalia can use it, or if they want to
+ configure path selection preferences.
+
+Package: tzdata
+Description-md5: a77a3cc9a67658dd7cfdc6547391b8f8
+Description-en: time zone and daylight-saving time data
+ This package contains data required for the implementation of
+ standard local time for many representative locations around the
+ globe. It is updated periodically to reflect changes made by
+ political bodies to time zone boundaries, UTC offsets, and
+ daylight-saving rules.
+

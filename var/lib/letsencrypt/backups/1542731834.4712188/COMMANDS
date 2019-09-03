@@ -1,0 +1,2 @@
+a2dismod,-f,socache_shmcb
+a2dismod,-f,ssl

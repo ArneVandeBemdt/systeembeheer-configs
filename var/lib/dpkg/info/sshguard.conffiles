@@ -1,0 +1,3 @@
+/etc/default/sshguard
+/etc/init.d/sshguard
+/etc/sshguard/whitelist
